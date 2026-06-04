@@ -29,6 +29,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float speed = 5f;
     [SerializeField] private KeyCode sprintKey = KeyCode.LeftShift;
     [SerializeField] private float sprintSpeed = 10f;
+    [SerializeField] private KeyCode crouchKey = KeyCode.LeftControl;
+    [SerializeField] private float crouchScale = 0.5f;
+    [SerializeField] private float crouchTransitionDuration = 0.2f;
+    [SerializeField] private float crouchSpeed = 3f;
 
     [Header("Camera")]
     [SerializeField] private float mouseSensitivity = 0.1f;
@@ -41,12 +45,17 @@ public class PlayerController : MonoBehaviour
     {
         cameraAnchor.transform.DOKill();
 
-        float forward = Input.GetAxis("Vertical");
-        float strafe = Input.GetAxis("Horizontal");
+        float forward = Input.GetAxisRaw("Vertical");
+        float strafe = Input.GetAxisRaw("Horizontal");
 
         float currentSpeed = Input.GetKey(sprintKey) ? sprintSpeed : speed;
+        if (Input.GetKey(crouchKey))
+        {
+            currentSpeed = crouchSpeed;
+        }
 
-        Vector3 movement = (transform.forward * forward + transform.right * strafe) * currentSpeed;
+        Vector3 movement = (transform.forward * forward + transform.right * strafe).normalized * currentSpeed;
+        movement.y = rb.linearVelocity.y;
 
         rb.linearVelocity = movement;
 
@@ -60,5 +69,14 @@ public class PlayerController : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(new Vector3(0, heading, 0));
         cameraAnchor.transform.localRotation = Quaternion.Euler(new Vector3(pitch, 0, 0));
+
+        if (Input.GetKeyDown(crouchKey))
+        {
+            transform.DOScaleY(crouchScale, crouchTransitionDuration);
+        }
+        else if (Input.GetKeyUp(crouchKey))
+        {
+            transform.DOScaleY(1f, crouchTransitionDuration);
+        }
     }
 }
