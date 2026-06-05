@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &196581202 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8801462057061667394, guid: 3f38c611dfc130745adabfebe2bb54f5, type: 3}
+  m_PrefabInstance: {fileID: 1881444760}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &481674924
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,6 +426,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3095142134960779841, guid: 885cd65af1e82c1418e12f1a5a2a96fd, type: 3}
+      propertyPath: currentDay
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5802171905835766667, guid: 885cd65af1e82c1418e12f1a5a2a96fd, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -478,6 +487,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6936318400425364617, guid: f2eb7103b4e777146940cfe8c8d7bd7c, type: 3}
+      propertyPath: Target.TrackingTarget
+      value: 
+      objectReference: {fileID: 196581202}
     - target: {fileID: 8966518250591942171, guid: f2eb7103b4e777146940cfe8c8d7bd7c, type: 3}
       propertyPath: m_Name
       value: Camera's
