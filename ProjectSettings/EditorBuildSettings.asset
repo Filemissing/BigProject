@@ -8,6 +8,36 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Days/Day 1 test.unity
+    guid: 112df2225edbf724c801ca3dc5f24e7d
+  - enabled: 1
+    path: Assets/Scenes/Days/Day 2 test.unity
+    guid: f17a6b20b2129aa4ba5b6a3853df6dd4
+  - enabled: 1
+    path: Assets/Scenes/Days/Day 3 test.unity
+    guid: 7f755f68ad87514448a4bbd21ce73880
+  - enabled: 1
+    path: Assets/Scenes/Days/Day 4 test.unity
+    guid: 2e48867c98c148a46a98a7d6462e138f
+  - enabled: 1
+    path: Assets/Scenes/Days/Day 5 test.unity
+    guid: a7c16d134ac43e249926174993597fd7
+  - enabled: 1
+    path: Assets/Scenes/Days/Night 1 test.unity
+    guid: 928561f45e468c04f95379f5f0d6c75c
+  - enabled: 1
+    path: Assets/Scenes/Days/Night 2 test.unity
+    guid: e098055e03b17b5469ef72ae29edf144
+  - enabled: 1
+    path: Assets/Scenes/Days/Night 3 test.unity
+    guid: 980c79695541ec5458cce32724e559f7
+  - enabled: 1
+    path: Assets/Scenes/Days/Night 4 test.unity
+    guid: b7cfdca10aa678044b20c9cef343d78d
+  - enabled: 1
+    path: Assets/Scenes/Days/Night 5 test.unity
+    guid: 700cdf3da21c83c4a96234970f879074
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

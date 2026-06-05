@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Camera")]
     [SerializeField] private float mouseSensitivity = 0.1f;
-    [SerializeField] private Transform cameraAnchor;
+    public Transform cameraAnchor;
     [SerializeField] private float upLookLimit = 80f;
     [SerializeField] private float downLookLimit = 80f;
 
