@@ -11,12 +11,15 @@ public class JournalData : MonoBehaviour
 
     public static event Action JournalUpdated;
     
+    
+    
+    // Use to add a Note to the current day
     public void AddNoteToCurrentDay(string note)
     {
-        if (GameManager.instance.isNight == true)
-            days[GameManager.instance.currentDay] += note;
+        if (GameManager.instance.isNight == false)
+            days[GameManager.instance.currentDay] += note + "<br><br>";
         else
-            nights[GameManager.instance.currentDay] += note;
+            nights[GameManager.instance.currentDay] += note + "<br><br>";
         
         JournalUpdated?.Invoke();
     }

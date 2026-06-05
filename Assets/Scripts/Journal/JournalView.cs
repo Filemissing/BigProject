@@ -12,8 +12,6 @@ public class JournalView : MonoBehaviour
 
     
     [Header("References")]
-    [SerializeField] private JournalData journalData;
-    
     [SerializeField] private TMP_Text title;
     [SerializeField] private TMP_Text descriptionLeft;
     [SerializeField] private TMP_Text descriptionRight;
@@ -26,6 +24,9 @@ public class JournalView : MonoBehaviour
     [Button]
     public void UpdateView()
     {
+        if (selectedTab == null)
+            selectedTab = dayButtons[0];
+        
         UpdateTabs();
 
         // Day
@@ -33,8 +34,8 @@ public class JournalView : MonoBehaviour
         if (dayIndex != -1)
         {
             title.text = "Day " + (dayIndex + 1);
-            descriptionLeft.text = journalData.days[dayIndex];
-            descriptionRight.text = journalData.days[dayIndex];
+            descriptionLeft.text = GameManager.instance.journalData.days[dayIndex];
+            descriptionRight.text = GameManager.instance.journalData.days[dayIndex];
             return;
         }
         
@@ -43,8 +44,8 @@ public class JournalView : MonoBehaviour
         if (nightIndex != -1)
         {
             title.text = "Night " + (nightIndex + 1);
-            descriptionLeft.text = journalData.nights[nightIndex];
-            descriptionRight.text = journalData.nights[nightIndex];
+            descriptionLeft.text = GameManager.instance.journalData.nights[nightIndex];
+            descriptionRight.text = GameManager.instance.journalData.nights[nightIndex];
             return;
         }
         
@@ -56,17 +57,17 @@ public class JournalView : MonoBehaviour
     
     public void UpdateTabs()
     {
-        for (int i = 0; i < journalData.days.Length; i++)
+        for (int i = 0; i < GameManager.instance.journalData.days.Length; i++)
         {
-            if (journalData.days[i] != "" || journalData.days[i] == null)
+            if (GameManager.instance.journalData.days[i] != "" || GameManager.instance.journalData.days[i] == null)
                 EnableCanvasGroup(dayButtons[i].GetComponent<CanvasGroup>());
             else
                 DisableCanvasGroup(dayButtons[i].GetComponent<CanvasGroup>());
         }
         
-        for (int i = 0; i < journalData.nights.Length; i++)
+        for (int i = 0; i < GameManager.instance.journalData.nights.Length; i++)
         {
-            if (journalData.nights[i] != "" || journalData.nights[i] == null)
+            if (GameManager.instance.journalData.nights[i] != "" || GameManager.instance.journalData.nights[i] == null)
                 EnableCanvasGroup(nightButtons[i].GetComponent<CanvasGroup>());
             else
                 DisableCanvasGroup(nightButtons[i].GetComponent<CanvasGroup>());

@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using System;
 
+[RequireComponent(typeof(JournalData))]
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
@@ -15,14 +16,17 @@ public class GameManager : MonoBehaviour
         else
         {
             instance = this;
+            DontDestroyOnLoad(gameObject);
         }
     }
 
+    [Header("References")]
+    public JournalData journalData;
     public GameObject interactionPromptPrefab;
 
     [Header("Day/Night Cycle")]
     [SerializeField] List<Day> days;
-    public int currentDay = 1;
+    public int currentDay = 0;
     public bool isNight = false;
     public void AdvanceDay()
     {

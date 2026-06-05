@@ -3,17 +3,15 @@ using UnityEngine;
 
 public class JournalTest : MonoBehaviour
 {
-    [SerializeField] private JournalData journalData;
-
     [Button]
     void ShutDownLaptop1()
     {
-        journalData.AddNoteToCurrentDay("asdfmjhgsadfkjhasgdfkjsahdgfskadhfgsakjdfvsadfsadfsadfasdfasdfasdsdkfhgdskjhfhgsdjkfgsdfg");
+        GameManager.instance.journalData.AddNoteToCurrentDay("asdfmjhgsadfkjhasgdfkjsahdgfskadhfgsakjdfvsadfsadfsadfasdfasdfasdsdkfhgdskjhfhgsdjkfgsdfg");
     }
     
     [Button]
     void ShutDownLaptop2()
     {
-        journalData.AddNoteToCurrentDay("dfsgdsfgdsfgdfgdsfgdsfjghsdfdkgjhdsgfgkjsahdfgmnasfhglkjasjbfdnglkjsjdfbglsdksjfghsdljfkghsdlfjkgdsdfgsdjfkgjsdbfgdskjfghasdasdsdfg");
+        GameManager.instance.journalData.AddNoteToCurrentDay("dfsgdsfgdsfgdfgdsfgdsfjghsdfdkgjhdsgfgkjsahdfgmnasfhglkjasjbfdnglkjsjdfbglsdksjfghsdljfkghsdlfjkgdsdfgsdjfkgjsdbfgdskjfghasdasdsdfg");
     }
 }
