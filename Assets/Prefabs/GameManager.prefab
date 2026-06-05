@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 254145626582724701}
   - component: {fileID: 3095142134960779841}
+  - component: {fileID: 4574898053677438824}
+  - component: {fileID: 7659212096376620256}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -44,6 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9093cac7026827e49be48a21623851ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  journalData: {fileID: 4574898053677438824}
+  inventoryData: {fileID: 7659212096376620256}
   interactionPromptPrefab: {fileID: 8306187112073313052, guid: c80b7322a4cdb1f47a45f65c29eda9f9, type: 3}
   days:
   - sceneName: Day 1 test
@@ -61,3 +65,42 @@ MonoBehaviour:
   - sceneName: Day 5 test
     hasNight: 0
     nightSceneName: 
+  currentDay: 0
+  isNight: 0
+--- !u!114 &4574898053677438824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5802171905835766667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7352d0bc786fc8143968bea1d0bf4104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JournalData
+  days:
+  - 
+  - 
+  - 
+  - 
+  - 
+  nights:
+  - 
+  - 
+  - 
+  - 
+  - 
+--- !u!114 &7659212096376620256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5802171905835766667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50f8529fc680ebe43b386a397670d67d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InventoryData
+  inventory: []

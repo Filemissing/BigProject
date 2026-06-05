@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class InventoryViewPresenter : MonoBehaviour
 {
-    [Header("TEMP")]
-    [SerializeField] private InventoryData inventoryData;
-    
     [Header("References")]
     [SerializeField] private TMP_Text title;
     [SerializeField] private TMP_Text description;
@@ -22,7 +19,7 @@ public class InventoryViewPresenter : MonoBehaviour
 
     private void Awake()
     {
-        if (inventoryData.inventory.Count > 0)
-            UpdateView(inventoryData.inventory[0]);
+        if (GameManager.instance.inventoryData.inventory.Count > 0)
+            UpdateView(GameManager.instance.inventoryData.inventory[0]);
     }
 }

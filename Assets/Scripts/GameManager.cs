@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System;
 
 [RequireComponent(typeof(JournalData))]
+[RequireComponent(typeof(InventoryData))]
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
@@ -22,6 +23,7 @@ public class GameManager : MonoBehaviour
 
     [Header("References")]
     public JournalData journalData;
+    public InventoryData inventoryData;
     public GameObject interactionPromptPrefab;
 
     [Header("Day/Night Cycle")]
