@@ -1,5 +1,6 @@
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.AI;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerController : MonoBehaviour
@@ -77,6 +78,17 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetKeyUp(crouchKey))
         {
             transform.DOScaleY(1f, crouchTransitionDuration);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, 2f);
+            if (hit.collider != null && hit.rigidbody.gameObject.TryGetComponent(out NavMeshAgent navMeshAgent))
+            {
+                hit.rigidbody.isKinematic = false;
+                hit.rigidbody.linearDamping = 0f;
+                hit.rigidbody.AddForce(cameraAnchor.forward * 1000f, ForceMode.Impulse);
+            }
         }
     }
 }
