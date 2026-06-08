@@ -19,6 +19,7 @@ public class InteractionHandler : MonoBehaviour
 
     [SerializeField] private KeyCode key = KeyCode.E;
     [SerializeField] private float radius = 2f;
+    public GameObject[] interactionPrompts;
     [HideInInspector] public List<Interactable> interactables = new List<Interactable>();
 
     void Update()

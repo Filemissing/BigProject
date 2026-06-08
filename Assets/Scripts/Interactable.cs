@@ -3,17 +3,36 @@ using UnityEngine.Events;
 
 public class Interactable : MonoBehaviour
 {
+    enum InteractionType
+    {
+        Interactable,
+        Pickup,
+        Observation
+    }
+    
+    [Header("Settings")]
+    [SerializeField] private InteractionType interactionType = InteractionType.Interactable;
+    [SerializeField] private bool destroyOnUse = false;
     private GameObject interactionPromptInstance;
+    
+    [Header("Events")]
+    [SerializeField] private UnityEvent onInteracted;
     private void Start()
     {
-        interactionPromptInstance = Instantiate(GameManager.instance.interactionPromptPrefab, transform.position, Quaternion.identity, transform);
+        GameObject prefab = InteractionHandler.instance.interactionPrompts[(int)interactionType];
+        
+        interactionPromptInstance = Instantiate(prefab, transform.position, Quaternion.identity);
         interactionPromptInstance.SetActive(false);
     }
-
-    [SerializeField] private UnityEvent onInteracted;
     public void Interact()
     {
         onInteracted?.Invoke();
+
+        if (destroyOnUse)
+        {
+            Destroy(interactionPromptInstance);
+            Destroy(gameObject);
+        }
     }
     public void ShowInteractionPrompt()
     {

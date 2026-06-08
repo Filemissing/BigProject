@@ -132,6 +132,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   key: 101
   radius: 2
+  interactionPrompts:
+  - {fileID: 4716927393694428065, guid: 8f810a18fd767794b99d1b0176191eb6, type: 3}
+  - {fileID: 4716927393694428065, guid: 83c13d351ef2bcd4f962c62a44c301d0, type: 3}
+  - {fileID: 4716927393694428065, guid: 8fcca25d1dbd42741b4913c9d9e10a63, type: 3}
   interactables: []
 --- !u!136 &7924641518253406714
 CapsuleCollider:
