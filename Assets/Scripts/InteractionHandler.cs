@@ -41,7 +41,7 @@ public class InteractionHandler : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(key))
+        if (Input.GetKeyDown(key) && Vector3.Distance(nearest.transform.position, transform.position) <= radius)
         {
             nearest?.Interact();
         }
