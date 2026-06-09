@@ -1,6 +1,7 @@
 using DG.Tweening;
 using NaughtyAttributes;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -47,12 +48,15 @@ public class NPC : MonoBehaviour
     }
 
     bool pauseWandering = false;
+    bool shouldRotate = true;
     float timeUntilNextWander = 0f;
     public IEnumerator Wander()
     {
         PointOfInterest target = null;
         while (true)
         {
+            yield return new WaitUntil(() => !pauseWandering);
+
             if (timeUntilNextWander <= 0)
             {
                 target = pointsOfInterest[Random.Range(0, pointsOfInterest.Length)];
@@ -69,11 +73,10 @@ public class NPC : MonoBehaviour
                 if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
                 {
                     // reached destination
-                    RotateToward(target.transform.eulerAngles.y);
+                    if (shouldRotate)
+                        RotateToward(target.transform.eulerAngles.y);
                 }
             }
-
-            yield return new WaitUntil(() => !pauseWandering);
         }
     }
 
@@ -88,11 +91,13 @@ public class NPC : MonoBehaviour
     {
         pauseWandering = true;
         agent.isStopped = true;
+        shouldRotate = false;
     }
 
     [Button] public void ResumeWandering()
     {
         pauseWandering = false;
         agent.isStopped = false;
+        shouldRotate = true;
     }
 }
