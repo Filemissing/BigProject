@@ -24,6 +24,10 @@ public class NPC : MonoBehaviour
 
     public void PlayDialogue()
     {
+        PauseWandering();
+
+        RotateToward(Quaternion.LookRotation(GameManager.instance.player.transform.position - transform.position).eulerAngles.y);
+
         DSP_ConversationManager.instance.StartConversation(conversations[currentConversationIndex]);
 
         // last conversation will be repeated
@@ -39,6 +43,7 @@ public class NPC : MonoBehaviour
     private void Start()
     {
         StartCoroutine(Wander());
+        DSP_ConversationManager.instance.OnConversationEnded += ResumeWandering;
     }
 
     bool pauseWandering = false;
@@ -64,7 +69,7 @@ public class NPC : MonoBehaviour
                 if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
                 {
                     // reached destination
-                    RotateToward(target.transform.eulerAngles);
+                    RotateToward(target.transform.eulerAngles.y);
                 }
             }
 
@@ -72,10 +77,10 @@ public class NPC : MonoBehaviour
         }
     }
 
-    public void RotateToward(Vector3 eulerAngles)
+    public void RotateToward(float yRotation)
     {
         transform.DOKill();
-        Quaternion targetRotation = Quaternion.Euler(eulerAngles);
+        Quaternion targetRotation = Quaternion.Euler(0, yRotation, 0);
         transform.DORotate(targetRotation.eulerAngles, 1f);
     }
 
