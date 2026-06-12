@@ -1488,6 +1488,10 @@ PrefabInstance:
       propertyPath: 'pointsOfInterest.Array.data[2]'
       value: 
       objectReference: {fileID: 1844736300}
+    - target: {fileID: 5131467307736727496, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: m_AngularSpeed
+      value: 360
+      objectReference: {fileID: 0}
     - target: {fileID: 5379631661938212770, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: m_Name
       value: NPC
