@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47d5a1aab1955814f8f0160f91f760c4, type: 3}
-  m_Name: Scissors
+  m_Name: Rounded Cube
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  title: Scissors
-  description: Snip snip
-  sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  model: {fileID: 1981131855061102, guid: 7ec354ef3daae7641b7a3fa5e1fe0c81, type: 3}
+  title: Rounded Cube
+  description: C U B E
+  sprite: {fileID: 21300000, guid: 5d2f173ac0a835c45a359280401c2882, type: 3}
+  model: {fileID: 919132149155446097, guid: 05248194670eb73469d9c9ba20297064, type: 3}
+  defaultRotation: {x: 0, y: 0, z: 0}
+  defaultScale: {x: 2, y: 2, z: 2}

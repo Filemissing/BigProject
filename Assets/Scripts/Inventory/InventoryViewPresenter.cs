@@ -8,13 +8,13 @@ public class InventoryViewPresenter : MonoBehaviour
     [Header("References")]
     [SerializeField] private TMP_Text title;
     [SerializeField] private TMP_Text description;
-    [SerializeField] private Image image;
+    [SerializeField] private ItemInspect itemInspect;
     
     public void UpdateView(Item item)
     {
         title.text = item.title;
         description.text = item.description;
-        image.sprite = item.sprite;
+        itemInspect.UpdateItem(item);
     }
 
     private void Awake()
