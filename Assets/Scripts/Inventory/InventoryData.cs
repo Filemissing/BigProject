@@ -12,4 +12,10 @@ public class InventoryData : MonoBehaviour
     {
         inventory.Add(item);
     }
+    
+    // Use to remove an item from the inventory
+    public void RemoveItem(Item item)
+    {
+        inventory.Remove(item);
+    }
 }
