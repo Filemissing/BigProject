@@ -37,6 +37,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float crouchTransitionDuration = 0.2f;
     [SerializeField] private float crouchSpeed = 3f;
 
+    [HideInInspector] public bool isCrouched;
+
     [Header("Camera")]
     [SerializeField] private float mouseSensitivity = 0.1f;
     public Transform cameraAnchor;
