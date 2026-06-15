@@ -12,7 +12,7 @@ public class DSP_DialogueOptionsVisualizer : MonoBehaviour
     public GameObject optionButtonPrefab;
     
     private DSP_ConversationManager conversationManager;
-    private DSP_SettingsObject settings;
+    [SerializeField] private DSP_DialogueBoxVisualizer dialogueBoxVisualizer;
 
     private List<GameObject> options = new List<GameObject>();
     
@@ -22,7 +22,6 @@ public class DSP_DialogueOptionsVisualizer : MonoBehaviour
     void Awake()
     {
         conversationManager = DSP_ConversationManager.GetInstance();
-        settings = conversationManager.settings;
         ClearOptions();
     }
     
@@ -36,24 +35,25 @@ public class DSP_DialogueOptionsVisualizer : MonoBehaviour
         ClearOptions();
     }
     
-    private void OnChoiceNode(string[] choices)
+    private void OnChoiceNode((string, bool)[] choices)
     {
         if (choices == null || choices.Length == 0) return;
         
         CreateOptions(choices);
-        DSP_EffectsHandler.AppearOptions(options);
+
+        dialogueBoxVisualizer.ForcePlayEffect(options, DSP_DialogueBoxVisualizer.EffectType.AppearOptions);
     }
     
     private void OnOptionSelected(int choiceIndex)
     {
-        DSP_EffectsHandler.DisappearOptions(options);
+        dialogueBoxVisualizer.ForcePlayEffect(options, DSP_DialogueBoxVisualizer.EffectType.DisappearOptions);
         conversationManager.AdvanceChoice(choiceIndex);
     }
     
     
     
     // Helpers
-    private void CreateOptions(string[] choices)
+    private void CreateOptions((string, bool)[] choices)
     {
         ClearOptions();
         
@@ -62,8 +62,10 @@ public class DSP_DialogueOptionsVisualizer : MonoBehaviour
             int index = i;
             
             GameObject optionButton = Instantiate(optionButtonPrefab, optionsContainer.transform);
-            optionButton.GetComponent<Button>().onClick.AddListener(( )=> OnOptionSelected(index));
-            optionButton.transform.GetChild(0).GetComponent<TMP_Text>().text = choices[index];
+            Button button = optionButton.GetComponent<Button>();
+            button.onClick.AddListener(() => OnOptionSelected(index));
+            button.interactable = choices[index].Item2;
+            optionButton.transform.GetChild(0).GetComponent<TMP_Text>().text = choices[index].Item1;
             options.Add(optionButton);
         }
     }

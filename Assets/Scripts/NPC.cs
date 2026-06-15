@@ -1,20 +1,22 @@
 using DG.Tweening;
 using NaughtyAttributes;
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Animator))]
 public class NPC : MonoBehaviour
 {
     private NavMeshAgent agent;
     private Rigidbody rb;
+    private Animator animator;
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
     }
 
     [Header("Dialogue")]
@@ -53,17 +55,21 @@ public class NPC : MonoBehaviour
     public IEnumerator Wander()
     {
         PointOfInterest target = null;
+        bool hasArrived = true;
         while (true)
         {
             yield return new WaitUntil(() => !pauseWandering);
 
-            if (timeUntilNextWander <= 0)
+            if (timeUntilNextWander <= 0 && hasArrived)
             {
+                animator.Play("Walking");
                 target = pointsOfInterest[Random.Range(0, pointsOfInterest.Length)];
                 timeUntilNextWander = Random.Range(5f, 15f);
                 agent.SetDestination(target.transform.position);
+
+                hasArrived = false;
             }
-            else
+            else if (hasArrived)
             {
                 timeUntilNextWander -= Time.deltaTime;
             }
@@ -73,10 +79,20 @@ public class NPC : MonoBehaviour
                 if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
                 {
                     // reached destination
+
                     if (shouldRotate)
                         RotateToward(target.transform.eulerAngles.y);
+
+                    // play the animation, it needs to be in the controller and the state name needs to match the clip name, but like who ever changes that?
+                    // don't replay after it has finished
+                    if (!hasArrived)
+                        animator.Play(target.animationClip.name);
+
+                    hasArrived = true;
                 }
             }
+
+            animator.SetBool("IsWalking", agent.velocity.sqrMagnitude > 0.01f);
         }
     }
 
