@@ -60,8 +60,60 @@ PrefabInstance:
       propertyPath: interactionType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4508243947067563906, guid: 7bb30ea91b2dc4543a28b1890179da80, type: 3}
+      propertyPath: onInteracted.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508243947067563906, guid: 7bb30ea91b2dc4543a28b1890179da80, type: 3}
+      propertyPath: onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508243947067563906, guid: 7bb30ea91b2dc4543a28b1890179da80, type: 3}
+      propertyPath: onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7239962933941181344}
+    - target: {fileID: 4508243947067563906, guid: 7bb30ea91b2dc4543a28b1890179da80, type: 3}
+      propertyPath: onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508243947067563906, guid: 7bb30ea91b2dc4543a28b1890179da80, type: 3}
+      propertyPath: onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GiveItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508243947067563906, guid: 7bb30ea91b2dc4543a28b1890179da80, type: 3}
+      propertyPath: onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ItemGiver, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508243947067563906, guid: 7bb30ea91b2dc4543a28b1890179da80, type: 3}
+      propertyPath: onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 4cc9a1096fffd6245b3ad0182a04ab4a, type: 2}
+    - target: {fileID: 4508243947067563906, guid: 7bb30ea91b2dc4543a28b1890179da80, type: 3}
+      propertyPath: onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Item, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4284851929546167431, guid: 7bb30ea91b2dc4543a28b1890179da80, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 7239962933941181344}
   m_SourcePrefab: {fileID: 100100000, guid: 7bb30ea91b2dc4543a28b1890179da80, type: 3}
+--- !u!1 &4291050785886597714 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4284851929546167431, guid: 7bb30ea91b2dc4543a28b1890179da80, type: 3}
+  m_PrefabInstance: {fileID: 70375155931637461}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7239962933941181344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4291050785886597714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cfe70bb006c3fe47ad6ef3144830001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemGiver
