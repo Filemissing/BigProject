@@ -86,7 +86,7 @@ public class NPC : MonoBehaviour
                     // play the animation, it needs to be in the controller and the state name needs to match the clip name, but like who ever changes that?
                     // don't replay after it has finished
                     if (!hasArrived)
-                        animator.Play(target.animationClip.name);
+                        animator.Play(target.animationClip?.name);
 
                     hasArrived = true;
                 }
