@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     }
 
     [Header("References")]
+    public PlayerController player;
     public JournalData journalData;
     public InventoryData inventoryData;
     public GameObject interactionPromptPrefab;

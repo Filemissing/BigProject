@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3635822171205137501}
   - component: {fileID: 7924641518253406714}
   - component: {fileID: 8172133964516608998}
+  - component: {fileID: 9003348331537261550}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -132,6 +133,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   key: 101
   radius: 2
+  interactionPrompts:
+  - {fileID: 4716927393694428065, guid: 8f810a18fd767794b99d1b0176191eb6, type: 3}
+  - {fileID: 4716927393694428065, guid: 83c13d351ef2bcd4f962c62a44c301d0, type: 3}
+  - {fileID: 4716927393694428065, guid: 8fcca25d1dbd42741b4913c9d9e10a63, type: 3}
   interactables: []
 --- !u!136 &7924641518253406714
 CapsuleCollider:
@@ -183,6 +188,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &9003348331537261550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4452590923600526309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshModifier
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 1
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &6479208518618674879
 GameObject:
   m_ObjectHideFlags: 0

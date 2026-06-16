@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9093cac7026827e49be48a21623851ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  player: {fileID: 0}
   journalData: {fileID: 4574898053677438824}
   inventoryData: {fileID: 7659212096376620256}
   interactionPromptPrefab: {fileID: 8306187112073313052, guid: c80b7322a4cdb1f47a45f65c29eda9f9, type: 3}
@@ -57,12 +58,6 @@ MonoBehaviour:
     hasNight: 1
     nightSceneName: Night 2 test
   - sceneName: Day 3 test
-    hasNight: 0
-    nightSceneName: 
-  - sceneName: Day 4 test
-    hasNight: 1
-    nightSceneName: Night 5 test
-  - sceneName: Day 5 test
     hasNight: 0
     nightSceneName: 
   currentDay: 0
