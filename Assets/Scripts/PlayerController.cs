@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
     public void Update()
     {
         // Temporary cursor unlock.     - MICHA WHY DOES UNLOCKCHARACTER LOCK THE CURSOR???
-        if (Input.GetKeyDown(KeyCode.RightControl))
+        if (Input.GetKeyDown(KeyCode.LeftAlt))
         {
             if (Cursor.lockState == CursorLockMode.None)
                 UnlockCharacter();
