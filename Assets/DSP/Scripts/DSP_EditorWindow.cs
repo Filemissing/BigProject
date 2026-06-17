@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Reflection;
-using System.Security.Cryptography;
-using Unity.VisualScripting;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEditor.UIElements;
@@ -222,6 +220,7 @@ public class DSP_NodeGraphView : GraphView
             DSP_NodeType.End => typeof(DSP_EndNode),
             DSP_NodeType.Dialogue => typeof(DSP_DialogueNode),
             DSP_NodeType.SceneEvent => typeof(DSP_SceneEventNode),
+            DSP_NodeType.Random => typeof(DSP_RandomNode),
             _ => throw new Exception("Unknown node type")
         };
 
@@ -396,13 +395,26 @@ public class DSP_NodeGraphView : GraphView
                 position = node.GetPosition().position,
                 values = new SerializableValue[]
                 {
-                        new(conditionNode.assignedObject),
-                        new(methodKey)
+                    new(conditionNode.assignedObject),
+                    new(methodKey)
                 },
                 eventParameters = conditionNode.finalCondition?.parameter != null
                     ? new SerializableValue[] { conditionNode.finalCondition.parameter }
                     : null,
                 finalConditions = new SerializableCondition[] { conditionNode.finalCondition }
+            };
+        }
+        else if (node is DSP_RandomNode randomNode)
+        {
+            data = new DSP_NodeData
+            {
+                id = nodes.ToList().FindIndex(n => n == node),
+                nodeType = DSP_NodeType.Random,
+                position = node.GetPosition().position,
+                values = new SerializableValue[]
+                {
+                    new SerializableValue(randomNode.optionWeights.ToArray())
+                }
             };
         }
 
@@ -445,6 +457,7 @@ public class DSP_NodeGraphView : GraphView
         menu.AddItem(new GUIContent("Static Event Node"), false, () => CreateNode(() => new DSP_StaticEventNode(pos), port, dir));
         menu.AddItem(new GUIContent("Scene Event Node"), false, () => CreateNode(() => new DSP_SceneEventNode(pos), port, dir));
         menu.AddItem(new GUIContent("Condition Node"), false, () => CreateNode(() => new DSP_ConditionNode(pos), port, dir));
+        menu.AddItem(new GUIContent("Random Node"), false, () => CreateNode(() => new DSP_RandomNode(pos), port, dir));
     }
 
     void CreateNode(Func<Node> factory, Port draggedPort, Direction draggedDirection)
@@ -1932,7 +1945,7 @@ public class DSP_ConditionNode : Node
 }
 public class DSP_RandomNode : Node
 {
-    List<int> optionWeights = new();
+    public List<int> optionWeights = new();
 
     public DSP_RandomNode(Vector2 position, SerializableValue[] values = null)
     {
@@ -1958,6 +1971,8 @@ public class DSP_RandomNode : Node
             AddOption(optionContainer);
             AddOption(optionContainer);
         }
+
+        mainContainer.Add(optionContainer);
 
         // buttons
         VisualElement buttonContainer = new VisualElement();
@@ -1992,9 +2007,34 @@ public class DSP_RandomNode : Node
         SetPosition(new Rect(position, Vector2.zero));
     }
 
-    void AddOption(VisualElement optionsContainer, int storedWeight = 0)
+    void AddOption(VisualElement optionsContainer, int storedWeight = 1)
     {
+        int index = optionWeights.Count;
+        optionWeights.Add(storedWeight);
 
+        VisualElement row = new VisualElement();
+        row.style.flexDirection = FlexDirection.Row;
+        row.style.alignContent = Align.Center;
+        row.style.width = new StyleLength(StyleKeyword.Auto);
+        row.style.flexGrow = 1;
+
+        IntegerField weightField = new IntegerField("Weight");
+        weightField.labelElement.style.minWidth = 0;
+        weightField.labelElement.style.width = 50;
+        weightField.style.flexGrow = 1;
+
+        weightField.style.width = 100;
+
+        weightField.value = storedWeight;
+        weightField.RegisterValueChangedCallback(evt => optionWeights[index] = evt.newValue);
+
+        row.Add(weightField);
+        
+        // port
+        Port port = this.GeneratePort(Direction.Output, Port.Capacity.Single);
+        row.Add(port);
+
+        optionsContainer.Add(row);
     }
 
     void RemoveOption(VisualElement optionsContainer)
@@ -2002,6 +2042,7 @@ public class DSP_RandomNode : Node
         if (optionWeights.Count <= 2)
             return;
 
-
+        optionsContainer.RemoveAt(optionWeights.Count - 1);
+        optionWeights.RemoveAt(optionWeights.Count - 1);
     }
 }
