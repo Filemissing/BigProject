@@ -437,6 +437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4721094557267423054}
   - component: {fileID: 3343871615605368320}
+  - component: {fileID: 4038519734634735838}
   m_Layer: 5
   m_Name: Inventory
   m_TagString: Untagged
@@ -477,6 +478,23 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &4038519734634735838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605409861524811414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7031cee6e1a9f274ebad200539cebbe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VisibilityManager
+  canvasGroup: {fileID: 3343871615605368320}
+  eventType: 1
+  turnVisibleAnimation: 0
+  turnInvisibleAnimation: 0
+  duration: 0.2
 --- !u!1 &1910325745180859139
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,13 +587,13 @@ MonoBehaviour:
   cameraTransform: {fileID: 2832490728321321795}
   xMultiplier: 1
   yMultiplier: 1
-  zoomMultiplier: 10
   tweenDuration: 0.15
   yMin: -70
   yMax: 70
+  zoomMultiplier: 10
   defaultZ: -10
   minimumZoom: 0
-  maximumZoom: 5
+  maximumZoom: 7
 --- !u!1 &2478277677136033069
 GameObject:
   m_ObjectHideFlags: 0
