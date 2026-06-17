@@ -60,7 +60,7 @@ public class NPC : MonoBehaviour
         {
             yield return new WaitUntil(() => !pauseWandering);
 
-            if (timeUntilNextWander <= 0 && hasArrived)
+            if (timeUntilNextWander <= 0 && hasArrived && pointsOfInterest.Length > 0)
             {
                 animator.Play("Walking");
                 target = pointsOfInterest[Random.Range(0, pointsOfInterest.Length)];

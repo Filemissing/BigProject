@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3589410243605531027}
   - component: {fileID: 1761790224273420426}
   - component: {fileID: 6223619733913385829}
+  - component: {fileID: 8732270609692244960}
   m_Layer: 0
   m_Name: ConversationManager
   m_TagString: Untagged
@@ -61,3 +62,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueBoxVisualizer: {fileID: 0}
+--- !u!114 &8732270609692244960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457751710703105605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c669d8762435914dbaa80c7222e9595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HandleIsBusyOnDialogue
