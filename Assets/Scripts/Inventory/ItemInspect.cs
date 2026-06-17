@@ -75,7 +75,8 @@ public class ItemInspect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 
     public void UpdateItem(Item item)
     {
-        Destroy(visualObject);
+        if (visualObject) Destroy(visualObject);
+        
         visualObject = Instantiate(item.model, visualObjectParent);
         visualObject.transform.localPosition = Vector3.zero;
         visualObject.transform.localRotation = Quaternion.Euler(item.defaultRotation);
@@ -85,6 +86,15 @@ public class ItemInspect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
         currentZoom = 0;
         smoothCurrentZoom = 0;
         objectTransform.localRotation = Quaternion.Euler(item.defaultRotation);
+        cameraPivotTransform.localRotation = Quaternion.identity;
+    }
+
+    public void SetEmpty()
+    {
+        if (visualObject) Destroy(visualObject);
+
+        currentZoom = 0;
+        smoothCurrentZoom = 0;
         cameraPivotTransform.localRotation = Quaternion.identity;
     }
 }
