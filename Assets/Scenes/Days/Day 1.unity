@@ -39712,6 +39712,19 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 74351839488406940, guid: 8ceacb98f2efcc6489e6d437ab915ad6, type: 3}
+      propertyPath: m_text
+      value: 'Sprint - [LeftShift]
+
+        Crouch - [LeftCtrl]
+
+        Toggle inventory
+        - [I]
+
+        Toggle journal - [J]
+
+        Toggle CursorLock - [LeftAlt]'
+      objectReference: {fileID: 0}
     - target: {fileID: 773699241126763411, guid: 8ceacb98f2efcc6489e6d437ab915ad6, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
