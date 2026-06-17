@@ -652,24 +652,6 @@ MonoBehaviour:
     finalEvents: []
     finalConditions: []
   - id: 13
-    nodeType: 1
-    position: {x: 4170, y: -144}
-    values:
-    - type: 1
-      intValue: 1
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    eventParameters: []
-    finalEvents: []
-    finalConditions: []
-  - id: 14
     nodeType: 2
     position: {x: 278, y: 55}
     values:
@@ -710,6 +692,42 @@ MonoBehaviour:
     eventParameters: []
     finalEvents: []
     finalConditions: []
+  - id: 14
+    nodeType: 1
+    position: {x: 4372, y: -174}
+    values:
+    - type: 1
+      intValue: 1
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 15
+    nodeType: 5
+    position: {x: 4176, y: -271}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: e140f0d6711b540438929d6813fe71d0, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
   edges:
   - fromNode: 0
     outPortID: 0
@@ -725,7 +743,7 @@ MonoBehaviour:
     inPortID: 0
   - fromNode: 2
     outPortID: 1
-    toNode: 14
+    toNode: 13
     inPortID: 0
   - fromNode: 3
     outPortID: 0
@@ -753,7 +771,7 @@ MonoBehaviour:
     inPortID: 0
   - fromNode: 8
     outPortID: 0
-    toNode: 13
+    toNode: 14
     inPortID: 0
   - fromNode: 9
     outPortID: 0
@@ -769,9 +787,13 @@ MonoBehaviour:
     inPortID: 0
   - fromNode: 12
     outPortID: 0
-    toNode: 13
+    toNode: 15
     inPortID: 0
-  - fromNode: 14
+  - fromNode: 13
     outPortID: 0
     toNode: 2
+    inPortID: 0
+  - fromNode: 15
+    outPortID: 0
+    toNode: 14
     inPortID: 0
