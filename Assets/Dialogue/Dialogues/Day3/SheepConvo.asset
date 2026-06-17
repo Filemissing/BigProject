@@ -10,25 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 664e79af2f21ddb4b9e73bdf5ab9f450, type: 3}
-  m_Name: PriestConvo
+  m_Name: SheepConvo
   m_EditorClassIdentifier: Assembly-CSharp::DSP_ConversationGraphAsset
   nodes:
   - id: 0
     nodeType: 0
-    position: {x: -312, y: -214}
+    position: {x: 0, y: 0}
     values: []
     eventParameters: []
     finalEvents: []
     finalConditions: []
   - id: 1
     nodeType: 2
-    position: {x: -147, y: -228}
+    position: {x: 213, y: -14}
     values:
     - type: 3
       intValue: 0
       floatValue: 0
-      stringValue: Ah, there you are! I heard about the trial and let me just say
-        how foolish I find this affair.
+      stringValue: Good morning!
       boolValue: 0
       objectValue: {fileID: 0}
       intArray: 
@@ -41,7 +40,7 @@ MonoBehaviour:
       floatValue: 0
       stringValue: 
       boolValue: 0
-      objectValue: {fileID: 11400000, guid: 93021c4853d69ec4f910ed285a8ed018, type: 2}
+      objectValue: {fileID: 11400000, guid: b6c5410b2ba6f5145a34f6b97058a913, type: 2}
       intArray: 
       floatArray: []
       stringArray: []
@@ -63,12 +62,13 @@ MonoBehaviour:
     finalConditions: []
   - id: 2
     nodeType: 2
-    position: {x: 407, y: -228}
+    position: {x: 573, y: -14}
     values:
     - type: 3
       intValue: 0
       floatValue: 0
-      stringValue: An upstanding Christian like you, a witch! How preposterous.
+      stringValue: "Sorry for the low stock; I had a few sheep go missing, \nso,
+        y\u2019know, less wool and all that."
       boolValue: 0
       objectValue: {fileID: 0}
       intArray: 
@@ -81,7 +81,7 @@ MonoBehaviour:
       floatValue: 0
       stringValue: 
       boolValue: 0
-      objectValue: {fileID: 11400000, guid: 93021c4853d69ec4f910ed285a8ed018, type: 2}
+      objectValue: {fileID: 11400000, guid: b6c5410b2ba6f5145a34f6b97058a913, type: 2}
       intArray: 
       floatArray: []
       stringArray: []
@@ -103,7 +103,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 3
     nodeType: 3
-    position: {x: 824, y: -228}
+    position: {x: 955, y: -34}
     values:
     - type: 8
       intValue: 0
@@ -114,8 +114,8 @@ MonoBehaviour:
       intArray: 
       floatArray: []
       stringArray:
-      - "It seems others don\u2019t agree."
-      - Thank you...
+      - Missing?
+      - Was it your house that was broken into?
       boolArray: 
       objectArray: []
     - type: 9
@@ -215,11 +215,34 @@ MonoBehaviour:
         boolArray: 
         objectArray: []
   - id: 4
-    nodeType: 1
-    position: {x: 1760, y: -21}
+    nodeType: 2
+    position: {x: 1454, y: -118}
     values:
-    - type: 1
-      intValue: 1
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "Yes, I think wolves are stealing them. \nThough, I am surprised
+        that they can scale the fence so easily."
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: b6c5410b2ba6f5145a34f6b97058a913, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
       floatValue: 0
       stringValue: 
       boolValue: 0
@@ -234,13 +257,12 @@ MonoBehaviour:
     finalConditions: []
   - id: 5
     nodeType: 2
-    position: {x: 1151, y: -326}
+    position: {x: 1882, y: -131}
     values:
     - type: 3
       intValue: 0
       floatValue: 0
-      stringValue: "Well, nothing you can do about it. \nPray that God turns his
-        gaze upon you."
+      stringValue: Maybe I should start standing out there, guarding them.
       boolValue: 0
       objectValue: {fileID: 0}
       intArray: 
@@ -253,7 +275,7 @@ MonoBehaviour:
       floatValue: 0
       stringValue: 
       boolValue: 0
-      objectValue: {fileID: 11400000, guid: 93021c4853d69ec4f910ed285a8ed018, type: 2}
+      objectValue: {fileID: 11400000, guid: b6c5410b2ba6f5145a34f6b97058a913, type: 2}
       intArray: 
       floatArray: []
       stringArray: []
@@ -275,13 +297,12 @@ MonoBehaviour:
     finalConditions: []
   - id: 6
     nodeType: 2
-    position: {x: 1446, y: -287}
+    position: {x: 2264, y: -118}
     values:
     - type: 3
       intValue: 0
       floatValue: 0
-      stringValue: "But, if it\u2019s convincing you need, I can give my testimony.
-        \nHere, let me write it down."
+      stringValue: Anyways, did you want to buy something?
       boolValue: 0
       objectValue: {fileID: 0}
       intArray: 
@@ -294,7 +315,7 @@ MonoBehaviour:
       floatValue: 0
       stringValue: 
       boolValue: 0
-      objectValue: {fileID: 11400000, guid: 93021c4853d69ec4f910ed285a8ed018, type: 2}
+      objectValue: {fileID: 11400000, guid: b6c5410b2ba6f5145a34f6b97058a913, type: 2}
       intArray: 
       floatArray: []
       stringArray: []
@@ -302,6 +323,145 @@ MonoBehaviour:
       objectArray: []
     - type: 0
       intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 7
+    nodeType: 2
+    position: {x: 2635, y: -118}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: No, I was just wondering.
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: f76b187be59b792469e2ff63bf5dfc07, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 8
+    nodeType: 2
+    position: {x: 3035, y: -118}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: Well then, give me space for actual customers. Good day.
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: b6c5410b2ba6f5145a34f6b97058a913, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 9
+    nodeType: 2
+    position: {x: 959, y: 182}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "No, no - I think it was the family by the road. \nY'know, the
+        one with the blue roof?"
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: b6c5410b2ba6f5145a34f6b97058a913, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 10
+    nodeType: 1
+    position: {x: 3489, y: -118}
+    values:
+    - type: 1
+      intValue: 1
       floatValue: 0
       stringValue: 
       boolValue: 0
@@ -328,10 +488,14 @@ MonoBehaviour:
     toNode: 3
     inPortID: 0
   - fromNode: 3
-    outPortID: 1
+    outPortID: 0
     toNode: 4
     inPortID: 0
   - fromNode: 3
+    outPortID: 1
+    toNode: 9
+    inPortID: 0
+  - fromNode: 4
     outPortID: 0
     toNode: 5
     inPortID: 0
@@ -341,5 +505,17 @@ MonoBehaviour:
     inPortID: 0
   - fromNode: 6
     outPortID: 0
-    toNode: 4
+    toNode: 7
+    inPortID: 0
+  - fromNode: 7
+    outPortID: 0
+    toNode: 8
+    inPortID: 0
+  - fromNode: 8
+    outPortID: 0
+    toNode: 10
+    inPortID: 0
+  - fromNode: 9
+    outPortID: 0
+    toNode: 3
     inPortID: 0
