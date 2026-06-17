@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public JournalData journalData;
     public InventoryData inventoryData;
     public GameObject interactionPromptPrefab;
+    public InputHandler inputHandler;
 
     [Header("Day/Night Cycle")]
     [SerializeField] List<Day> days;
