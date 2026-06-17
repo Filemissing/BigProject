@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Newspaper
   m_EditorClassIdentifier: Assembly-CSharp::Item
   title: Newspaper
-  description: It has a report about you, pperantly you helped someone to cure their
-    illness with herbs.
+  description: A newspaper, released a few days ago. It talks about an apothecary
+    opening in town.
   sprite: {fileID: 21300000, guid: 46ad87b7d9aa8aa4bb42f95a33f5efad, type: 3}
   model: {fileID: 6688829467841926659, guid: 2a3dbe31ccbbe8349936ef84346cc429, type: 3}
   defaultRotation: {x: 0, y: 0, z: 0}
