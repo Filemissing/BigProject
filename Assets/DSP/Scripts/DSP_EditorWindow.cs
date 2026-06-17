@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Reflection;
+using System.Security.Cryptography;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
-using UnityEditor.Rendering;
 using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -939,7 +940,6 @@ public class DSP_ChoiceNode : Node
         // choice container
         VisualElement choiceContainer = new VisualElement();
         choiceContainer.style.flexDirection = FlexDirection.Column;
-
 
         if (values != null && values.Length > 0)
         {
@@ -1928,5 +1928,80 @@ public class DSP_ConditionNode : Node
     {
         string paramList = string.Join(", ", method.GetParameters().Select(p => p.ParameterType.Name));
         return $"{method.Name}({paramList})";
+    }
+}
+public class DSP_RandomNode : Node
+{
+    List<int> optionWeights = new();
+
+    public DSP_RandomNode(Vector2 position, SerializableValue[] values = null)
+    {
+        title = "Random";
+        this.FixTransparency();
+
+        this.AddInputPort();
+
+        VisualElement optionContainer = new();
+        optionContainer.style.flexDirection = FlexDirection.Column;
+
+        if (values != null && values.Length > 0)
+        {
+            int[] storedWeights = values[0].GetValue() as int[];
+
+            for (int i = 0; i < storedWeights.Length; i++)
+            {
+                AddOption(optionContainer, storedWeights[i]);
+            }
+        }
+        else
+        {
+            AddOption(optionContainer);
+            AddOption(optionContainer);
+        }
+
+        // buttons
+        VisualElement buttonContainer = new VisualElement();
+        buttonContainer.style.flexDirection = FlexDirection.Row;
+
+        Button removeButton = new Button(() =>
+        {
+            this.StartUndoRecord();
+            RemoveOption(optionContainer);
+            this.EndUndoRecord();
+        })
+        {
+            text = "-"
+        };
+        Button addButton = new Button(() =>
+        {
+            this.StartUndoRecord();
+            AddOption(optionContainer);
+            this.EndUndoRecord();
+        })
+        {
+            text = "+"
+        };
+
+        buttonContainer.Add(removeButton);
+        buttonContainer.Add(addButton);
+
+        mainContainer.Add(buttonContainer);
+
+        RefreshExpandedState();
+        RefreshPorts();
+        SetPosition(new Rect(position, Vector2.zero));
+    }
+
+    void AddOption(VisualElement optionsContainer, int storedWeight = 0)
+    {
+
+    }
+
+    void RemoveOption(VisualElement optionsContainer)
+    {
+        if (optionWeights.Count <= 2)
+            return;
+
+
     }
 }
