@@ -19,7 +19,33 @@ public class InventoryViewPresenter : MonoBehaviour
 
     private void Awake()
     {
+        TryUpdateViewToDefault();
+    }
+
+    void TryUpdateViewToDefault()
+    {
+        if (title.text != "") return;
+        
         if (GameManager.instance.inventoryData.inventory.Count > 0)
             UpdateView(GameManager.instance.inventoryData.inventory[0]);
+        else
+        {
+            title.text = "";
+            description.text = "";
+            itemInspect.SetEmpty();
+        }
+    }
+    
+    // Event Bindings
+    void OnEnable()
+    {
+        GameManager.instance.inventoryData.OnItemAdded += TryUpdateViewToDefault;
+        GameManager.instance.inventoryData.OnItemRemoved += TryUpdateViewToDefault;
+    }
+    
+    void OnDisable()
+    {
+        GameManager.instance.inventoryData.OnItemAdded -= TryUpdateViewToDefault;
+        GameManager.instance.inventoryData.OnItemRemoved -= TryUpdateViewToDefault;
     }
 }
