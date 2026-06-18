@@ -14,6 +14,10 @@ public class Guard : NPC
     private PlayerController player;
     private void Start()
     {
+        // taken from NPC start since it gets overriden by unity
+        StartCoroutine(Wander());
+        DSP_ConversationManager.instance.OnConversationEnded += ResumeWandering;
+
         player = GameManager.instance.player;
 
         // adjust wander parameters to fit a more patrol-like style
@@ -64,6 +68,9 @@ public class Guard : NPC
             // if they were searhing they will notice immediately no matter what
             if (alertStatus == AlertStatus.Searching)
                 alertStatus = AlertStatus.Found;
+
+            if (alertStatus == AlertStatus.Found)
+                suspiciousPoint = player.transform.position;
         }
         else // player is not visible
         {
@@ -102,14 +109,15 @@ public class Guard : NPC
             RotateToward(suspiciousPoint);
         }
 
-
-    }
-
-    void UpdateAlertStatus(AlertStatus oldStatus, AlertStatus newStatus, )
-    {
-        switch (oldStatus)
+        if (alertStatus == AlertStatus.Searching || alertStatus == AlertStatus.Found)
         {
-
+            // works for both Searching and Found, the difference is in updating the suspiciousPoint
+            agent.destination = suspiciousPoint;
+            
+            if (HasAgentArrived())
+            {
+                RotateToward(player.transform.position);
+            }
         }
     }
 

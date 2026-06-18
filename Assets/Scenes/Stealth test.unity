@@ -216,6 +216,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2eb7103b4e777146940cfe8c8d7bd7c, type: 3}
+--- !u!114 &38451317 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7221712623915272607, guid: 27cd756447cac8f44baf127b362cea06, type: 3}
+  m_PrefabInstance: {fileID: 1832870975}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78ddd094a88969c499e33f00f1d53305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &193997858
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,6 +508,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConversationManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6223619733913385829, guid: eb89ce207563c304bb0c444c0da1e98d, type: 3}
+      propertyPath: dialogueBoxVisualizer
+      value: 
+      objectReference: {fileID: 38451317}
     - target: {fileID: 8763403882595644942, guid: eb89ce207563c304bb0c444c0da1e98d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.52309
@@ -1063,6 +1078,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6768612269692578380, guid: 27cd756447cac8f44baf127b362cea06, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7652669862535773348, guid: 27cd756447cac8f44baf127b362cea06, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1100,7 +1119,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 762512512417973448, guid: 27cd756447cac8f44baf127b362cea06, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27cd756447cac8f44baf127b362cea06, type: 3}
@@ -2661,7 +2681,7 @@ Transform:
   m_GameObject: {fileID: 6594574318114694900}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4002,6 +4022,12 @@ MonoBehaviour:
   - {fileID: 1375854661}
   - {fileID: 394647654}
   - {fileID: 1844736300}
+  FOV: 45
+  visionDistance: 10
+  crouchedVisionDistance: 7
+  timeToNotice: 1
+  timeToGiveUp: 5
+  alertStatus: 0
 --- !u!1 &9207776984060812151
 GameObject:
   m_ObjectHideFlags: 0

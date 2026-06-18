@@ -67,7 +67,7 @@ public class NPC : MonoBehaviour
             yield return new WaitUntil(() => !pauseWandering);
 
             // restore target after resume if it got changed
-            if (agent.destination != target.transform.position)
+            if (target != null && agent.destination != target.transform.position)
                 agent.SetDestination(target.transform.position);
 
             if (timeUntilNextWander <= 1f)
@@ -80,7 +80,7 @@ public class NPC : MonoBehaviour
                 animator.Play("Walking");
 
                 if (keepOrder)
-                    target = pointsOfInterest[pointsOfInterest.IndexOf(target) + 1];
+                    target = pointsOfInterest[(pointsOfInterest.IndexOf(target) + 1) % (pointsOfInterest.Count)];
                 else
                     target = pointsOfInterest.Where(POI => POI != target).ElementAt(Random.Range(0, pointsOfInterest.Count - 1));
 
@@ -94,26 +94,28 @@ public class NPC : MonoBehaviour
                 timeUntilNextWander -= Time.deltaTime;
             }
 
-            if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
+            if (HasAgentArrived())
             {
-                if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
-                {
-                    // reached destination
+                // reached destination
 
-                    if (shouldRotate)
-                        RotateToward(target.transform.position + target.transform.forward);
+                if (shouldRotate)
+                    RotateToward(target.transform.position + target.transform.forward);
 
-                    // play the animation, it needs to be in the controller and the state name needs to match the clip name, but like who ever changes that?
-                    // don't replay after it has finished
-                    if (!hasArrived)
-                        animator.Play(target.animationClip.name);
+                // play the animation, it needs to be in the controller and the state name needs to match the clip name, but like who ever changes that?
+                // don't replay after it has finished
+                if (!hasArrived)
+                    animator.Play(target.animationClip.name);
 
-                    hasArrived = true;
-                }
+                hasArrived = true;
             }
 
             animator.SetBool("IsWalking", agent.velocity.sqrMagnitude > 0.01f);
         }
+    }
+
+    protected bool HasAgentArrived()
+    {
+        return !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance && (!agent.hasPath || agent.velocity.sqrMagnitude == 0f);
     }
 
     public void RotateToward(Vector3 point)
