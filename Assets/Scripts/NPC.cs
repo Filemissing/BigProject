@@ -20,7 +20,7 @@ public class NPC : MonoBehaviour
     }
 
     [Header("Dialogue")]
-    [SerializeField] private DSP_CharacterAsset characterAsset;
+    public DSP_CharacterAsset characterAsset;
     [SerializeField] private DSP_ConversationGraphAsset[] conversations;
 
     private int currentConversationIndex = 0;
