@@ -10,65 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 664e79af2f21ddb4b9e73bdf5ab9f450, type: 3}
-  m_Name: Mandrake
+  m_Name: CaughtConvo
   m_EditorClassIdentifier: Assembly-CSharp::DSP_ConversationGraphAsset
   nodes:
   - id: 0
-    nodeType: 2
-    position: {x: 166, y: -23}
-    values:
-    - type: 3
-      intValue: 0
-      floatValue: 0
-      stringValue: "What are these doing behind the house? \nThey don\u2019t grow
-        around these parts\u2026"
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    - type: 5
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 11400000, guid: f76b187be59b792469e2ff63bf5dfc07, type: 2}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    - type: 0
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    eventParameters: []
-    finalEvents: []
-    finalConditions: []
-  - id: 1
     nodeType: 0
-    position: {x: -2, y: -23}
+    position: {x: 0, y: 0}
     values: []
     eventParameters: []
     finalEvents: []
     finalConditions: []
-  - id: 2
+  - id: 1
     nodeType: 2
-    position: {x: 510, y: -23}
+    position: {x: 136, y: -7}
     values:
     - type: 3
       intValue: 0
       floatValue: 0
-      stringValue: "They\u2019re rather poisonous too. Who put them here?"
+      stringValue: Hey! You can't walk around this late! Go back to your home.
       boolValue: 0
       objectValue: {fileID: 0}
       intArray: 
@@ -81,7 +40,7 @@ MonoBehaviour:
       floatValue: 0
       stringValue: 
       boolValue: 0
-      objectValue: {fileID: 11400000, guid: 2b25e2c8b4106154a97cf983752b4d87, type: 2}
+      objectValue: {fileID: 11400000, guid: 9537755b1823be441a29964e757abcdb, type: 2}
       intArray: 
       floatArray: []
       stringArray: []
@@ -101,9 +60,9 @@ MonoBehaviour:
     eventParameters: []
     finalEvents: []
     finalConditions: []
-  - id: 3
+  - id: 2
     nodeType: 1
-    position: {x: 1147, y: -23}
+    position: {x: 855, y: 12}
     values:
     - type: 1
       intValue: 1
@@ -119,16 +78,16 @@ MonoBehaviour:
     eventParameters: []
     finalEvents: []
     finalConditions: []
-  - id: 4
+  - id: 3
     nodeType: 5
-    position: {x: 898, y: -23}
+    position: {x: 572, y: 12}
     values:
     - type: 5
       intValue: 0
       floatValue: 0
       stringValue: 
       boolValue: 0
-      objectValue: {fileID: 11400000, guid: 4f01d29af7dea9d4a8afce72e2241ac2, type: 2}
+      objectValue: {fileID: 11400000, guid: 55e9a3a6ae4938a4fafd2f48288d5417, type: 2}
       intArray: 
       floatArray: []
       stringArray: []
@@ -140,17 +99,13 @@ MonoBehaviour:
   edges:
   - fromNode: 0
     outPortID: 0
-    toNode: 2
+    toNode: 1
     inPortID: 0
   - fromNode: 1
     outPortID: 0
-    toNode: 0
-    inPortID: 0
-  - fromNode: 2
-    outPortID: 0
-    toNode: 4
-    inPortID: 0
-  - fromNode: 4
-    outPortID: 0
     toNode: 3
+    inPortID: 0
+  - fromNode: 3
+    outPortID: 0
+    toNode: 2
     inPortID: 0

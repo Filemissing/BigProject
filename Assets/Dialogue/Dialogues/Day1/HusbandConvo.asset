@@ -167,7 +167,7 @@ MonoBehaviour:
       intArray: 
       floatArray: []
       stringArray: []
-      boolArray: 000000
+      boolArray: 0000
       objectArray: []
     - type: 10
       intValue: 0
