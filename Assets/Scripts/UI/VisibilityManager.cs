@@ -62,8 +62,8 @@ public class VisibilityManager : MonoBehaviour
     public void ForceInvisible()
     {
         canvasGroup.alpha = 0;
-        canvasGroup.interactable = true;
-        canvasGroup.blocksRaycasts = true;
+        canvasGroup.interactable = false;
+        canvasGroup.blocksRaycasts = false;
     }
     
     
