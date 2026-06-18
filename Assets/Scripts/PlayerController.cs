@@ -24,8 +24,6 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         UnlockCharacter();
-        DSP_ConversationManager.instance.OnConversationStarted += LockCharacter;
-        DSP_ConversationManager.instance.OnConversationEnded += UnlockCharacter;
     }
 
     [Header("Movement")]
@@ -46,13 +44,13 @@ public class PlayerController : MonoBehaviour
 
     bool canMove = true;
     bool canLook = true;
-
-    bool uncrouched = false;
+    bool unCrouched = false;
+    
     public void Update()
     {
         // keep outside canMove check to mitigate permanent crouch after dialogue
         if (Input.GetKeyUp(crouchKey))
-            uncrouched = true;
+            unCrouched = true;
 
         cameraAnchor.transform.DOKill();
 
@@ -76,16 +74,16 @@ public class PlayerController : MonoBehaviour
             {
                 transform.DOScaleY(crouchScale, crouchTransitionDuration);
             }
-            else if (uncrouched)
+            else if (unCrouched)
             {
                 transform.DOScaleY(1f, crouchTransitionDuration);
-                uncrouched = false;
+                unCrouched = false;
             }
 
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, 2f);
-                if (hit.collider != null && hit.rigidbody.gameObject.TryGetComponent(out NavMeshAgent navMeshAgent))
+                if (!hit.collider && hit.rigidbody.gameObject.TryGetComponent(out NavMeshAgent navMeshAgent))
                 {
                     hit.rigidbody.isKinematic = false;
                     hit.rigidbody.linearDamping = 0f;

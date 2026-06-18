@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4574898053677438824}
   - component: {fileID: 7659212096376620256}
   - component: {fileID: 6129325699842453534}
+  - component: {fileID: 6948649452640438920}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -52,6 +53,7 @@ MonoBehaviour:
   inventoryData: {fileID: 7659212096376620256}
   interactionPromptPrefab: {fileID: 8306187112073313052, guid: c80b7322a4cdb1f47a45f65c29eda9f9, type: 3}
   inputHandler: {fileID: 6129325699842453534}
+  characterUnlockHandler: {fileID: 6948649452640438920}
   days:
   - sceneName: Day 1 test
     hasNight: 0
@@ -109,3 +111,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b08e461dedd0f44a8d454c936224302, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InputHandler
+  inventoryToggle: 105
+  journalToggle: 106
+  TEMP_CursorUnlock: 308
+--- !u!114 &6948649452640438920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5802171905835766667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce58b184412c43740a6a236423e2cac0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterUnlockHandler
+  characterUnlockBlocks: []

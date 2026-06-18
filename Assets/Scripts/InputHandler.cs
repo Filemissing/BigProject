@@ -17,7 +17,7 @@ public class InputHandler : MonoBehaviour
         if (Input.GetKeyDown(inventoryToggle)) OnInventoryToggle?.Invoke();
         if (Input.GetKeyDown(journalToggle)) onJournalToggle?.Invoke();
         
-        // Temporary cursor unlock.     - MICHA WHY DOES UNLOCKCHARACTER LOCK THE CURSOR???
+        // Temporary cursor unlock
         if (Input.GetKeyDown(TEMP_CursorUnlock))
         {
             if (Cursor.lockState == CursorLockMode.None)
