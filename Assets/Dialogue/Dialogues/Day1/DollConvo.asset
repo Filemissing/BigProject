@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664e79af2f21ddb4b9e73bdf5ab9f450, type: 3}
+  m_Name: DollConvo
+  m_EditorClassIdentifier: Assembly-CSharp::DSP_ConversationGraphAsset
+  nodes:
+  - id: 0
+    nodeType: 0
+    position: {x: -104, y: -94}
+    values: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 1
+    nodeType: 2
+    position: {x: 39, y: -94}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: ...
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 0410b7fb99c0d9249bac61982de3ca1e, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 2
+    nodeType: 2
+    position: {x: 374, y: -94}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: They're not mine.
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 0410b7fb99c0d9249bac61982de3ca1e, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 3
+    nodeType: 2
+    position: {x: 721, y: -94}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: I... don't think you should leave things like that laying around.
+        Not at this time.
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 0410b7fb99c0d9249bac61982de3ca1e, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 4
+    nodeType: 5
+    position: {x: 1228, y: -94}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 96c4f9bcd6c059f4eb2029b80c7c2b0d, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 5
+    nodeType: 5
+    position: {x: 1483, y: -72}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 009961c418cbbf54099af56127c9ce5a, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 6
+    nodeType: 1
+    position: {x: 1754, y: -72}
+    values:
+    - type: 1
+      intValue: 1
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  edges:
+  - fromNode: 0
+    outPortID: 0
+    toNode: 1
+    inPortID: 0
+  - fromNode: 1
+    outPortID: 0
+    toNode: 2
+    inPortID: 0
+  - fromNode: 2
+    outPortID: 0
+    toNode: 3
+    inPortID: 0
+  - fromNode: 3
+    outPortID: 0
+    toNode: 4
+    inPortID: 0
+  - fromNode: 4
+    outPortID: 0
+    toNode: 5
+    inPortID: 0
+  - fromNode: 5
+    outPortID: 0
+    toNode: 6
+    inPortID: 0

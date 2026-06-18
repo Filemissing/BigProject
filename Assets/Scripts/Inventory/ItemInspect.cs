@@ -4,7 +4,7 @@ using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ItemInspect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
+public class ItemInspect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler
 {
     [Header("References")]
     public GameObject visualObject;
@@ -16,16 +16,17 @@ public class ItemInspect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
     [Header("Settings")]
     [SerializeField] private float xMultiplier = 1;
     [SerializeField] private float yMultiplier = 1;
-    [SerializeField] private float zoomMultiplier = 1f;
     [SerializeField] private float tweenDuration = .15f;
     [SerializeField] private float yMin, yMax;
     
     [Header("Zoom Settings")]
+    [SerializeField] private float zoomMultiplier = 10f;
     [SerializeField] private float defaultZ = -10;
     [SerializeField] private float minimumZoom = 0;
     [SerializeField] private float maximumZoom = 5;
     
     private bool isDragging = false;
+    private bool isHovering = false;
     private float currentZoom = 0;
     private float smoothCurrentZoom = 0;
     
@@ -48,10 +49,20 @@ public class ItemInspect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
     {
         isDragging = false;
     }
+    
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        isHovering = true;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        isHovering = false;
+    }
 
     private void Update()
     {
-        if (isDragging)
+        if (isHovering)
         {
             currentZoom += Input.GetAxisRaw("Mouse ScrollWheel") * zoomMultiplier;
             currentZoom = Math.Clamp(currentZoom, minimumZoom, maximumZoom);
@@ -75,16 +86,26 @@ public class ItemInspect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 
     public void UpdateItem(Item item)
     {
-        Destroy(visualObject);
+        if (visualObject) Destroy(visualObject);
+        
         visualObject = Instantiate(item.model, visualObjectParent);
         visualObject.transform.localPosition = Vector3.zero;
         visualObject.transform.localRotation = Quaternion.Euler(item.defaultRotation);
-        visualObject.transform.localScale = item.defaultScale;
+        visualObject.transform.localScale = Vector3.Scale(visualObject.transform.localScale, item.defaultScale);
         visualObject.layer = LayerMask.NameToLayer("Inventory");
 
         currentZoom = 0;
         smoothCurrentZoom = 0;
         objectTransform.localRotation = Quaternion.Euler(item.defaultRotation);
+        cameraPivotTransform.localRotation = Quaternion.identity;
+    }
+
+    public void SetEmpty()
+    {
+        if (visualObject) Destroy(visualObject);
+
+        currentZoom = 0;
+        smoothCurrentZoom = 0;
         cameraPivotTransform.localRotation = Quaternion.identity;
     }
 }

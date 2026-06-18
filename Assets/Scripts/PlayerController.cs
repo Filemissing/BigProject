@@ -52,15 +52,6 @@ public class PlayerController : MonoBehaviour
     bool uncrouched = false;
     public void Update()
     {
-        // Temporary cursor unlock.     - MICHA WHY DOES UNLOCKCHARACTER LOCK THE CURSOR???
-        if (Input.GetKeyDown(KeyCode.RightControl))
-        {
-            if (Cursor.lockState == CursorLockMode.None)
-                UnlockCharacter();
-            else
-                LockCharacter();
-        }
-        
         // keep outside canMove check to mitigate permanent crouch after dialogue
         if (Input.GetKeyUp(crouchKey))
             uncrouched = true;

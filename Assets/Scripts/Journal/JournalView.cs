@@ -99,6 +99,7 @@ public class JournalView : MonoBehaviour
         UpdateView();
     }
 
+    // Event Bindings
     private void OnEnable()
     {
         JournalData.JournalUpdated += UpdateView;

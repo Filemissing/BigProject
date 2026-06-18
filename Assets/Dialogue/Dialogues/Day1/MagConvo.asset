@@ -1,0 +1,799 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664e79af2f21ddb4b9e73bdf5ab9f450, type: 3}
+  m_Name: MagConvo
+  m_EditorClassIdentifier: Assembly-CSharp::DSP_ConversationGraphAsset
+  nodes:
+  - id: 0
+    nodeType: 2
+    position: {x: -96, y: -174}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: Good day.
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 6afdad30389fbd4449cddf897ac9bfa4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 1
+    nodeType: 0
+    position: {x: -235, y: -174}
+    values: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 2
+    nodeType: 3
+    position: {x: 278, y: -155}
+    values:
+    - type: 8
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray:
+      - I have a problem...
+      - Has something happened recently?
+      boolArray: 
+      objectArray: []
+    - type: 9
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 0000
+      objectArray: []
+    - type: 10
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray:
+      - {fileID: 0}
+      - {fileID: 0}
+    - type: 8
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray:
+      - 
+      - 
+      boolArray: 
+      objectArray: []
+    eventParameters:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    finalEvents: []
+    finalConditions:
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+  - id: 3
+    nodeType: 2
+    position: {x: 683, y: -258}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: What is it? I am a busy man.
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 4
+    nodeType: 2
+    position: {x: 994, y: -258}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: ...
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 6afdad30389fbd4449cddf897ac9bfa4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 5
+    nodeType: 2
+    position: {x: 1365, y: -258}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "You can leave and for everyone\u2019s sake, \nI\u2019ll pretend
+        I didn\u2019t hear anything."
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 6afdad30389fbd4449cddf897ac9bfa4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 6
+    nodeType: 3
+    position: {x: 1714, y: -258}
+    values:
+    - type: 8
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray:
+      - But I really do need help!
+      - ...
+      boolArray: 
+      objectArray: []
+    - type: 9
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 0000
+      objectArray: []
+    - type: 10
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray:
+      - {fileID: 0}
+      - {fileID: 0}
+    - type: 8
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray:
+      - 
+      - 
+      boolArray: 
+      objectArray: []
+    eventParameters:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    finalEvents: []
+    finalConditions:
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+  - id: 7
+    nodeType: 2
+    position: {x: 2050, y: -362}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "Look, I have been trying to keep it a secret for you, \nand now
+        you come and want me to adress it? \nDo you know how this will look to the
+        other towns?"
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 6afdad30389fbd4449cddf897ac9bfa4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 8
+    nodeType: 2
+    position: {x: 2050, y: -133}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: ...Fine.
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: f76b187be59b792469e2ff63bf5dfc07, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 9
+    nodeType: 2
+    position: {x: 2432, y: -362}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "Though, if you\u2019re serious about this, come to me with evidence
+        that you didn\u2019t do anything before the water trial starts. \nWith how
+        riled up the villagers are, that might be the only way to calm them down."
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 6afdad30389fbd4449cddf897ac9bfa4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 10
+    nodeType: 2
+    position: {x: 3135, y: -362}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: How am I supposed to get evidence like that?
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: f76b187be59b792469e2ff63bf5dfc07, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 11
+    nodeType: 2
+    position: {x: 3455, y: -362}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: Your problem, not mine.
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 6afdad30389fbd4449cddf897ac9bfa4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 12
+    nodeType: 2
+    position: {x: 3810, y: -362}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: Fine.
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: f76b187be59b792469e2ff63bf5dfc07, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 13
+    nodeType: 2
+    position: {x: 278, y: 55}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "Eh, not really; last week, we had a break-in. \nNothing was stolen,
+        so take that how you will."
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 6afdad30389fbd4449cddf897ac9bfa4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 14
+    nodeType: 1
+    position: {x: 4372, y: -174}
+    values:
+    - type: 1
+      intValue: 1
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 15
+    nodeType: 5
+    position: {x: 4176, y: -271}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: e140f0d6711b540438929d6813fe71d0, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  edges:
+  - fromNode: 0
+    outPortID: 0
+    toNode: 2
+    inPortID: 0
+  - fromNode: 1
+    outPortID: 0
+    toNode: 0
+    inPortID: 0
+  - fromNode: 2
+    outPortID: 0
+    toNode: 3
+    inPortID: 0
+  - fromNode: 2
+    outPortID: 1
+    toNode: 13
+    inPortID: 0
+  - fromNode: 3
+    outPortID: 0
+    toNode: 4
+    inPortID: 0
+  - fromNode: 4
+    outPortID: 0
+    toNode: 5
+    inPortID: 0
+  - fromNode: 5
+    outPortID: 0
+    toNode: 6
+    inPortID: 0
+  - fromNode: 6
+    outPortID: 0
+    toNode: 7
+    inPortID: 0
+  - fromNode: 6
+    outPortID: 1
+    toNode: 8
+    inPortID: 0
+  - fromNode: 7
+    outPortID: 0
+    toNode: 9
+    inPortID: 0
+  - fromNode: 8
+    outPortID: 0
+    toNode: 14
+    inPortID: 0
+  - fromNode: 9
+    outPortID: 0
+    toNode: 10
+    inPortID: 0
+  - fromNode: 10
+    outPortID: 0
+    toNode: 11
+    inPortID: 0
+  - fromNode: 11
+    outPortID: 0
+    toNode: 12
+    inPortID: 0
+  - fromNode: 12
+    outPortID: 0
+    toNode: 15
+    inPortID: 0
+  - fromNode: 13
+    outPortID: 0
+    toNode: 2
+    inPortID: 0
+  - fromNode: 15
+    outPortID: 0
+    toNode: 14
+    inPortID: 0
