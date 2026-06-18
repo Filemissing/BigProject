@@ -27133,6 +27133,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: passiveDialogueEntryDatas.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: 'passiveDialogueEntryDatas.Array.data[0]'
+      value: Hey, how are you doing?
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

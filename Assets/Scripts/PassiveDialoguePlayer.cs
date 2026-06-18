@@ -16,7 +16,7 @@ public class PassiveDialoguePlayer : MonoBehaviour
     [SerializeField] private float minimumTime = 4;
     [SerializeField] private float maximumTime = 12;
     
-    private int lastPlayedDialogueEntryIndex = 0;
+    private int lastPlayedDialogueEntryIndex = -1;
     
     
     
@@ -41,14 +41,21 @@ public class PassiveDialoguePlayer : MonoBehaviour
     // Helpers
     public void PlayRandomDialogue()
     {
+        if (passiveDialogueEntryDatas.Count == 0) return;
+        
         int index = 0;
         
         // Get index
-        bool isPreviousEntry = true;
-        while (isPreviousEntry)
+        if (passiveDialogueEntryDatas.Count == 1)
+            index = 0;
+        else
         {
-            index = GetRandomIndex();
-            isPreviousEntry = index == lastPlayedDialogueEntryIndex;
+            bool isPreviousEntry = true;
+            while (isPreviousEntry)
+            {
+                index = GetRandomIndex();
+                isPreviousEntry = index == lastPlayedDialogueEntryIndex;
+            }
         }
         lastPlayedDialogueEntryIndex = index;
         
