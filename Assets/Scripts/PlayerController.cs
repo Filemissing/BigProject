@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        UnlockCharacter();
         DSP_ConversationManager.instance.OnConversationStarted += LockCharacter;
         DSP_ConversationManager.instance.OnConversationEnded += UnlockCharacter;
     }
@@ -36,6 +36,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float crouchScale = 0.5f;
     [SerializeField] private float crouchTransitionDuration = 0.2f;
     [SerializeField] private float crouchSpeed = 3f;
+
+    [HideInInspector] public bool isCrouched;
 
     [Header("Camera")]
     [SerializeField] private float mouseSensitivity = 0.1f;
@@ -50,7 +52,7 @@ public class PlayerController : MonoBehaviour
     bool uncrouched = false;
     public void Update()
     {
-        // keep ooutside canMove check to mitigate permanent crouch after dialogue
+        // keep outside canMove check to mitigate permanent crouch after dialogue
         if (Input.GetKeyUp(crouchKey))
             uncrouched = true;
 
