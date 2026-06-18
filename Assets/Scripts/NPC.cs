@@ -62,6 +62,8 @@ public class NPC : MonoBehaviour
     {
         PointOfInterest target = null;
         bool hasArrived = true;
+        bool nextTargetChosen = false;
+        PointOfInterest nextTarget = null;
         while (true)
         {
             yield return new WaitUntil(() => !pauseWandering);
@@ -70,21 +72,30 @@ public class NPC : MonoBehaviour
             if (target != null && agent.destination != target.transform.position)
                 agent.SetDestination(target.transform.position);
 
-            if (timeUntilNextWander <= 1f)
+            if (timeUntilNextWander <= 1f && !nextTargetChosen)
             {
+                animator.Play("Idle");
 
+                if (keepOrder)
+                    nextTarget = pointsOfInterest[(pointsOfInterest.IndexOf(target) + 1) % (pointsOfInterest.Count)];
+                else
+                    nextTarget = pointsOfInterest.Where(POI => POI != target).ElementAt(Random.Range(0, pointsOfInterest.Count - 1));
+
+                nextTargetChosen = true;
+
+                RotateToward(nextTarget.transform.position);
             }
 
             if (timeUntilNextWander <= 0 && hasArrived)
             {
                 animator.Play("Walking");
 
-                if (keepOrder)
-                    target = pointsOfInterest[(pointsOfInterest.IndexOf(target) + 1) % (pointsOfInterest.Count)];
-                else
-                    target = pointsOfInterest.Where(POI => POI != target).ElementAt(Random.Range(0, pointsOfInterest.Count - 1));
-
                 timeUntilNextWander = Random.Range(stayDurationRange.x, stayDurationRange.y);
+
+                target = nextTarget;
+                nextTarget = null;
+                nextTargetChosen = false;
+
                 agent.SetDestination(target.transform.position);
 
                 hasArrived = false;
@@ -98,7 +109,7 @@ public class NPC : MonoBehaviour
             {
                 // reached destination
 
-                if (shouldRotate)
+                if (shouldRotate && !nextTargetChosen)
                     RotateToward(target.transform.position + target.transform.forward);
 
                 // play the animation, it needs to be in the controller and the state name needs to match the clip name, but like who ever changes that?
