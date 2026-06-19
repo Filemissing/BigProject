@@ -41,6 +41,8 @@ public class VisibilityManager : MonoBehaviour
     // Public Functions
     public void TurnVisible()
     {
+        GameManager.instance.characterUnlockHandler.AddBlock();
+        
         switch (turnVisibleAnimation)
         {
             case TurnVisibleAnimation.Fade:
@@ -51,6 +53,8 @@ public class VisibilityManager : MonoBehaviour
 
     public void TurnInvisible()
     {
+        GameManager.instance.characterUnlockHandler.RemoveBlock();
+        
         switch (turnInvisibleAnimation)
         {
             case TurnInvisibleAnimation.Fade:
@@ -62,8 +66,8 @@ public class VisibilityManager : MonoBehaviour
     public void ForceInvisible()
     {
         canvasGroup.alpha = 0;
-        canvasGroup.interactable = true;
-        canvasGroup.blocksRaycasts = true;
+        canvasGroup.interactable = false;
+        canvasGroup.blocksRaycasts = false;
     }
     
     

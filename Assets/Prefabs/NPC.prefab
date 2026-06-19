@@ -1385,7 +1385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2077680768891174397}
   - component: {fileID: 4934200052846533329}
-  - component: {fileID: 1077162206589622085}
+  - component: {fileID: 6969136767722334916}
   - component: {fileID: 7734272789918961846}
   - component: {fileID: 5131467307736727496}
   - component: {fileID: 6953063328055083419}
@@ -1412,6 +1412,7 @@ Transform:
   m_Children:
   - {fileID: 9034935971177220341}
   - {fileID: 863713797035327649}
+  - {fileID: 8389617688354525123}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4934200052846533329
@@ -1428,12 +1429,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   characterAsset: {fileID: 11400000, guid: 92578d1debabeca4e87ac875ce29c8db, type: 2}
   conversations:
-  - {fileID: 11400000, guid: 6dbc001a0cb9be544817078c3049063d, type: 2}
-  pointsOfInterest:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
---- !u!114 &1077162206589622085
+  - {fileID: 11400000, guid: 6ab8c9a35ee12d94da105f4caa4f3662, type: 2}
+  pointsOfInterest: []
+--- !u!114 &6969136767722334916
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1442,26 +1440,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 5379631661938212770}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbbf7114574102c46b206798d12e496f, type: 3}
+  m_Script: {fileID: 11500000, guid: 9bf6bb35df1050e4ebe090ac6f6ca13f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Interactable
-  interactionType: 0
-  destroyOnUse: 0
-  onInteracted:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4934200052846533329}
-        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
-        m_MethodName: PlayDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  m_EditorClassIdentifier: Assembly-CSharp::PassiveDialoguePlayer
+  npc: {fileID: 4934200052846533329}
+  passiveDialogueEntryDatas: []
+  maximumDistance: 14
+  minimumTime: 4
+  maximumTime: 12
 --- !u!95 &7734272789918961846
 Animator:
   serializedVersion: 7
@@ -2581,3 +2567,93 @@ Transform:
   - {fileID: 117416264325254867}
   m_Father: {fileID: 9034935971177220341}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3682174865717973703
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2077680768891174397}
+    m_Modifications:
+    - target: {fileID: 5148844033493785860, guid: df06ca987ca87514f968a7d33f8faaf4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5148844033493785860, guid: df06ca987ca87514f968a7d33f8faaf4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 5148844033493785860, guid: df06ca987ca87514f968a7d33f8faaf4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5148844033493785860, guid: df06ca987ca87514f968a7d33f8faaf4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5148844033493785860, guid: df06ca987ca87514f968a7d33f8faaf4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5148844033493785860, guid: df06ca987ca87514f968a7d33f8faaf4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5148844033493785860, guid: df06ca987ca87514f968a7d33f8faaf4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5148844033493785860, guid: df06ca987ca87514f968a7d33f8faaf4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5148844033493785860, guid: df06ca987ca87514f968a7d33f8faaf4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5148844033493785860, guid: df06ca987ca87514f968a7d33f8faaf4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8076074795685137909, guid: df06ca987ca87514f968a7d33f8faaf4, type: 3}
+      propertyPath: m_Name
+      value: Talk
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499804220750759664, guid: df06ca987ca87514f968a7d33f8faaf4, type: 3}
+      propertyPath: onInteracted.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499804220750759664, guid: df06ca987ca87514f968a7d33f8faaf4, type: 3}
+      propertyPath: onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499804220750759664, guid: df06ca987ca87514f968a7d33f8faaf4, type: 3}
+      propertyPath: onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4934200052846533329}
+    - target: {fileID: 8499804220750759664, guid: df06ca987ca87514f968a7d33f8faaf4, type: 3}
+      propertyPath: onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499804220750759664, guid: df06ca987ca87514f968a7d33f8faaf4, type: 3}
+      propertyPath: onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499804220750759664, guid: df06ca987ca87514f968a7d33f8faaf4, type: 3}
+      propertyPath: onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: NPC, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499804220750759664, guid: df06ca987ca87514f968a7d33f8faaf4, type: 3}
+      propertyPath: onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: df06ca987ca87514f968a7d33f8faaf4, type: 3}
+--- !u!4 &8389617688354525123 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5148844033493785860, guid: df06ca987ca87514f968a7d33f8faaf4, type: 3}
+  m_PrefabInstance: {fileID: 3682174865717973703}
+  m_PrefabAsset: {fileID: 0}

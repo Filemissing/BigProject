@@ -196,12 +196,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   key: 101
-  radius: 2
+  radius: 3.5
   interactionPrompts:
   - {fileID: 4716927393694428065, guid: 8f810a18fd767794b99d1b0176191eb6, type: 3}
   - {fileID: 4716927393694428065, guid: 83c13d351ef2bcd4f962c62a44c301d0, type: 3}
   - {fileID: 4716927393694428065, guid: 8fcca25d1dbd42741b4913c9d9e10a63, type: 3}
+  - {fileID: 5409094007057418847, guid: a00f2af79cf75c34d8739a5a24bb44dd, type: 3}
   interactables: []
+  isBusy: 0
 --- !u!136 &7924641518253406714
 CapsuleCollider:
   m_ObjectHideFlags: 0
