@@ -1,6 +1,9 @@
 using DG.Tweening;
 using NaughtyAttributes;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEditor.XR;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -9,9 +12,9 @@ using UnityEngine.AI;
 [RequireComponent(typeof(Animator))]
 public class NPC : MonoBehaviour
 {
-    private NavMeshAgent agent;
-    private Rigidbody rb;
-    private Animator animator;
+    protected NavMeshAgent agent;
+    protected Rigidbody rb;
+    protected Animator animator;
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -29,7 +32,7 @@ public class NPC : MonoBehaviour
     {
         PauseWandering();
 
-        RotateToward(Quaternion.LookRotation(GameManager.instance.player.transform.position - transform.position).eulerAngles.y);
+        RotateToward(GameManager.instance.player.transform.position);
 
         DSP_ConversationManager.instance.StartConversation(conversations[currentConversationIndex]);
 
@@ -41,7 +44,7 @@ public class NPC : MonoBehaviour
     }
 
     [Header("Wandering")]
-    [SerializeField] private PointOfInterest[] pointsOfInterest;
+    [SerializeField] private List<PointOfInterest> pointsOfInterest;
 
     private void Start()
     {
@@ -49,22 +52,50 @@ public class NPC : MonoBehaviour
         DSP_ConversationManager.instance.OnConversationEnded += ResumeWandering;
     }
 
-    bool pauseWandering = false;
-    bool shouldRotate = true;
+    protected bool pauseWandering = false;
+    protected bool shouldRotate = true;
     float timeUntilNextWander = 0f;
+
+    protected bool keepOrder = false;
+    protected Vector2 stayDurationRange = new Vector2(5f, 15f);
     public IEnumerator Wander()
     {
         PointOfInterest target = null;
         bool hasArrived = true;
+        bool nextTargetChosen = false;
+        PointOfInterest nextTarget = null;
         while (true)
         {
             yield return new WaitUntil(() => !pauseWandering);
 
-            if (timeUntilNextWander <= 0 && hasArrived && pointsOfInterest.Length > 0)
+            // restore target after resume if it got changed
+            if (target != null && agent.destination != target.transform.position)
+                agent.SetDestination(target.transform.position);
+
+            if (timeUntilNextWander <= 1f && !nextTargetChosen)
+            {
+                animator.Play("Idle");
+
+                if (keepOrder)
+                    nextTarget = pointsOfInterest[(pointsOfInterest.IndexOf(target) + 1) % (pointsOfInterest.Count)];
+                else
+                    nextTarget = pointsOfInterest.Where(POI => POI != target).ElementAt(Random.Range(0, pointsOfInterest.Count - 1));
+
+                nextTargetChosen = true;
+
+                RotateToward(nextTarget.transform.position);
+            }
+
+            if (timeUntilNextWander <= 0 && hasArrived)
             {
                 animator.Play("Walking");
-                target = pointsOfInterest[Random.Range(0, pointsOfInterest.Length)];
-                timeUntilNextWander = Random.Range(5f, 15f);
+
+                timeUntilNextWander = Random.Range(stayDurationRange.x, stayDurationRange.y);
+
+                target = nextTarget;
+                nextTarget = null;
+                nextTargetChosen = false;
+
                 agent.SetDestination(target.transform.position);
 
                 hasArrived = false;
@@ -74,33 +105,34 @@ public class NPC : MonoBehaviour
                 timeUntilNextWander -= Time.deltaTime;
             }
 
-            if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
+            if (HasAgentArrived())
             {
-                if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
-                {
-                    // reached destination
+                // reached destination
 
-                    if (shouldRotate)
-                        RotateToward(target.transform.eulerAngles.y);
+                if (shouldRotate && !nextTargetChosen)
+                    RotateToward(target.transform.position + target.transform.forward);
 
-                    // play the animation, it needs to be in the controller and the state name needs to match the clip name, but like who ever changes that?
-                    // don't replay after it has finished
-                    if (!hasArrived)
-                        animator.Play(target.animationClip?.name);
+                // play the animation, it needs to be in the controller and the state name needs to match the clip name, but like who ever changes that?
+                // don't replay after it has finished
+                if (!hasArrived)
+                    animator.Play(target.animationClip.name);
 
-                    hasArrived = true;
-                }
+                hasArrived = true;
             }
 
             animator.SetBool("IsWalking", agent.velocity.sqrMagnitude > 0.01f);
         }
     }
 
-    public void RotateToward(float yRotation)
+    protected bool HasAgentArrived()
+    {
+        return !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance && (!agent.hasPath || agent.velocity.sqrMagnitude == 0f);
+    }
+
+    public void RotateToward(Vector3 point)
     {
         transform.DOKill();
-        Quaternion targetRotation = Quaternion.Euler(0, yRotation, 0);
-        transform.DORotate(targetRotation.eulerAngles, 1f);
+        transform.DOLookAt(point, 1f, AxisConstraint.Y, Vector3.up);
     }
 
     [Button] public void PauseWandering()
