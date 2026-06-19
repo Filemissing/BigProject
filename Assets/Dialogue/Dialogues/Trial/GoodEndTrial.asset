@@ -12,5 +12,428 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 664e79af2f21ddb4b9e73bdf5ab9f450, type: 3}
   m_Name: GoodEndTrial
   m_EditorClassIdentifier: Assembly-CSharp::DSP_ConversationGraphAsset
-  nodes: []
-  edges: []
+  nodes:
+  - id: 0
+    nodeType: 0
+    position: {x: 0, y: 0}
+    values: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 1
+    nodeType: 2
+    position: {x: 174, y: -7}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: Well, with that, I think we can all conclude that Hendrika is
+        innocent.
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 6afdad30389fbd4449cddf897ac9bfa4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 2
+    nodeType: 2
+    position: {x: 637, y: 7}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: Do you concede your accusation, Jenneke?
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 6afdad30389fbd4449cddf897ac9bfa4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 3
+    nodeType: 2
+    position: {x: 999, y: 7}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "\u2026yes."
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 4
+    nodeType: 2
+    position: {x: 1358, y: 7}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "Great! Okay, people, show\u2019s over! Time to go home!"
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 6afdad30389fbd4449cddf897ac9bfa4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 5
+    nodeType: 1
+    position: {x: 1866, y: 354}
+    values:
+    - type: 1
+      intValue: 1
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 6
+    nodeType: 2
+    position: {x: 1742, y: 7}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "I don\u2019t need the other towns on my arse\u2026"
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 6afdad30389fbd4449cddf897ac9bfa4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 7
+    nodeType: 2
+    position: {x: 2118, y: 7}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "Great work! I didn\u2019t think you actually could do it."
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 0410b7fb99c0d9249bac61982de3ca1e, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 8
+    nodeType: 2
+    position: {x: 2463, y: 7}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: I mean, the entire town was ready to put you in the water one
+        way or another.
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 0410b7fb99c0d9249bac61982de3ca1e, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 9
+    nodeType: 2
+    position: {x: 2985, y: 7}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "I\u2019m glad that didn\u2019t happen, of course."
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 0410b7fb99c0d9249bac61982de3ca1e, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 10
+    nodeType: 2
+    position: {x: 3334, y: 21}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: ...
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  edges:
+  - fromNode: 0
+    outPortID: 0
+    toNode: 1
+    inPortID: 0
+  - fromNode: 1
+    outPortID: 0
+    toNode: 2
+    inPortID: 0
+  - fromNode: 2
+    outPortID: 0
+    toNode: 3
+    inPortID: 0
+  - fromNode: 3
+    outPortID: 0
+    toNode: 4
+    inPortID: 0
+  - fromNode: 4
+    outPortID: 0
+    toNode: 6
+    inPortID: 0
+  - fromNode: 6
+    outPortID: 0
+    toNode: 7
+    inPortID: 0
+  - fromNode: 7
+    outPortID: 0
+    toNode: 8
+    inPortID: 0
+  - fromNode: 8
+    outPortID: 0
+    toNode: 9
+    inPortID: 0
+  - fromNode: 9
+    outPortID: 0
+    toNode: 10
+    inPortID: 0
