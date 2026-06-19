@@ -34,7 +34,11 @@ public class NPC : MonoBehaviour
 
         RotateToward(GameManager.instance.player.transform.position);
 
-        DSP_ConversationManager.instance.StartConversation(conversations[currentConversationIndex]);
+        if (conversations != null && conversations.Length > 0)
+        {
+            DSP_ConversationGraphAsset conversation = conversations[currentConversationIndex];
+            DSP_ConversationManager.instance.StartConversation(conversation);
+        }
 
         // last conversation will be repeated
         if (currentConversationIndex < conversations.Length - 1)
@@ -48,7 +52,8 @@ public class NPC : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(Wander());
+        if (pointsOfInterest.Count < 2)
+            StartCoroutine(Wander());
         DSP_ConversationManager.instance.OnConversationEnded += ResumeWandering;
     }
 
