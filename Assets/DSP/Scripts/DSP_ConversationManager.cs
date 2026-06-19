@@ -1,9 +1,22 @@
+using System;
 using UnityEngine;
 using System.Collections;
 using System.Linq;
 
 public class DSP_ConversationManager : MonoBehaviour
 {
+    public static DSP_ConversationManager instance;
+    public void Awake()
+    {
+        if (instance != null && instance != this)
+            Destroy(this);
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+    
     public DSP_ConversationGraphAsset currentConversation;
     
     [Header("Settings")]
@@ -16,14 +29,16 @@ public class DSP_ConversationManager : MonoBehaviour
     // Delegate definitions
     public delegate void ConversationEventHandler();
     public delegate void DialogueEventHandler(string dialogue, string characterName, Sprite characterSprite);
-    public delegate void ChoiceEventHandler(string[] choices);
+    public delegate void ChoiceEventHandler((string, bool)[] choices);
     
     // Events
-    public event ConversationEventHandler OnConversationStarted;
-    public event ConversationEventHandler OnConversationEnded;
+    public event Action OnConversationStarted;
+    public event Action OnConversationEnded;
     public event DialogueEventHandler OnDialogueNode;
     public event ChoiceEventHandler OnChoiceNode;
-    public event ConversationEventHandler OnEventNode;
+    //public event Action OnEventNode;
+    public event Action<DSP_ConversationGraphAsset> OnPassiveDialogueTriggered;
+    public event Action<DSP_CharacterAsset, string> OnPassiveDialogueTriggeredString;
     
     public bool IsConversationActive { get; private set; }
     public bool IsAtChoiceNode { get; private set; }
@@ -143,11 +158,16 @@ public class DSP_ConversationManager : MonoBehaviour
     
     private void HandleChoiceNode(DSP_NodeData node)
     {
-        string[] choices = null;
+        string[] choicesArray = node.values[0].GetValue() as string[];
+
+        (string, bool)[] choices = new (string, bool)[choicesArray.Length];
         
-        if (node.values.Length > 0 && node.values[0].GetValue() is string[] choicesArray)
+        if (node.values.Length > 0 && choicesArray != null)
         {
-            choices = choicesArray;
+            for (int i = 0; i < choicesArray.Length; i++)
+            {
+                choices[i] = (choicesArray[i], node.finalConditions[i].hasValue ? node.finalConditions[i].Invoke() : true);
+            }
         }
         
         OnChoiceNode?.Invoke(choices);
@@ -187,8 +207,13 @@ public class DSP_ConversationManager : MonoBehaviour
         OnConversationEnded?.Invoke();
     }
     
-    public static DSP_ConversationManager GetInstance()
+    public void PlayPassiveDialogue(DSP_ConversationGraphAsset graph)
     {
-        return FindObjectOfType<DSP_ConversationManager>();
+        OnPassiveDialogueTriggered?.Invoke(graph);
+    }
+    
+    public void PlayPassiveDialogue(DSP_CharacterAsset characterAsset, string dialogue)
+    {
+        OnPassiveDialogueTriggeredString?.Invoke(characterAsset, dialogue);
     }
 }

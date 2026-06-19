@@ -21,6 +21,8 @@ public class InteractionHandler : MonoBehaviour
     [SerializeField] private float radius = 2f;
     public GameObject[] interactionPrompts;
     [HideInInspector] public List<Interactable> interactables = new List<Interactable>();
+    
+    [HideInInspector] public bool isBusy = false;
 
     void Update()
     {
@@ -31,7 +33,7 @@ public class InteractionHandler : MonoBehaviour
 
         foreach (var interactable in interactables)
         {
-            if (interactable == nearest && Vector3.Distance(interactable.transform.position, transform.position) <= radius)
+            if (interactable == nearest && Vector3.Distance(interactable.transform.position, transform.position) <= radius && !isBusy)
             {
                 nearest.ShowInteractionPrompt();
             }
@@ -41,7 +43,7 @@ public class InteractionHandler : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(key) && Vector3.Distance(nearest.transform.position, transform.position) <= radius)
+        if (Input.GetKeyDown(key) && Vector3.Distance(nearest.transform.position, transform.position) <= radius && !isBusy)
         {
             nearest?.Interact();
         }

@@ -11,7 +11,8 @@ public enum DSP_NodeType
     Choice,
     StaticEvent,
     SceneEvent,
-    Condition
+    Condition,
+    Random
 }
 
 [System.Serializable] public class DSP_NodeData
@@ -23,7 +24,7 @@ public enum DSP_NodeType
 
     public SerializableValue[] eventParameters; // only for Event and Condition nodes
     public SerializableEvent[] finalEvents; // only for Event nodes
-    public SerializableCondition finalCondition; // only for Condition nodes
+    public SerializableCondition[] finalConditions; // for Condition and Choice nodes
 }
 [System.Serializable] public class DSP_EdgeData
 {
@@ -217,6 +218,8 @@ public enum DSP_NodeType
 }
 [System.Serializable] public class SerializableCondition
 {
+    public bool hasValue = false;
+
     public Object target;
     public string methodName;
     public string staticTypeName;
@@ -285,4 +288,6 @@ public enum DSP_NodeType
             return (bool)method.Invoke(target, args);
         }
     }
+
+    
 }

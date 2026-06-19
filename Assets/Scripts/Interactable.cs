@@ -7,7 +7,8 @@ public class Interactable : MonoBehaviour
     {
         Interactable,
         Pickup,
-        Observation
+        Observation,
+        Talk
     }
     
     [Header("Settings")]
@@ -22,6 +23,7 @@ public class Interactable : MonoBehaviour
         GameObject prefab = InteractionHandler.instance.interactionPrompts[(int)interactionType];
         
         interactionPromptInstance = Instantiate(prefab, transform.position, Quaternion.identity);
+        interactionPromptInstance.transform.SetParent(transform);
         interactionPromptInstance.SetActive(false);
     }
     public void Interact()
