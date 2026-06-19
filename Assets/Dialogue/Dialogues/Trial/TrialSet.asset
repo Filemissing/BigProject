@@ -1,0 +1,3336 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664e79af2f21ddb4b9e73bdf5ab9f450, type: 3}
+  m_Name: TrialSet
+  m_EditorClassIdentifier: Assembly-CSharp::DSP_ConversationGraphAsset
+  nodes:
+  - id: 0
+    nodeType: 0
+    position: {x: 0, y: 0}
+    values: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 1
+    nodeType: 2
+    position: {x: 156, y: 0}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: So, you want to try to weasel out of your own trial?
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 2
+    nodeType: 2
+    position: {x: 500, y: 0}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "Too late, there\u2019s nothing you can do to make you innocent. "
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 3
+    nodeType: 2
+    position: {x: 890, y: 0}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "You brought over the milk, clearly made ill with magic! \nIt
+        looks different, it tastes different \u2013 you cannot fool me!"
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 4
+    nodeType: 3
+    position: {x: 1288, y: 0}
+    values:
+    - type: 8
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray:
+      - Present the milk
+      - Present the vial
+      - Don't say anything
+      boolArray: 
+      objectArray: []
+    - type: 9
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 000000
+      objectArray: []
+    - type: 10
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+    - type: 8
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray:
+      - 
+      - 
+      - 
+      boolArray: 
+      objectArray: []
+    eventParameters:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    finalEvents: []
+    finalConditions:
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+  - id: 5
+    nodeType: 2
+    position: {x: 1634, y: -155}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: 'There''s nothing wrong with it - anyone can come
+
+        and
+        see. It looks the same, smells the same and - I presume - tastes
+
+        the
+        same as well.'
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: f76b187be59b792469e2ff63bf5dfc07, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 6
+    nodeType: 2
+    position: {x: 2117, y: -155}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "\u201COkay, and? Maybe the milk is fine, but there\u2019s others
+        who have been wronged too!\u201D "
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 7
+    nodeType: 2
+    position: {x: 1634, y: 89}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: Isn't that one of your concontions? You're just proving my point!
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 8
+    nodeType: 5
+    position: {x: 2646, y: -155}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: d0780d0666cac5b4da5c4cd24f80accd, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 9
+    nodeType: 5
+    position: {x: 2142, y: 89}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: b9919cc8a74eef946a562f55812e42e4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 10
+    nodeType: 2
+    position: {x: 1634, y: 295}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: Nothing to say? Tch.
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 11
+    nodeType: 5
+    position: {x: 2057, y: 295}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: b9919cc8a74eef946a562f55812e42e4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 12
+    nodeType: 3
+    position: {x: 3492, y: 2}
+    values:
+    - type: 8
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray:
+      - Present the branch
+      - Present the mandrake
+      - Present the newspaper
+      - Don't say anything
+      boolArray: 
+      objectArray: []
+    - type: 9
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 00000000
+      objectArray: []
+    - type: 10
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+    - type: 8
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray:
+      - 
+      - 
+      - 
+      - 
+      boolArray: 
+      objectArray: []
+    eventParameters:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    finalEvents: []
+    finalConditions:
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+  - id: 13
+    nodeType: 2
+    position: {x: 3901, y: -167}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: Ugh, what is this?! What are these witchy symbols?
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 14
+    nodeType: 2
+    position: {x: 3901, y: 16}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: 'Get that away from me! '
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 15
+    nodeType: 2
+    position: {x: 3901, y: 199}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "I was gathering herbs for the \napothecary - they're hiring me.
+        It's been in all\nnewspapers."
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: f76b187be59b792469e2ff63bf5dfc07, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 16
+    nodeType: 2
+    position: {x: 3901, y: 398}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: Nothing to say? Tch.
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 17
+    nodeType: 5
+    position: {x: 4257, y: 398}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: b9919cc8a74eef946a562f55812e42e4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 18
+    nodeType: 5
+    position: {x: 4280, y: 16}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: b9919cc8a74eef946a562f55812e42e4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 19
+    nodeType: 5
+    position: {x: 4280, y: -167}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: b9919cc8a74eef946a562f55812e42e4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 20
+    nodeType: 5
+    position: {x: 4577, y: 180}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: d0780d0666cac5b4da5c4cd24f80accd, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 21
+    nodeType: 2
+    position: {x: 4245, y: 186}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: So? You don't have to do all of that in such a creepy way!
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 22
+    nodeType: 2
+    position: {x: 4999, y: 180}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "Are you not content with God\u2019s decisions? Do you even recognise
+        His will?"
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 23
+    nodeType: 3
+    position: {x: 5495, y: 180}
+    values:
+    - type: 8
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray:
+      - Present the straw doll
+      - Present the church slip
+      - Present the water
+      - Don't say anything
+      boolArray: 
+      objectArray: []
+    - type: 9
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 00000000
+      objectArray: []
+    - type: 10
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+    - type: 8
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray:
+      - 
+      - 
+      - 
+      - 
+      boolArray: 
+      objectArray: []
+    eventParameters:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    finalEvents: []
+    finalConditions:
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+  - id: 24
+    nodeType: 2
+    position: {x: 5909, y: -43}
+    values:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 25
+    nodeType: 2
+    position: {x: 5909, y: 141}
+    values:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: f76b187be59b792469e2ff63bf5dfc07, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 26
+    nodeType: 2
+    position: {x: 5909, y: 331}
+    values:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 27
+    nodeType: 2
+    position: {x: 5909, y: 536}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: Nothing to say? Tch.
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 28
+    nodeType: 5
+    position: {x: 6266, y: -43}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: b9919cc8a74eef946a562f55812e42e4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 29
+    nodeType: 2
+    position: {x: 6233, y: 141}
+    values:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 30
+    nodeType: 5
+    position: {x: 6288, y: 536}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: b9919cc8a74eef946a562f55812e42e4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 31
+    nodeType: 2
+    position: {x: 6921, y: 194}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "But your creeping around is odd and everyone knows that! \nThe
+        late night walks \u2013 it\u2019s almost like you\u2019re possessed by the
+        devil!"
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 32
+    nodeType: 5
+    position: {x: 6288, y: 363}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: b9919cc8a74eef946a562f55812e42e4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 33
+    nodeType: 5
+    position: {x: 6566, y: 176}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: d0780d0666cac5b4da5c4cd24f80accd, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 34
+    nodeType: 3
+    position: {x: 7427, y: 194}
+    values:
+    - type: 8
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray:
+      - Water
+      - Wax
+      - Ashes
+      - Don't say anything
+      boolArray: 
+      objectArray: []
+    - type: 9
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 00000000
+      objectArray: []
+    - type: 10
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+    - type: 8
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray:
+      - 
+      - 
+      - 
+      - 
+      boolArray: 
+      objectArray: []
+    eventParameters:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    finalEvents: []
+    finalConditions:
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+  - id: 35
+    nodeType: 2
+    position: {x: 7706, y: 330}
+    values:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 36
+    nodeType: 2
+    position: {x: 7706, y: 110}
+    values:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 37
+    nodeType: 2
+    position: {x: 7706, y: -99}
+    values:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: f76b187be59b792469e2ff63bf5dfc07, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 38
+    nodeType: 2
+    position: {x: 8032, y: -99}
+    values:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 39
+    nodeType: 5
+    position: {x: 8066, y: 110}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: b9919cc8a74eef946a562f55812e42e4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 40
+    nodeType: 5
+    position: {x: 8066, y: 330}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: b9919cc8a74eef946a562f55812e42e4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 41
+    nodeType: 5
+    position: {x: 8066, y: 542}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: b9919cc8a74eef946a562f55812e42e4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 42
+    nodeType: 2
+    position: {x: 8649, y: 292}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "Then, then \u2013 the rumors! T-the shephards been saying his
+        sheep have gone missing."
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 43
+    nodeType: 2
+    position: {x: 2931, y: 2}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "Just check her house \u2013 it\u2019s full to the brim with odd
+        herbs! Who has need for all that?"
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 44
+    nodeType: 3
+    position: {x: 9206, y: 292}
+    values:
+    - type: 8
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray:
+      - Present the axe
+      - Present the blood
+      - Don't say anything
+      boolArray: 
+      objectArray: []
+    - type: 9
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 00000000
+      objectArray: []
+    - type: 10
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+    - type: 8
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray:
+      - 
+      - 
+      - 
+      boolArray: 
+      objectArray: []
+    eventParameters:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    finalEvents: []
+    finalConditions:
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+  - id: 45
+    nodeType: 2
+    position: {x: 9519, y: 105}
+    values:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: f76b187be59b792469e2ff63bf5dfc07, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 46
+    nodeType: 2
+    position: {x: 9519, y: 292}
+    values:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 47
+    nodeType: 2
+    position: {x: 9519, y: 499}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: Nothing to say? Tch.
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 48
+    nodeType: 5
+    position: {x: 9842, y: 292}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: b9919cc8a74eef946a562f55812e42e4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 49
+    nodeType: 5
+    position: {x: 9842, y: 499}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: b9919cc8a74eef946a562f55812e42e4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 50
+    nodeType: 2
+    position: {x: 9833, y: 105}
+    values:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 51
+    nodeType: 5
+    position: {x: 10155, y: 131}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: d0780d0666cac5b4da5c4cd24f80accd, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 52
+    nodeType: 2
+    position: {x: 10429, y: 330}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "\u201C\u2026no- no one likes you anyways! You-you do bad even
+        if you aren\u2019t a witch!\u201D"
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 53
+    nodeType: 3
+    position: {x: 10962, y: 330}
+    values:
+    - type: 8
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray:
+      - Present an opinion
+      - Present journal entries
+      - Talk back
+      boolArray: 
+      objectArray: []
+    - type: 9
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 000000
+      objectArray: []
+    - type: 10
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+    - type: 8
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray:
+      - 
+      - 
+      - 
+      boolArray: 
+      objectArray: []
+    eventParameters:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    finalEvents: []
+    finalConditions:
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+  - id: 54
+    nodeType: 2
+    position: {x: 11331, y: 161}
+    values:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: f76b187be59b792469e2ff63bf5dfc07, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 55
+    nodeType: 2
+    position: {x: 11331, y: 344}
+    values:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: f76b187be59b792469e2ff63bf5dfc07, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 56
+    nodeType: 2
+    position: {x: 11331, y: 537}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: 'Sittin there useless as 2 shits
+
+        bend over, I''ll show
+        you where my shoe fits'
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: f76b187be59b792469e2ff63bf5dfc07, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 57
+    nodeType: 2
+    position: {x: 11660, y: 161}
+    values:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 58
+    nodeType: 2
+    position: {x: 11660, y: 344}
+    values:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 59
+    nodeType: 5
+    position: {x: 12047, y: 189}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: d0780d0666cac5b4da5c4cd24f80accd, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 60
+    nodeType: 5
+    position: {x: 12047, y: 367}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: d0780d0666cac5b4da5c4cd24f80accd, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 61
+    nodeType: 5
+    position: {x: 12047, y: 556}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: b9919cc8a74eef946a562f55812e42e4, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 62
+    nodeType: 2
+    position: {x: 12431, y: 367}
+    values:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 63
+    nodeType: 6
+    position: {x: 12759, y: 377}
+    values:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions:
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+  - id: 64
+    nodeType: 5
+    position: {x: 13068, y: 308}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 2072b1c3ac4e2b542a9e6b650e7d5be0, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 65
+    nodeType: 5
+    position: {x: 13068, y: 464}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 33036ea5e74c0f74086b088226092252, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 66
+    nodeType: 1
+    position: {x: 13390, y: 377}
+    values:
+    - type: 1
+      intValue: 1
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 67
+    nodeType: 5
+    position: {x: 8349, y: 13}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: d0780d0666cac5b4da5c4cd24f80accd, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 68
+    nodeType: 2
+    position: {x: 7706, y: 542}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: Nothing to say? Tch.
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 69
+    nodeType: 2
+    position: {x: 11660, y: 537}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: BRO
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  edges:
+  - fromNode: 0
+    outPortID: 0
+    toNode: 1
+    inPortID: 0
+  - fromNode: 1
+    outPortID: 0
+    toNode: 2
+    inPortID: 0
+  - fromNode: 2
+    outPortID: 0
+    toNode: 3
+    inPortID: 0
+  - fromNode: 3
+    outPortID: 0
+    toNode: 4
+    inPortID: 0
+  - fromNode: 4
+    outPortID: 0
+    toNode: 5
+    inPortID: 0
+  - fromNode: 4
+    outPortID: 1
+    toNode: 7
+    inPortID: 0
+  - fromNode: 4
+    outPortID: 2
+    toNode: 10
+    inPortID: 0
+  - fromNode: 5
+    outPortID: 0
+    toNode: 6
+    inPortID: 0
+  - fromNode: 6
+    outPortID: 0
+    toNode: 8
+    inPortID: 0
+  - fromNode: 7
+    outPortID: 0
+    toNode: 9
+    inPortID: 0
+  - fromNode: 8
+    outPortID: 0
+    toNode: 43
+    inPortID: 0
+  - fromNode: 9
+    outPortID: 0
+    toNode: 43
+    inPortID: 0
+  - fromNode: 10
+    outPortID: 0
+    toNode: 11
+    inPortID: 0
+  - fromNode: 11
+    outPortID: 0
+    toNode: 43
+    inPortID: 0
+  - fromNode: 12
+    outPortID: 0
+    toNode: 13
+    inPortID: 0
+  - fromNode: 12
+    outPortID: 1
+    toNode: 14
+    inPortID: 0
+  - fromNode: 12
+    outPortID: 2
+    toNode: 15
+    inPortID: 0
+  - fromNode: 12
+    outPortID: 3
+    toNode: 16
+    inPortID: 0
+  - fromNode: 13
+    outPortID: 0
+    toNode: 19
+    inPortID: 0
+  - fromNode: 14
+    outPortID: 0
+    toNode: 18
+    inPortID: 0
+  - fromNode: 15
+    outPortID: 0
+    toNode: 21
+    inPortID: 0
+  - fromNode: 16
+    outPortID: 0
+    toNode: 17
+    inPortID: 0
+  - fromNode: 17
+    outPortID: 0
+    toNode: 22
+    inPortID: 0
+  - fromNode: 18
+    outPortID: 0
+    toNode: 22
+    inPortID: 0
+  - fromNode: 19
+    outPortID: 0
+    toNode: 22
+    inPortID: 0
+  - fromNode: 20
+    outPortID: 0
+    toNode: 22
+    inPortID: 0
+  - fromNode: 21
+    outPortID: 0
+    toNode: 20
+    inPortID: 0
+  - fromNode: 22
+    outPortID: 0
+    toNode: 23
+    inPortID: 0
+  - fromNode: 23
+    outPortID: 0
+    toNode: 24
+    inPortID: 0
+  - fromNode: 23
+    outPortID: 1
+    toNode: 25
+    inPortID: 0
+  - fromNode: 23
+    outPortID: 2
+    toNode: 26
+    inPortID: 0
+  - fromNode: 23
+    outPortID: 3
+    toNode: 27
+    inPortID: 0
+  - fromNode: 24
+    outPortID: 0
+    toNode: 28
+    inPortID: 0
+  - fromNode: 25
+    outPortID: 0
+    toNode: 29
+    inPortID: 0
+  - fromNode: 26
+    outPortID: 0
+    toNode: 32
+    inPortID: 0
+  - fromNode: 27
+    outPortID: 0
+    toNode: 30
+    inPortID: 0
+  - fromNode: 28
+    outPortID: 0
+    toNode: 31
+    inPortID: 0
+  - fromNode: 29
+    outPortID: 0
+    toNode: 33
+    inPortID: 0
+  - fromNode: 30
+    outPortID: 0
+    toNode: 31
+    inPortID: 0
+  - fromNode: 31
+    outPortID: 0
+    toNode: 34
+    inPortID: 0
+  - fromNode: 32
+    outPortID: 0
+    toNode: 31
+    inPortID: 0
+  - fromNode: 33
+    outPortID: 0
+    toNode: 31
+    inPortID: 0
+  - fromNode: 34
+    outPortID: 0
+    toNode: 37
+    inPortID: 0
+  - fromNode: 34
+    outPortID: 1
+    toNode: 36
+    inPortID: 0
+  - fromNode: 34
+    outPortID: 2
+    toNode: 35
+    inPortID: 0
+  - fromNode: 34
+    outPortID: 3
+    toNode: 68
+    inPortID: 0
+  - fromNode: 35
+    outPortID: 0
+    toNode: 40
+    inPortID: 0
+  - fromNode: 36
+    outPortID: 0
+    toNode: 39
+    inPortID: 0
+  - fromNode: 37
+    outPortID: 0
+    toNode: 38
+    inPortID: 0
+  - fromNode: 38
+    outPortID: 0
+    toNode: 67
+    inPortID: 0
+  - fromNode: 39
+    outPortID: 0
+    toNode: 42
+    inPortID: 0
+  - fromNode: 40
+    outPortID: 0
+    toNode: 42
+    inPortID: 0
+  - fromNode: 41
+    outPortID: 0
+    toNode: 42
+    inPortID: 0
+  - fromNode: 42
+    outPortID: 0
+    toNode: 44
+    inPortID: 0
+  - fromNode: 43
+    outPortID: 0
+    toNode: 12
+    inPortID: 0
+  - fromNode: 44
+    outPortID: 0
+    toNode: 45
+    inPortID: 0
+  - fromNode: 44
+    outPortID: 1
+    toNode: 46
+    inPortID: 0
+  - fromNode: 44
+    outPortID: 2
+    toNode: 47
+    inPortID: 0
+  - fromNode: 45
+    outPortID: 0
+    toNode: 50
+    inPortID: 0
+  - fromNode: 46
+    outPortID: 0
+    toNode: 48
+    inPortID: 0
+  - fromNode: 47
+    outPortID: 0
+    toNode: 49
+    inPortID: 0
+  - fromNode: 48
+    outPortID: 0
+    toNode: 52
+    inPortID: 0
+  - fromNode: 49
+    outPortID: 0
+    toNode: 52
+    inPortID: 0
+  - fromNode: 50
+    outPortID: 0
+    toNode: 51
+    inPortID: 0
+  - fromNode: 51
+    outPortID: 0
+    toNode: 52
+    inPortID: 0
+  - fromNode: 52
+    outPortID: 0
+    toNode: 53
+    inPortID: 0
+  - fromNode: 53
+    outPortID: 0
+    toNode: 54
+    inPortID: 0
+  - fromNode: 53
+    outPortID: 1
+    toNode: 55
+    inPortID: 0
+  - fromNode: 53
+    outPortID: 2
+    toNode: 56
+    inPortID: 0
+  - fromNode: 54
+    outPortID: 0
+    toNode: 57
+    inPortID: 0
+  - fromNode: 55
+    outPortID: 0
+    toNode: 58
+    inPortID: 0
+  - fromNode: 56
+    outPortID: 0
+    toNode: 69
+    inPortID: 0
+  - fromNode: 57
+    outPortID: 0
+    toNode: 59
+    inPortID: 0
+  - fromNode: 58
+    outPortID: 0
+    toNode: 60
+    inPortID: 0
+  - fromNode: 59
+    outPortID: 0
+    toNode: 62
+    inPortID: 0
+  - fromNode: 60
+    outPortID: 0
+    toNode: 62
+    inPortID: 0
+  - fromNode: 61
+    outPortID: 0
+    toNode: 62
+    inPortID: 0
+  - fromNode: 62
+    outPortID: 0
+    toNode: 63
+    inPortID: 0
+  - fromNode: 63
+    outPortID: 0
+    toNode: 64
+    inPortID: 0
+  - fromNode: 63
+    outPortID: 1
+    toNode: 65
+    inPortID: 0
+  - fromNode: 64
+    outPortID: 0
+    toNode: 66
+    inPortID: 0
+  - fromNode: 65
+    outPortID: 0
+    toNode: 66
+    inPortID: 0
+  - fromNode: 67
+    outPortID: 0
+    toNode: 42
+    inPortID: 0
+  - fromNode: 68
+    outPortID: 0
+    toNode: 41
+    inPortID: 0
+  - fromNode: 69
+    outPortID: 0
+    toNode: 61
+    inPortID: 0
