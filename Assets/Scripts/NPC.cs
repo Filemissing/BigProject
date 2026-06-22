@@ -52,7 +52,7 @@ public class NPC : MonoBehaviour
 
     private void Start()
     {
-        if (pointsOfInterest.Count < 2)
+        if (pointsOfInterest.Count > 1 )
             StartCoroutine(Wander());
         DSP_ConversationManager.instance.OnConversationEnded += ResumeWandering;
     }
@@ -84,7 +84,9 @@ public class NPC : MonoBehaviour
                 if (keepOrder)
                     nextTarget = pointsOfInterest[(pointsOfInterest.IndexOf(target) + 1) % (pointsOfInterest.Count)];
                 else
-                    nextTarget = pointsOfInterest.Where(POI => POI != target).ElementAt(Random.Range(0, pointsOfInterest.Count - 1));
+                    if(pointsOfInterest.Count > 0) {
+                      nextTarget = pointsOfInterest.Where(POI => POI != target).ElementAt(Random.Range(0, pointsOfInterest.Count - 1));
+                    }
 
                 nextTargetChosen = true;
 
