@@ -2587,6 +2587,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: passiveDialogueEntryDatas.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: 'passiveDialogueEntryDatas.Array.data[0]'
+      value: '*yawn*'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6476,6 +6484,10 @@ PrefabInstance:
     - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: passiveDialogueEntryDatas.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: 'passiveDialogueEntryDatas.Array.data[0]'
+      value: The market here is very small; I should make the trip to Hengelo.
       objectReference: {fileID: 0}
     - target: {fileID: 7734272789918961846, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: m_Avatar
@@ -13155,6 +13167,11 @@ PrefabInstance:
       propertyPath: passiveDialogueEntryDatas.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: 'passiveDialogueEntryDatas.Array.data[0]'
+      value: "They increased the price of ale in the tavern. If they keep doing that,
+        they\u2019ll end up losing their last customers."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14014,6 +14031,15 @@ PrefabInstance:
     - target: {fileID: 5379631661938212770, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: m_Name
       value: NPC 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: passiveDialogueEntryDatas.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: 'passiveDialogueEntryDatas.Array.data[0]'
+      value: "I should drop by the market soon\u2026 The butcher has been bringing
+        some excellent cuts. I wonder where he gets the meat from?"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

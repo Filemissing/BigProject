@@ -2594,6 +2594,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: passiveDialogueEntryDatas.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: 'passiveDialogueEntryDatas.Array.data[0]'
+      value: "Yesterday, I saw a crow croak 3 times. I wonder if that\u2019s bad
+        luck\u2026"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6627,6 +6636,11 @@ PrefabInstance:
     - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: passiveDialogueEntryDatas.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: 'passiveDialogueEntryDatas.Array.data[0]'
+      value: 'The last sermon was rather interesting. A shame the priest will be
+        retiring soon. '
       objectReference: {fileID: 0}
     - target: {fileID: 7734272789918961846, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: m_Avatar
@@ -13456,6 +13470,10 @@ PrefabInstance:
       propertyPath: passiveDialogueEntryDatas.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: 'passiveDialogueEntryDatas.Array.data[0]'
+      value: Anna! Where are you? ANNA!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14315,6 +14333,14 @@ PrefabInstance:
     - target: {fileID: 5379631661938212770, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: m_Name
       value: NPC 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: passiveDialogueEntryDatas.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: 'passiveDialogueEntryDatas.Array.data[0]'
+      value: WITCH!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
