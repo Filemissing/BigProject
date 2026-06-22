@@ -1982,7 +1982,7 @@ MonoBehaviour:
       intArray: 
       floatArray: []
       stringArray: []
-      boolArray: 00000000
+      boolArray: 000000
       objectArray: []
     - type: 10
       intValue: 0
@@ -2796,8 +2796,160 @@ MonoBehaviour:
     finalEvents: []
     finalConditions: []
   - id: 63
+    nodeType: 5
+    position: {x: 13068, y: 308}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 2072b1c3ac4e2b542a9e6b650e7d5be0, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 64
+    nodeType: 5
+    position: {x: 13068, y: 464}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 33036ea5e74c0f74086b088226092252, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 65
+    nodeType: 1
+    position: {x: 13390, y: 377}
+    values:
+    - type: 1
+      intValue: 1
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 66
+    nodeType: 5
+    position: {x: 8349, y: 13}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: d0780d0666cac5b4da5c4cd24f80accd, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 67
+    nodeType: 2
+    position: {x: 7706, y: 542}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: Nothing to say? Tch.
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 68
+    nodeType: 2
+    position: {x: 11660, y: 537}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: BRO
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 69
     nodeType: 6
-    position: {x: 12759, y: 377}
+    position: {x: 12761, y: 377}
     values:
     - type: 0
       intValue: 0
@@ -2841,158 +2993,6 @@ MonoBehaviour:
         stringArray: []
         boolArray: 
         objectArray: []
-  - id: 64
-    nodeType: 5
-    position: {x: 13068, y: 308}
-    values:
-    - type: 5
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 11400000, guid: 2072b1c3ac4e2b542a9e6b650e7d5be0, type: 2}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    eventParameters: []
-    finalEvents: []
-    finalConditions: []
-  - id: 65
-    nodeType: 5
-    position: {x: 13068, y: 464}
-    values:
-    - type: 5
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 11400000, guid: 33036ea5e74c0f74086b088226092252, type: 2}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    eventParameters: []
-    finalEvents: []
-    finalConditions: []
-  - id: 66
-    nodeType: 1
-    position: {x: 13390, y: 377}
-    values:
-    - type: 1
-      intValue: 1
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    eventParameters: []
-    finalEvents: []
-    finalConditions: []
-  - id: 67
-    nodeType: 5
-    position: {x: 8349, y: 13}
-    values:
-    - type: 5
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 11400000, guid: d0780d0666cac5b4da5c4cd24f80accd, type: 2}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    eventParameters: []
-    finalEvents: []
-    finalConditions: []
-  - id: 68
-    nodeType: 2
-    position: {x: 7706, y: 542}
-    values:
-    - type: 3
-      intValue: 0
-      floatValue: 0
-      stringValue: Nothing to say? Tch.
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    - type: 5
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    - type: 0
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    eventParameters: []
-    finalEvents: []
-    finalConditions: []
-  - id: 69
-    nodeType: 2
-    position: {x: 11660, y: 537}
-    values:
-    - type: 3
-      intValue: 0
-      floatValue: 0
-      stringValue: BRO
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    - type: 5
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 11400000, guid: 50c921d724c938345999aa66c45d5624, type: 2}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    - type: 0
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    eventParameters: []
-    finalEvents: []
-    finalConditions: []
   edges:
   - fromNode: 0
     outPortID: 0
@@ -3176,7 +3176,7 @@ MonoBehaviour:
     inPortID: 0
   - fromNode: 34
     outPortID: 3
-    toNode: 68
+    toNode: 67
     inPortID: 0
   - fromNode: 35
     outPortID: 0
@@ -3192,7 +3192,7 @@ MonoBehaviour:
     inPortID: 0
   - fromNode: 38
     outPortID: 0
-    toNode: 67
+    toNode: 66
     inPortID: 0
   - fromNode: 39
     outPortID: 0
@@ -3280,7 +3280,7 @@ MonoBehaviour:
     inPortID: 0
   - fromNode: 56
     outPortID: 0
-    toNode: 69
+    toNode: 68
     inPortID: 0
   - fromNode: 57
     outPortID: 0
@@ -3304,33 +3304,33 @@ MonoBehaviour:
     inPortID: 0
   - fromNode: 62
     outPortID: 0
-    toNode: 63
+    toNode: 69
     inPortID: 0
   - fromNode: 63
     outPortID: 0
-    toNode: 64
-    inPortID: 0
-  - fromNode: 63
-    outPortID: 1
     toNode: 65
     inPortID: 0
   - fromNode: 64
     outPortID: 0
-    toNode: 66
+    toNode: 65
     inPortID: 0
-  - fromNode: 65
-    outPortID: 0
-    toNode: 66
-    inPortID: 0
-  - fromNode: 67
+  - fromNode: 66
     outPortID: 0
     toNode: 42
     inPortID: 0
-  - fromNode: 68
+  - fromNode: 67
     outPortID: 0
     toNode: 41
     inPortID: 0
-  - fromNode: 69
+  - fromNode: 68
     outPortID: 0
     toNode: 61
+    inPortID: 0
+  - fromNode: 69
+    outPortID: 0
+    toNode: 63
+    inPortID: 0
+  - fromNode: 69
+    outPortID: 1
+    toNode: 64
     inPortID: 0
