@@ -83,10 +83,12 @@ public class NPC : MonoBehaviour
 
                 if (keepOrder)
                     nextTarget = pointsOfInterest[(pointsOfInterest.IndexOf(target) + 1) % (pointsOfInterest.Count)];
-                else
-                    if(pointsOfInterest.Count > 0) {
-                      nextTarget = pointsOfInterest.Where(POI => POI != target).ElementAt(Random.Range(0, pointsOfInterest.Count - 1));
-                    }
+                else if(pointsOfInterest.Count > 1)
+                {
+                    var otherPOIs = pointsOfInterest.Where(POI => POI != target).ToArray();
+                    int randomIndex = Random.Range(0, pointsOfInterest.Count - 1);
+                    nextTarget = otherPOIs[randomIndex];
+                }
 
                 nextTargetChosen = true;
 
