@@ -5,7 +5,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerController : MonoBehaviour
 {
-    static PlayerController instance;
+    public static PlayerController instance;
     private Rigidbody rb;
     private void Awake()
     {

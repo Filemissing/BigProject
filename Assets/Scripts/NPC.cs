@@ -3,7 +3,6 @@ using NaughtyAttributes;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor.XR;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -32,7 +31,7 @@ public class NPC : MonoBehaviour
     {
         PauseWandering();
 
-        RotateToward(GameManager.instance.player.transform.position);
+        RotateToward(PlayerController.instance.transform.position);
 
         if (conversations != null && conversations.Length > 0)
         {
@@ -54,7 +53,17 @@ public class NPC : MonoBehaviour
     {
         if (pointsOfInterest.Count > 1 )
             StartCoroutine(Wander());
+        
+    }
+
+    private void OnEnable()
+    {
         DSP_ConversationManager.instance.OnConversationEnded += ResumeWandering;
+    }
+
+    private void OnDisable()
+    {
+        DSP_ConversationManager.instance.OnConversationEnded -= ResumeWandering;
     }
 
     protected bool pauseWandering = false;

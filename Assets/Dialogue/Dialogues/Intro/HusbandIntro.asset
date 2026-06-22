@@ -10,19 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 664e79af2f21ddb4b9e73bdf5ab9f450, type: 3}
-  m_Name: HusbandConvo
+  m_Name: HusbandIntro
   m_EditorClassIdentifier: Assembly-CSharp::DSP_ConversationGraphAsset
   nodes:
   - id: 0
+    nodeType: 0
+    position: {x: -928, y: 388.66666}
+    values: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 1
     nodeType: 2
-    position: {x: 1892.6666, y: -326}
+    position: {x: -736.6666, y: 381.3333}
     values:
     - type: 3
       intValue: 0
       floatValue: 0
-      stringValue: "You could go talk to Jenneke herself; perhaps she\u2019s willing
-        to change her mind. \nThe magistrate might help too\u2026 But I don\u2019t
-        think you want to get his attention on you."
+      stringValue: Ah, are you awake?
       boolValue: 0
       objectValue: {fileID: 0}
       intArray: 
@@ -55,9 +60,50 @@ MonoBehaviour:
     eventParameters: []
     finalEvents: []
     finalConditions: []
-  - id: 1
+  - id: 2
+    nodeType: 2
+    position: {x: -378.6667, y: 381.3333}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "I can\u2019t believe you\u2019re going through with this. Are
+        you sure?\n We can always tell them you changed your mind."
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 0410b7fb99c0d9249bac61982de3ca1e, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 3
     nodeType: 3
-    position: {x: 2452, y: -326}
+    position: {x: 58, y: 381.3333}
     values:
     - type: 8
       intValue: 0
@@ -68,8 +114,8 @@ MonoBehaviour:
       intArray: 
       floatArray: []
       stringArray:
-      - Where is she?
-      - Where is the magistrate?
+      - Um, I suppose.
+      - "\u2026 What are you talking about?"
       boolArray: 
       objectArray: []
     - type: 9
@@ -168,93 +214,35 @@ MonoBehaviour:
         stringArray: []
         boolArray: 
         objectArray: []
-  - id: 2
-    nodeType: 2
-    position: {x: 2782.6667, y: -217.33333}
-    values:
-    - type: 3
-      intValue: 0
-      floatValue: 0
-      stringValue: "By the church; I remember him mentioning something about patrols
-        there\u2026 \nI don\u2019t recommend talking to him, though."
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    - type: 5
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 11400000, guid: 0410b7fb99c0d9249bac61982de3ca1e, type: 2}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    - type: 0
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    eventParameters: []
-    finalEvents: []
-    finalConditions: []
-  - id: 3
-    nodeType: 2
-    position: {x: 2782.6667, y: -417.33334}
-    values:
-    - type: 3
-      intValue: 0
-      floatValue: 0
-      stringValue: Probably still in bed; you saw the state she is in.
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    - type: 5
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 11400000, guid: 0410b7fb99c0d9249bac61982de3ca1e, type: 2}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    - type: 0
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    eventParameters: []
-    finalEvents: []
-    finalConditions: []
   - id: 4
-    nodeType: 1
-    position: {x: 3382, y: -326}
+    nodeType: 2
+    position: {x: 736.6667, y: 493.33334}
     values:
-    - type: 1
-      intValue: 1
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "Woman, have you lost your mind? Keep joking around like that
+        \nand people will believe that you\u2019re an actual witch."
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 0410b7fb99c0d9249bac61982de3ca1e, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
       floatValue: 0
       stringValue: 
       boolValue: 0
@@ -269,12 +257,12 @@ MonoBehaviour:
     finalConditions: []
   - id: 5
     nodeType: 2
-    position: {x: 1523.3333, y: -326}
+    position: {x: 1150.6666, y: 493.33334}
     values:
     - type: 3
       intValue: 0
       floatValue: 0
-      stringValue: So what will you do now?
+      stringValue: "Because you\u2019re not."
       boolValue: 0
       objectValue: {fileID: 0}
       intArray: 
@@ -308,20 +296,13 @@ MonoBehaviour:
     finalEvents: []
     finalConditions: []
   - id: 6
-    nodeType: 0
-    position: {x: 974, y: -326}
-    values: []
-    eventParameters: []
-    finalEvents: []
-    finalConditions: []
-  - id: 7
     nodeType: 2
-    position: {x: 1164.6666, y: -326}
+    position: {x: 396, y: 493.33334}
     values:
     - type: 3
       intValue: 0
       floatValue: 0
-      stringValue: Ah, you're awake.
+      stringValue: "\u2026"
       boolValue: 0
       objectValue: {fileID: 0}
       intArray: 
@@ -354,6 +335,148 @@ MonoBehaviour:
     eventParameters: []
     finalEvents: []
     finalConditions: []
+  - id: 7
+    nodeType: 2
+    position: {x: 942, y: 225.33333}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "Not like there\u2019s anyone we don\u2019t know, but you get
+        my idea."
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 0410b7fb99c0d9249bac61982de3ca1e, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 8
+    nodeType: 2
+    position: {x: 476, y: 225.33333}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "*sigh* Well, you\u2019ve always been a stubborn one. I\u2019ll
+        let Berend know, then. \nI\u2019d rather have him take care of business than
+        some stranger."
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 0410b7fb99c0d9249bac61982de3ca1e, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 9
+    nodeType: 2
+    position: {x: 1636, y: 493.33334}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: For now you should go back to bed, it's not like we can do anything
+        right now.
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 0410b7fb99c0d9249bac61982de3ca1e, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 10
+    nodeType: 1
+    position: {x: 2239.3335, y: 493.33334}
+    values:
+    - type: 1
+      intValue: 1
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
   edges:
   - fromNode: 0
     outPortID: 0
@@ -361,29 +484,41 @@ MonoBehaviour:
     inPortID: 0
   - fromNode: 1
     outPortID: 0
-    toNode: 3
-    inPortID: 0
-  - fromNode: 1
-    outPortID: 1
     toNode: 2
     inPortID: 0
   - fromNode: 2
     outPortID: 0
-    toNode: 4
+    toNode: 3
     inPortID: 0
   - fromNode: 3
     outPortID: 0
-    toNode: 4
+    toNode: 8
+    inPortID: 0
+  - fromNode: 3
+    outPortID: 1
+    toNode: 6
+    inPortID: 0
+  - fromNode: 4
+    outPortID: 0
+    toNode: 5
     inPortID: 0
   - fromNode: 5
     outPortID: 0
-    toNode: 0
+    toNode: 9
     inPortID: 0
   - fromNode: 6
     outPortID: 0
-    toNode: 7
+    toNode: 4
     inPortID: 0
   - fromNode: 7
     outPortID: 0
-    toNode: 5
+    toNode: 9
+    inPortID: 0
+  - fromNode: 8
+    outPortID: 0
+    toNode: 7
+    inPortID: 0
+  - fromNode: 9
+    outPortID: 0
+    toNode: 10
     inPortID: 0

@@ -21,9 +21,9 @@ public class InputHandler : MonoBehaviour
         if (Input.GetKeyDown(TEMP_CursorUnlock))
         {
             if (Cursor.lockState == CursorLockMode.None)
-                GameManager.instance.player.UnlockCharacter();
+                PlayerController.instance.UnlockCharacter();
             else
-                GameManager.instance.player.LockCharacter();
+                PlayerController.instance.LockCharacter();
         }
     }
 }
