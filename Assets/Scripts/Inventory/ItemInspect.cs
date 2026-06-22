@@ -87,6 +87,7 @@ public class ItemInspect : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
     public void UpdateItem(Item item)
     {
         if (visualObject) Destroy(visualObject);
+        if (!item.model) return;
         
         visualObject = Instantiate(item.model, visualObjectParent);
         visualObject.transform.localPosition = Vector3.zero;

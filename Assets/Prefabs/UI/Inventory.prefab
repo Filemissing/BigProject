@@ -1354,6 +1354,7 @@ MonoBehaviour:
   title: {fileID: 5682984314778405000}
   description: {fileID: 7391056427586757758}
   itemInspect: {fileID: 1898755066144702749}
+  emptyItem: {fileID: 11400000, guid: a555f3dc2df54094d900cbd59a152c62, type: 2}
 --- !u!1001 &435483727214569495
 PrefabInstance:
   m_ObjectHideFlags: 0

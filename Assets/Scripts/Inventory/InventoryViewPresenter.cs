@@ -9,6 +9,7 @@ public class InventoryViewPresenter : MonoBehaviour
     [SerializeField] private TMP_Text title;
     [SerializeField] private TMP_Text description;
     [SerializeField] private ItemInspect itemInspect;
+    [SerializeField] private Item emptyItem;
     
     public void UpdateView(Item item)
     {
@@ -19,6 +20,7 @@ public class InventoryViewPresenter : MonoBehaviour
 
     private void Awake()
     {
+        UpdateView(emptyItem);
         TryUpdateViewToDefault();
     }
 
