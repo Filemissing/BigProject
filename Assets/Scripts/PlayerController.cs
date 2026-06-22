@@ -37,6 +37,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float crouchTransitionDuration = 0.2f;
     [SerializeField] private float crouchSpeed = 3f;
 
+    [HideInInspector] public bool isCrouched;
+
     [Header("Camera")]
     [SerializeField] private float mouseSensitivity = 0.1f;
     public Transform cameraAnchor;
@@ -84,12 +86,11 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Q))
             {
-                Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, 2f);
+                Physics.Raycast(transform.position + Vector3.up, transform.forward, out RaycastHit hit, 2f);
                 if (hit.collider != null && hit.rigidbody.gameObject.TryGetComponent(out NavMeshAgent navMeshAgent))
                 {
                     hit.rigidbody.isKinematic = false;
-                    hit.rigidbody.linearDamping = 0f;
-                    hit.rigidbody.AddForce(cameraAnchor.forward * 1000f, ForceMode.Impulse);
+                    hit.rigidbody.AddForce(cameraAnchor.forward * 100f, ForceMode.Impulse);
                 }
             }
         }
