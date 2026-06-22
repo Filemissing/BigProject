@@ -25,7 +25,7 @@ public class Guard : NPC
         // adjust wander parameters to fit a more patrol-like style
         keepOrder = true;
         stayDurationRange = new Vector2(5f, 5f);
-        rotationTime = .2f;
+        rotationTime = .01f;
     }
 
     float visibleTimer = 0f;
@@ -103,6 +103,8 @@ public class Guard : NPC
         if (alertStatus == AlertStatus.Unaware)
         {
             agent.speed = 3.5f;
+            agent.acceleration = 8;
+            agent.angularSpeed = 360;
             ResumeWandering();
             return; // handled by wander loop in NPC
         }
@@ -121,6 +123,8 @@ public class Guard : NPC
         {
             // works for both Searching and Found, the difference is in updating the suspiciousPoint
             agent.speed = 12;
+            agent.acceleration = 500;
+            agent.angularSpeed = 3000;
             agent.destination = suspiciousPoint;
             
             if (HasAgentArrived())
