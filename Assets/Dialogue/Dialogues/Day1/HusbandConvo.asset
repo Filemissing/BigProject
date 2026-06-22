@@ -103,159 +103,6 @@ MonoBehaviour:
     finalConditions: []
   - id: 3
     nodeType: 2
-    position: {x: 691, y: -509}
-    values:
-    - type: 3
-      intValue: 0
-      floatValue: 0
-      stringValue: "\u2026"
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    - type: 5
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 11400000, guid: 0410b7fb99c0d9249bac61982de3ca1e, type: 2}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    - type: 0
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    eventParameters: []
-    finalEvents: []
-    finalConditions: []
-  - id: 4
-    nodeType: 3
-    position: {x: 336, y: -425}
-    values:
-    - type: 8
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray:
-      - Um, I suppose.
-      - "\u2026 What are you talking about?"
-      boolArray: 
-      objectArray: []
-    - type: 9
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 0000
-      objectArray: []
-    - type: 10
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray:
-      - {fileID: 0}
-      - {fileID: 0}
-    - type: 8
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray:
-      - 
-      - 
-      boolArray: 
-      objectArray: []
-    eventParameters:
-    - type: 0
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    - type: 0
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    finalEvents: []
-    finalConditions:
-    - hasValue: 0
-      target: {fileID: 0}
-      methodName: 
-      staticTypeName: 
-      isStatic: 0
-      parameter:
-        type: 0
-        intValue: 0
-        floatValue: 0
-        stringValue: 
-        boolValue: 0
-        objectValue: {fileID: 0}
-        intArray: 
-        floatArray: []
-        stringArray: []
-        boolArray: 
-        objectArray: []
-    - hasValue: 0
-      target: {fileID: 0}
-      methodName: 
-      staticTypeName: 
-      isStatic: 0
-      parameter:
-        type: 0
-        intValue: 0
-        floatValue: 0
-        stringValue: 
-        boolValue: 0
-        objectValue: {fileID: 0}
-        intArray: 
-        floatArray: []
-        stringArray: []
-        boolArray: 
-        objectArray: []
-  - id: 5
-    nodeType: 2
     position: {x: 1032, y: -509}
     values:
     - type: 3
@@ -295,7 +142,7 @@ MonoBehaviour:
     eventParameters: []
     finalEvents: []
     finalConditions: []
-  - id: 6
+  - id: 4
     nodeType: 2
     position: {x: 1446, y: -509}
     values:
@@ -335,49 +182,7 @@ MonoBehaviour:
     eventParameters: []
     finalEvents: []
     finalConditions: []
-  - id: 7
-    nodeType: 2
-    position: {x: 691, y: -276}
-    values:
-    - type: 3
-      intValue: 0
-      floatValue: 0
-      stringValue: "*sigh* Well, you\u2019ve always been a stubborn one. I\u2019ll
-        let Berend know, then. \nI\u2019d rather have him take care of business than
-        some stranger."
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    - type: 5
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 11400000, guid: 0410b7fb99c0d9249bac61982de3ca1e, type: 2}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    - type: 0
-      intValue: 0
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    eventParameters: []
-    finalEvents: []
-    finalConditions: []
-  - id: 8
+  - id: 5
     nodeType: 2
     position: {x: 1157, y: -276}
     values:
@@ -418,7 +223,7 @@ MonoBehaviour:
     eventParameters: []
     finalEvents: []
     finalConditions: []
-  - id: 9
+  - id: 6
     nodeType: 2
     position: {x: 1893, y: -326}
     values:
@@ -460,7 +265,7 @@ MonoBehaviour:
     eventParameters: []
     finalEvents: []
     finalConditions: []
-  - id: 10
+  - id: 7
     nodeType: 3
     position: {x: 2452, y: -326}
     values:
@@ -573,7 +378,7 @@ MonoBehaviour:
         stringArray: []
         boolArray: 
         objectArray: []
-  - id: 11
+  - id: 8
     nodeType: 2
     position: {x: 2783, y: -217}
     values:
@@ -614,7 +419,7 @@ MonoBehaviour:
     eventParameters: []
     finalEvents: []
     finalConditions: []
-  - id: 12
+  - id: 9
     nodeType: 2
     position: {x: 2783, y: -417}
     values:
@@ -654,12 +459,207 @@ MonoBehaviour:
     eventParameters: []
     finalEvents: []
     finalConditions: []
-  - id: 13
+  - id: 10
     nodeType: 1
     position: {x: 3382, y: -326}
     values:
     - type: 1
       intValue: 1
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 11
+    nodeType: 3
+    position: {x: 336, y: -425}
+    values:
+    - type: 8
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray:
+      - Um, I suppose.
+      - "\u2026 What are you talking about?"
+      boolArray: 
+      objectArray: []
+    - type: 9
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 0000
+      objectArray: []
+    - type: 10
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray:
+      - {fileID: 0}
+      - {fileID: 0}
+    - type: 8
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray:
+      - 
+      - 
+      boolArray: 
+      objectArray: []
+    eventParameters:
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    finalEvents: []
+    finalConditions:
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
+  - id: 12
+    nodeType: 2
+    position: {x: 691, y: -509}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "\u2026"
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 0410b7fb99c0d9249bac61982de3ca1e, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 13
+    nodeType: 2
+    position: {x: 691, y: -276}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "*sigh* Well, you\u2019ve always been a stubborn one. I\u2019ll
+        let Berend know, then. \nI\u2019d rather have him take care of business than
+        some stranger."
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 0410b7fb99c0d9249bac61982de3ca1e, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
       floatValue: 0
       stringValue: 
       boolValue: 0
@@ -683,19 +683,15 @@ MonoBehaviour:
     inPortID: 0
   - fromNode: 2
     outPortID: 0
-    toNode: 4
+    toNode: 11
     inPortID: 0
   - fromNode: 3
     outPortID: 0
-    toNode: 5
+    toNode: 4
     inPortID: 0
   - fromNode: 4
     outPortID: 0
-    toNode: 3
-    inPortID: 0
-  - fromNode: 4
-    outPortID: 1
-    toNode: 7
+    toNode: 6
     inPortID: 0
   - fromNode: 5
     outPortID: 0
@@ -703,33 +699,37 @@ MonoBehaviour:
     inPortID: 0
   - fromNode: 6
     outPortID: 0
-    toNode: 9
+    toNode: 7
     inPortID: 0
   - fromNode: 7
     outPortID: 0
+    toNode: 9
+    inPortID: 0
+  - fromNode: 7
+    outPortID: 1
     toNode: 8
     inPortID: 0
   - fromNode: 8
     outPortID: 0
-    toNode: 9
+    toNode: 10
     inPortID: 0
   - fromNode: 9
     outPortID: 0
     toNode: 10
     inPortID: 0
-  - fromNode: 10
-    outPortID: 0
-    toNode: 12
-    inPortID: 0
-  - fromNode: 10
-    outPortID: 1
-    toNode: 11
-    inPortID: 0
   - fromNode: 11
     outPortID: 0
     toNode: 13
     inPortID: 0
+  - fromNode: 11
+    outPortID: 1
+    toNode: 12
+    inPortID: 0
   - fromNode: 12
     outPortID: 0
-    toNode: 13
+    toNode: 3
+    inPortID: 0
+  - fromNode: 13
+    outPortID: 0
+    toNode: 5
     inPortID: 0

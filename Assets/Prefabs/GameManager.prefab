@@ -55,7 +55,7 @@ MonoBehaviour:
   inputHandler: {fileID: 6129325699842453534}
   characterUnlockHandler: {fileID: 6948649452640438920}
   days:
-  - sceneName: Day 1 test
+  - sceneName: Day 1
     hasNight: 0
     nightSceneName: 
   - sceneName: Day 2 test
@@ -126,4 +126,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce58b184412c43740a6a236423e2cac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterUnlockHandler
-  characterUnlockBlocks: []
+  characterUnlockBlocks: 0

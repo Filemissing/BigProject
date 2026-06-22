@@ -183,7 +183,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 5
     nodeType: 5
-    position: {x: 1089, y: -433}
+    position: {x: 1106, y: -454}
     values:
     - type: 5
       intValue: 0
@@ -201,7 +201,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 6
     nodeType: 1
-    position: {x: 1350, y: -437}
+    position: {x: 1487, y: -454}
     values:
     - type: 1
       intValue: 1
