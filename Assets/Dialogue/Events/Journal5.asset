@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e168bed16e2d38246944958fb6ef9270, type: 3}
-  m_Name: NPC2
-  m_EditorClassIdentifier: Assembly-CSharp::DSP_CharacterAsset
-  characterName: Housewife
-  characterImage: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 1744d243fb3e113498bf1d3d2f622ba1, type: 3}
+  m_Name: Journal5
+  m_EditorClassIdentifier: Assembly-CSharp::DSP_SceneEvent
