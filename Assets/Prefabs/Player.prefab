@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 7924641518253406714}
   - component: {fileID: 8172133964516608998}
   - component: {fileID: 9003348331537261550}
+  - component: {fileID: 7696449410015984128}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -179,6 +180,7 @@ MonoBehaviour:
   crouchScale: 0.5
   crouchTransitionDuration: 0.2
   crouchSpeed: 3
+  isCrouched: 0
   mouseSensitivity: 1
   cameraAnchor: {fileID: 8801462057061667394}
   upLookLimit: 80
@@ -274,6 +276,18 @@ MonoBehaviour:
   m_IgnoreFromBuild: 1
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!114 &7696449410015984128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4452590923600526309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c669d8762435914dbaa80c7222e9595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HandleIsBusyOnDialogue
 --- !u!1 &6479208518618674879
 GameObject:
   m_ObjectHideFlags: 0
