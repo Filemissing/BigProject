@@ -93,6 +93,10 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            rb.linearVelocity = Vector3.zero;
+        }
 
         if (canLook)
         {
@@ -105,8 +109,12 @@ public class PlayerController : MonoBehaviour
             float heading = transform.rotation.eulerAngles.y + deltaMouse.x * mouseSensitivity;
 
             transform.localRotation = Quaternion.Euler(new Vector3(0, heading, 0));
-            cameraAnchor.transform.localRotation = Quaternion.Euler(new Vector3(pitch, 0, 0));        
-        } 
+            cameraAnchor.transform.localRotation = Quaternion.Euler(new Vector3(pitch, 0, 0));
+        }
+        else
+        {
+            rb.angularVelocity = Vector3.zero;
+        }
     }
 
     public void LockCharacter()

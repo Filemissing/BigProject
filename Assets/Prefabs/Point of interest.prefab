@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6920253264230854335}
   - component: {fileID: 226824028100326626}
+  - component: {fileID: 8062093925334417519}
   m_Layer: 0
   m_Name: Point of interest
   m_TagString: Untagged
@@ -45,3 +46,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PointOfInterest
   animationClip: {fileID: 7400000, guid: c9b8555fe72d43b419238298f825951e, type: 2}
+--- !u!114 &8062093925334417519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8793113945178941911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e461af18de684d241b2dcc1efe359a0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SphereGizmoExample
+  radius: 1
+  color: {r: 1, g: 0.2, b: 0.2, a: 0.5}

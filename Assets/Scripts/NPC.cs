@@ -138,7 +138,8 @@ public class NPC : MonoBehaviour
                 hasArrived = true;
             }
 
-            animator.SetBool("IsWalking", agent.velocity.sqrMagnitude > 0.01f);
+            if (!pauseWandering)
+                animator.SetBool("IsWalking", agent.velocity.sqrMagnitude > 0.01f);
         }
     }
 
@@ -155,6 +156,8 @@ public class NPC : MonoBehaviour
 
     [Button] public void PauseWandering()
     {
+        animator.SetBool("IsWalking", false);
+
         pauseWandering = true;
         agent.isStopped = true;
         shouldRotate = false;
