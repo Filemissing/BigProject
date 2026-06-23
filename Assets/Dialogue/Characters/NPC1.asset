@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e168bed16e2d38246944958fb6ef9270, type: 3}
   m_Name: NPC1
   m_EditorClassIdentifier: Assembly-CSharp::DSP_CharacterAsset
-  characterName: 
+  characterName: Guard
   characterImage: {fileID: 0}

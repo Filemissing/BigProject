@@ -20,7 +20,7 @@ public class Guard : NPC
         StartCoroutine(Wander());
         DSP_ConversationManager.instance.OnConversationEnded += ResumeWandering;
 
-        player = GameManager.instance.player;
+        player = PlayerController.instance;
 
         // adjust wander parameters to fit a more patrol-like style
         keepOrder = true;

@@ -29,8 +29,6 @@ public class VisibilityManager : MonoBehaviour
     [SerializeField] private TurnInvisibleAnimation turnInvisibleAnimation;
     [SerializeField] private float duration = .2f;
 
-    private bool toggle = false;
-
 
 
     void Awake()
@@ -41,6 +39,9 @@ public class VisibilityManager : MonoBehaviour
     // Public Functions
     public void TurnVisible()
     {
+        if (!GameManager.instance.currentMainUIManager.SetMainUI(this))
+            return;
+        
         switch (turnVisibleAnimation)
         {
             case TurnVisibleAnimation.Fade:
@@ -51,6 +52,8 @@ public class VisibilityManager : MonoBehaviour
 
     public void TurnInvisible()
     {
+        GameManager.instance.currentMainUIManager.RemoveMainUI(this);
+        
         switch (turnInvisibleAnimation)
         {
             case TurnInvisibleAnimation.Fade:
@@ -71,12 +74,10 @@ public class VisibilityManager : MonoBehaviour
     // Helpers
     private void ToggleVisibility()
     {
-        if (toggle)
+        if (GameManager.instance.currentMainUIManager.currentMainUI == this)
             TurnInvisible();
         else
             TurnVisible();
-        
-        toggle = !toggle;
     }
     
     

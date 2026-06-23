@@ -415,8 +415,26 @@ MonoBehaviour:
     finalEvents: []
     finalConditions: []
   - id: 9
+    nodeType: 5
+    position: {x: 1818, y: -56}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 60c9965ebda44c54988e391668c5ebca, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 10
     nodeType: 1
-    position: {x: 1849, y: -70}
+    position: {x: 2339, y: -43}
     values:
     - type: 1
       intValue: 1
@@ -424,6 +442,24 @@ MonoBehaviour:
       stringValue: 
       boolValue: 0
       objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 11
+    nodeType: 5
+    position: {x: 2086, y: -43}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 294c17ffeb16bd5419fd94158f5a3fe2, type: 2}
       intArray: 
       floatArray: []
       stringArray: []
@@ -472,4 +508,12 @@ MonoBehaviour:
   - fromNode: 8
     outPortID: 0
     toNode: 9
+    inPortID: 0
+  - fromNode: 9
+    outPortID: 0
+    toNode: 11
+    inPortID: 0
+  - fromNode: 11
+    outPortID: 0
+    toNode: 10
     inPortID: 0

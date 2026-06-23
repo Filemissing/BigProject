@@ -3,7 +3,6 @@ using NaughtyAttributes;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor.XR;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -23,7 +22,7 @@ public class NPC : MonoBehaviour
     }
 
     [Header("Dialogue")]
-    [SerializeField] private DSP_CharacterAsset characterAsset;
+    public DSP_CharacterAsset characterAsset;
     [SerializeField] private DSP_ConversationGraphAsset[] conversations;
 
     private int currentConversationIndex = 0;
@@ -32,9 +31,13 @@ public class NPC : MonoBehaviour
     {
         PauseWandering();
 
-        RotateToward(GameManager.instance.player.transform.position);
+        RotateToward(PlayerController.instance.transform.position);
 
-        DSP_ConversationManager.instance.StartConversation(conversations[currentConversationIndex]);
+        if (conversations != null && conversations.Length > 0)
+        {
+            DSP_ConversationGraphAsset conversation = conversations[currentConversationIndex];
+            DSP_ConversationManager.instance.StartConversation(conversation);
+        }
 
         // last conversation will be repeated
         if (currentConversationIndex < conversations.Length - 1)
@@ -48,8 +51,19 @@ public class NPC : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(Wander());
+        if (pointsOfInterest.Count > 1 )
+            StartCoroutine(Wander());
+        
+    }
+
+    private void OnEnable()
+    {
         DSP_ConversationManager.instance.OnConversationEnded += ResumeWandering;
+    }
+
+    private void OnDisable()
+    {
+        DSP_ConversationManager.instance.OnConversationEnded -= ResumeWandering;
     }
 
     protected bool pauseWandering = false;
@@ -78,8 +92,12 @@ public class NPC : MonoBehaviour
 
                 if (keepOrder)
                     nextTarget = pointsOfInterest[(pointsOfInterest.IndexOf(target) + 1) % (pointsOfInterest.Count)];
-                else
-                    nextTarget = pointsOfInterest.Where(POI => POI != target).ElementAt(Random.Range(0, pointsOfInterest.Count - 1));
+                else if(pointsOfInterest.Count > 1)
+                {
+                    var otherPOIs = pointsOfInterest.Where(POI => POI != target).ToArray();
+                    int randomIndex = Random.Range(0, pointsOfInterest.Count - 1);
+                    nextTarget = otherPOIs[randomIndex];
+                }
 
                 nextTargetChosen = true;
 
