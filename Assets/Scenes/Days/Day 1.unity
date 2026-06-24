@@ -15334,22 +15334,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3095142134960779841, guid: 885cd65af1e82c1418e12f1a5a2a96fd, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1823909321}
     - target: {fileID: 5802171905835766667, guid: 885cd65af1e82c1418e12f1a5a2a96fd, type: 3}
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 7659212096376620256, guid: 885cd65af1e82c1418e12f1a5a2a96fd, type: 3}
-      propertyPath: inventory.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7659212096376620256, guid: 885cd65af1e82c1418e12f1a5a2a96fd, type: 3}
-      propertyPath: 'inventory.Array.data[0]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 4cc9a1096fffd6245b3ad0182a04ab4a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27207,17 +27195,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!114 &1823909321 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1194896385535753746, guid: 3f38c611dfc130745adabfebe2bb54f5, type: 3}
-  m_PrefabInstance: {fileID: 126356933}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c86a488869e14243adeade40fac9a80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!1 &1830050742
 GameObject:
   m_ObjectHideFlags: 0
