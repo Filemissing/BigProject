@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 664e79af2f21ddb4b9e73bdf5ab9f450, type: 3}
-  m_Name: ButcherEWW
+  m_Name: AxeObser
   m_EditorClassIdentifier: Assembly-CSharp::DSP_ConversationGraphAsset
   nodes:
   - id: 0
     nodeType: 0
-    position: {x: -157, y: -111}
+    position: {x: 0, y: 0}
     values: []
     eventParameters: []
     finalEvents: []
     finalConditions: []
   - id: 1
     nodeType: 2
-    position: {x: -2, y: -118}
+    position: {x: 141, y: 0}
     values:
     - type: 3
       intValue: 0
       floatValue: 0
-      stringValue: ...for your services...
+      stringValue: What is that? An axe?
       boolValue: 0
       objectValue: {fileID: 0}
       intArray: 
@@ -40,7 +40,7 @@ MonoBehaviour:
       floatValue: 0
       stringValue: 
       boolValue: 0
-      objectValue: {fileID: 11400000, guid: b1ee41c3770995a46b1e14f23dec4dd4, type: 2}
+      objectValue: {fileID: 11400000, guid: f76b187be59b792469e2ff63bf5dfc07, type: 2}
       intArray: 
       floatArray: []
       stringArray: []
@@ -61,29 +61,33 @@ MonoBehaviour:
     finalEvents: []
     finalConditions: []
   - id: 2
-    nodeType: 5
-    position: {x: 342, y: -107}
+    nodeType: 2
+    position: {x: 454, y: 0}
     values:
-    - type: 5
+    - type: 3
       intValue: 0
       floatValue: 0
-      stringValue: 
+      stringValue: 'Gross, it''s all bloody... And is that wool stuck to it? '
       boolValue: 0
-      objectValue: {fileID: 11400000, guid: d69c1a02e458d324289c372b5a0a6432, type: 2}
+      objectValue: {fileID: 0}
       intArray: 
       floatArray: []
       stringArray: []
       boolArray: 
       objectArray: []
-    eventParameters: []
-    finalEvents: []
-    finalConditions: []
-  - id: 3
-    nodeType: 1
-    position: {x: 922, y: -118}
-    values:
-    - type: 1
-      intValue: 1
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: f76b187be59b792469e2ff63bf5dfc07, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
       floatValue: 0
       stringValue: 
       boolValue: 0
@@ -96,16 +100,16 @@ MonoBehaviour:
     eventParameters: []
     finalEvents: []
     finalConditions: []
-  - id: 4
-    nodeType: 5
-    position: {x: 604, y: -107}
+  - id: 3
+    nodeType: 1
+    position: {x: 826, y: 10}
     values:
-    - type: 5
-      intValue: 0
+    - type: 1
+      intValue: 1
       floatValue: 0
       stringValue: 
       boolValue: 0
-      objectValue: {fileID: 11400000, guid: 74ab5b56821fc4540bd3318c4d8e7068, type: 2}
+      objectValue: {fileID: 0}
       intArray: 
       floatArray: []
       stringArray: []
@@ -124,10 +128,6 @@ MonoBehaviour:
     toNode: 2
     inPortID: 0
   - fromNode: 2
-    outPortID: 0
-    toNode: 4
-    inPortID: 0
-  - fromNode: 4
     outPortID: 0
     toNode: 3
     inPortID: 0
