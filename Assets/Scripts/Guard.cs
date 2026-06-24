@@ -10,7 +10,9 @@ public class Guard : NPC
     [SerializeField] float timeToNotice = 1f;
     [SerializeField] float timeToGiveUp = 5f;
 
+    [Header("Guard")]
     public AlertStatus alertStatus = AlertStatus.Unaware;
+    [SerializeField] Transform playerSetBackPoint;
 
     private PlayerController player;
     private void Start()
@@ -24,6 +26,7 @@ public class Guard : NPC
         // adjust wander parameters to fit a more patrol-like style
         keepOrder = true;
         stayDurationRange = new Vector2(5f, 5f);
+        rotationTime = .01f;
     }
 
     float visibleTimer = 0f;
@@ -44,34 +47,38 @@ public class Guard : NPC
         float distance = Vector3.Distance(transform.position, player.transform.position);
         float visibleDistance = player.isCrouched ? crouchedVisionDistance : visionDistance;
 
-        if (angle < FOV && distance < visionDistance)
+        if (angle < FOV && distance < visibleDistance)
         {
-            if (alertStatus == AlertStatus.Unaware)
+            Physics.Raycast(transform.position + Vector3.up, toPlayer, out RaycastHit hit, visibleDistance);
+            if (hit.collider?.gameObject && hit.collider?.gameObject == player.gameObject)
             {
-                alertStatus = AlertStatus.Suspicious;
-                suspiciousPoint = player.transform.position;
-            }
+                if (alertStatus == AlertStatus.Unaware)
+                {
+                    alertStatus = AlertStatus.Suspicious;
+                    suspiciousPoint = player.transform.position;
+                }
 
-            // give the player some time to hide if they were crouching
-            if (alertStatus == AlertStatus.Suspicious)
-            {
-                if (player.isCrouched)
-                    visibleTimer += Time.deltaTime;
-                else
+                // give the player some time to hide if they were crouching
+                if (alertStatus == AlertStatus.Suspicious)
+                {
+                    if (player.isCrouched)
+                        visibleTimer += Time.deltaTime;
+                    else
+                        alertStatus = AlertStatus.Found;
+                }
+                if (visibleTimer > timeToNotice)
+                {
+                    visibleTimer = 0f;
                     alertStatus = AlertStatus.Found;
-            }
-            if (visibleTimer > timeToNotice)
-            {
-                visibleTimer = 0f;
-                alertStatus = AlertStatus.Found;
-            }
+                }
 
-            // if they were searhing they will notice immediately no matter what
-            if (alertStatus == AlertStatus.Searching)
-                alertStatus = AlertStatus.Found;
+                // if they were searhing they will notice immediately no matter what
+                if (alertStatus == AlertStatus.Searching)
+                    alertStatus = AlertStatus.Found;
 
-            if (alertStatus == AlertStatus.Found)
-                suspiciousPoint = player.transform.position;
+                if (alertStatus == AlertStatus.Found)
+                    suspiciousPoint = player.transform.position; 
+            }
         }
         else // player is not visible
         {
@@ -96,6 +103,9 @@ public class Guard : NPC
         // act based on state
         if (alertStatus == AlertStatus.Unaware)
         {
+            agent.speed = 3.5f;
+            agent.acceleration = 8;
+            agent.angularSpeed = 360;
             ResumeWandering();
             return; // handled by wander loop in NPC
         }
@@ -113,12 +123,24 @@ public class Guard : NPC
         if (alertStatus == AlertStatus.Searching || alertStatus == AlertStatus.Found)
         {
             // works for both Searching and Found, the difference is in updating the suspiciousPoint
+            agent.speed = 12;
+            agent.acceleration = 500;
+            agent.angularSpeed = 3000;
             agent.destination = suspiciousPoint;
             
             if (HasAgentArrived())
             {
                 RotateToward(player.transform.position);
             }
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            PlayDialogue();
+            player.transform.position = playerSetBackPoint.position;
         }
     }
 
