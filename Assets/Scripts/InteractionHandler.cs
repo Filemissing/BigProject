@@ -16,8 +16,7 @@ public class InteractionHandler : MonoBehaviour
             instance = this;
         }
     }
-
-    [SerializeField] private KeyCode key = KeyCode.E;
+    
     [SerializeField] private float radius = 2f;
     public GameObject[] interactionPrompts;
     [HideInInspector] public List<Interactable> interactables = new List<Interactable>();
@@ -43,7 +42,7 @@ public class InteractionHandler : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(key) && Vector3.Distance(nearest.transform.position, transform.position) <= radius && !isBusy)
+        if (Input.GetKeyDown(GameManager.instance.settings.interactKey) && Vector3.Distance(nearest.transform.position, transform.position) <= radius && !isBusy)
         {
             nearest?.Interact();
         }

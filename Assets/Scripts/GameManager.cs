@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
     public GameObject interactionPromptPrefab;
     public InputHandler inputHandler;
     public CurrentMainUIManager currentMainUIManager;
+    public Settings settings;
 
     [Header("Day/Night Cycle")]
     [SerializeField] List<Day> days;

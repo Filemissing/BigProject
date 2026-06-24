@@ -173,13 +173,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   speed: 5
-  sprintKey: 304
   sprintSpeed: 10
-  crouchKey: 306
   crouchScale: 0.5
   crouchTransitionDuration: 0.2
   crouchSpeed: 3
-  mouseSensitivity: 1
+  additionalMouseSensitivity: 0.8
   cameraAnchor: {fileID: 8801462057061667394}
   upLookLimit: 80
   downLookLimit: 80
@@ -195,7 +193,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb5d4c770e8ba6f4592faa432d60089b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  key: 101
   radius: 3.5
   interactionPrompts:
   - {fileID: 4716927393694428065, guid: 8f810a18fd767794b99d1b0176191eb6, type: 3}

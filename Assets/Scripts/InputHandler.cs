@@ -1,29 +1,18 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class InputHandler : MonoBehaviour
 {
-    [Header("Keys")]
-    [SerializeField] private KeyCode inventoryToggle = KeyCode.I;
-    [SerializeField] private KeyCode journalToggle = KeyCode.J;
-    [SerializeField] private KeyCode TEMP_CursorUnlock = KeyCode.LeftAlt;
-    
     // Events
     public event Action OnInventoryToggle;
     public event Action onJournalToggle;
+    public event Action onPauseToggle;
 
     void Update()
     {
-        if (Input.GetKeyDown(inventoryToggle)) OnInventoryToggle?.Invoke();
-        if (Input.GetKeyDown(journalToggle)) onJournalToggle?.Invoke();
-        
-        // Temporary cursor unlock
-        if (Input.GetKeyDown(TEMP_CursorUnlock))
-        {
-            if (Cursor.lockState == CursorLockMode.None)
-                GameManager.instance.player.UnlockCharacter();
-            else
-                GameManager.instance.player.LockCharacter();
-        }
+        if (Input.GetKeyDown(GameManager.instance.settings.inventoryKey)) OnInventoryToggle?.Invoke();
+        if (Input.GetKeyDown(GameManager.instance.settings.journalKey)) onJournalToggle?.Invoke();
+        if (Input.GetKeyDown(GameManager.instance.settings.pauseKey)) onPauseToggle?.Invoke();
     }
 }

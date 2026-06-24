@@ -24,11 +24,14 @@ public class VisibilityManager : MonoBehaviour
     [SerializeField] private CanvasGroup canvasGroup;
 
     [Header("Settings")]
+    [SerializeField] private bool careAboutOthers = true;
     [SerializeField] private EventType eventType;
     [SerializeField] private TurnVisibleAnimation turnVisibleAnimation;
     [SerializeField] private TurnInvisibleAnimation turnInvisibleAnimation;
     [SerializeField] private float duration = .2f;
 
+    private bool toggle = false;
+    
 
 
     void Awake()
@@ -39,8 +42,11 @@ public class VisibilityManager : MonoBehaviour
     // Public Functions
     public void TurnVisible()
     {
-        if (!GameManager.instance.currentMainUIManager.SetMainUI(this))
-            return;
+        if (careAboutOthers)
+            if (!GameManager.instance.currentMainUIManager.SetMainUI(this))
+                return;
+        
+        toggle = true;
         
         switch (turnVisibleAnimation)
         {
@@ -52,7 +58,8 @@ public class VisibilityManager : MonoBehaviour
 
     public void TurnInvisible()
     {
-        GameManager.instance.currentMainUIManager.RemoveMainUI(this);
+        if (careAboutOthers) GameManager.instance.currentMainUIManager.RemoveMainUI(this);
+        toggle = false;
         
         switch (turnInvisibleAnimation)
         {
@@ -74,10 +81,20 @@ public class VisibilityManager : MonoBehaviour
     // Helpers
     private void ToggleVisibility()
     {
-        if (GameManager.instance.currentMainUIManager.currentMainUI == this)
-            TurnInvisible();
+        if (careAboutOthers)
+        {
+            if (GameManager.instance.currentMainUIManager.currentMainUI == this)
+                TurnInvisible();
+            else
+                TurnVisible();
+        }
         else
-            TurnVisible();
+        {
+            if (toggle)
+                TurnInvisible();
+            else
+                TurnVisible();
+        }
     }
     
     
@@ -88,7 +105,7 @@ public class VisibilityManager : MonoBehaviour
         // Stop any current tweens
         canvasGroup.DOKill();
         
-        canvasGroup.DOFade(1, duration).SetEase(Ease.OutCubic);
+        canvasGroup.DOFade(1, duration).SetEase(Ease.OutCubic).SetUpdate(true);
         canvasGroup.interactable = true;
         canvasGroup.blocksRaycasts = true;
     }
@@ -101,7 +118,7 @@ public class VisibilityManager : MonoBehaviour
         // Stop any current tweens
         canvasGroup.DOKill();
         
-        canvasGroup.DOFade(0, duration).SetEase(Ease.OutCubic);
+        canvasGroup.DOFade(0, duration).SetEase(Ease.OutCubic).SetUpdate(true);
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
     }
