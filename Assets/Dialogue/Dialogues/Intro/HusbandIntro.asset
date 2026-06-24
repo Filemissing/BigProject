@@ -15,14 +15,14 @@ MonoBehaviour:
   nodes:
   - id: 0
     nodeType: 0
-    position: {x: -928, y: 388.66666}
+    position: {x: -928, y: 389}
     values: []
     eventParameters: []
     finalEvents: []
     finalConditions: []
   - id: 1
     nodeType: 2
-    position: {x: -736.6666, y: 381.3333}
+    position: {x: -737, y: 381}
     values:
     - type: 3
       intValue: 0
@@ -62,7 +62,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 2
     nodeType: 2
-    position: {x: -378.6667, y: 381.3333}
+    position: {x: -379, y: 381}
     values:
     - type: 3
       intValue: 0
@@ -103,7 +103,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 3
     nodeType: 3
-    position: {x: 58, y: 381.3333}
+    position: {x: 58, y: 381}
     values:
     - type: 8
       intValue: 0
@@ -216,7 +216,7 @@ MonoBehaviour:
         objectArray: []
   - id: 4
     nodeType: 2
-    position: {x: 736.6667, y: 493.33334}
+    position: {x: 737, y: 493}
     values:
     - type: 3
       intValue: 0
@@ -257,7 +257,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 5
     nodeType: 2
-    position: {x: 1150.6666, y: 493.33334}
+    position: {x: 1151, y: 493}
     values:
     - type: 3
       intValue: 0
@@ -297,7 +297,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 6
     nodeType: 2
-    position: {x: 396, y: 493.33334}
+    position: {x: 396, y: 493}
     values:
     - type: 3
       intValue: 0
@@ -337,7 +337,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 7
     nodeType: 2
-    position: {x: 942, y: 225.33333}
+    position: {x: 942, y: 225}
     values:
     - type: 3
       intValue: 0
@@ -378,7 +378,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 8
     nodeType: 2
-    position: {x: 476, y: 225.33333}
+    position: {x: 476, y: 225}
     values:
     - type: 3
       intValue: 0
@@ -420,13 +420,12 @@ MonoBehaviour:
     finalConditions: []
   - id: 9
     nodeType: 2
-    position: {x: 1636, y: 493.33334}
+    position: {x: 1636, y: 493}
     values:
     - type: 3
       intValue: 0
       floatValue: 0
-      stringValue: For now you should go back to bed, it's not like we can do anything
-        right now.
+      stringValue: For now, you should go back to bed. Tomorrow's another day.
       boolValue: 0
       objectValue: {fileID: 0}
       intArray: 
@@ -461,7 +460,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 10
     nodeType: 1
-    position: {x: 2239.3335, y: 493.33334}
+    position: {x: 2239, y: 493}
     values:
     - type: 1
       intValue: 1

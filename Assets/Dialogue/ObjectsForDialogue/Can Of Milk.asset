@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47d5a1aab1955814f8f0160f91f760c4, type: 3}
-  m_Name: Straw Doll
+  m_Name: Can Of Milk
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  title: Straw Doll
-  description: A doll, made from old straw. Its smile is guaranteed to creep anyone
-    out.
+  title: 
+  description: 
   sprite: {fileID: 0}
-  model: {fileID: 6186806649335260992, guid: 0ceb9521ce4deea409f23833df89b75a, type: 3}
+  model: {fileID: 0}
   defaultRotation: {x: 0, y: 0, z: 0}
   defaultScale: {x: 1, y: 1, z: 1}

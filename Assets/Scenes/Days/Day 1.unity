@@ -2583,6 +2583,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4934200052846533329, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: characterAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: acaa7fa4d13948b4e8a3f6e76eb248e8, type: 2}
+    - target: {fileID: 4934200052846533329, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: conversations.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -6678,6 +6682,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4934200052846533329, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: characterAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: acaa7fa4d13948b4e8a3f6e76eb248e8, type: 2}
+    - target: {fileID: 4934200052846533329, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: conversations.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -7542,6 +7550,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4934200052846533329, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: characterAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 93021c4853d69ec4f910ed285a8ed018, type: 2}
+    - target: {fileID: 4934200052846533329, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: conversations.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -7568,6 +7580,14 @@ PrefabInstance:
     - target: {fileID: 5379631661938212770, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: m_Name
       value: NPC Priest
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: passiveDialogueEntryDatas.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: 'passiveDialogueEntryDatas.Array.data[0]'
+      value: The sermon this Sunday... hmm. I am getting too old for this.
       objectReference: {fileID: 0}
     - target: {fileID: 7734272789918961846, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: m_Avatar
@@ -13799,6 +13819,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4934200052846533329, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: characterAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: acaa7fa4d13948b4e8a3f6e76eb248e8, type: 2}
+    - target: {fileID: 4934200052846533329, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: conversations.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -14747,6 +14771,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4934200052846533329, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: characterAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: acaa7fa4d13948b4e8a3f6e76eb248e8, type: 2}
+    - target: {fileID: 4934200052846533329, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: conversations.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -15215,6 +15243,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4934200052846533329, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: characterAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 6afdad30389fbd4449cddf897ac9bfa4, type: 2}
+    - target: {fileID: 4934200052846533329, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: 'conversations.Array.data[0]'
       value: 
       objectReference: {fileID: 11400000, guid: f34f98f9019c66f4ab69bf553bdd3b4a, type: 2}
@@ -15241,6 +15273,14 @@ PrefabInstance:
     - target: {fileID: 5379631661938212770, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: m_Name
       value: NPC Magistrate
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: passiveDialogueEntryDatas.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: 'passiveDialogueEntryDatas.Array.data[0]'
+      value: ... that damned woman...
       objectReference: {fileID: 0}
     - target: {fileID: 7734272789918961846, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: m_Avatar
@@ -23500,6 +23540,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4934200052846533329, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: characterAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 0410b7fb99c0d9249bac61982de3ca1e, type: 2}
+    - target: {fileID: 4934200052846533329, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: 'conversations.Array.data[0]'
       value: 
       objectReference: {fileID: 11400000, guid: 87fb2612f2e5a7d4fb1e94bfab197111, type: 2}
@@ -23518,6 +23562,14 @@ PrefabInstance:
     - target: {fileID: 5379631661938212770, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: m_Name
       value: NPC Husband
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: passiveDialogueEntryDatas.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: 'passiveDialogueEntryDatas.Array.data[0]'
+      value: Good morning.
       objectReference: {fileID: 0}
     - target: {fileID: 7734272789918961846, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: m_Avatar

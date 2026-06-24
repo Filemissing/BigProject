@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 664e79af2f21ddb4b9e73bdf5ab9f450, type: 3}
-  m_Name: ButcherEWW
+  m_Name: MarketCall
   m_EditorClassIdentifier: Assembly-CSharp::DSP_ConversationGraphAsset
   nodes:
   - id: 0
     nodeType: 0
-    position: {x: -157, y: -111}
+    position: {x: 0, y: 0}
     values: []
     eventParameters: []
     finalEvents: []
     finalConditions: []
   - id: 1
     nodeType: 2
-    position: {x: -2, y: -118}
+    position: {x: 140, y: 0}
     values:
     - type: 3
       intValue: 0
       floatValue: 0
-      stringValue: ...for your services...
+      stringValue: 'Leather! Shoes! Get your new shoes here! '
       boolValue: 0
       objectValue: {fileID: 0}
       intArray: 
@@ -35,12 +35,12 @@ MonoBehaviour:
       stringArray: []
       boolArray: 
       objectArray: []
-    - type: 5
+    - type: 0
       intValue: 0
       floatValue: 0
       stringValue: 
       boolValue: 0
-      objectValue: {fileID: 11400000, guid: b1ee41c3770995a46b1e14f23dec4dd4, type: 2}
+      objectValue: {fileID: 0}
       intArray: 
       floatArray: []
       stringArray: []
@@ -61,15 +61,37 @@ MonoBehaviour:
     finalEvents: []
     finalConditions: []
   - id: 2
-    nodeType: 5
-    position: {x: 342, y: -107}
+    nodeType: 2
+    position: {x: 436, y: 0}
     values:
-    - type: 5
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: Bread and baked rolls - stop by for a snack!
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
       intValue: 0
       floatValue: 0
       stringValue: 
       boolValue: 0
-      objectValue: {fileID: 11400000, guid: d69c1a02e458d324289c372b5a0a6432, type: 2}
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
       intArray: 
       floatArray: []
       stringArray: []
@@ -79,8 +101,48 @@ MonoBehaviour:
     finalEvents: []
     finalConditions: []
   - id: 3
+    nodeType: 2
+    position: {x: 762, y: 0}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: Fresh meat cuts for sale!
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 4
     nodeType: 1
-    position: {x: 922, y: -118}
+    position: {x: 1427, y: 10}
     values:
     - type: 1
       intValue: 1
@@ -96,10 +158,32 @@ MonoBehaviour:
     eventParameters: []
     finalEvents: []
     finalConditions: []
-  - id: 4
-    nodeType: 5
-    position: {x: 604, y: -107}
+  - id: 5
+    nodeType: 2
+    position: {x: 1081, y: 0}
     values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: Imports from other lands - all new and exotic!
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
     - type: 0
       intValue: 0
       floatValue: 0
@@ -125,9 +209,13 @@ MonoBehaviour:
     inPortID: 0
   - fromNode: 2
     outPortID: 0
-    toNode: 4
-    inPortID: 0
-  - fromNode: 4
-    outPortID: 0
     toNode: 3
+    inPortID: 0
+  - fromNode: 3
+    outPortID: 0
+    toNode: 5
+    inPortID: 0
+  - fromNode: 5
+    outPortID: 0
+    toNode: 4
     inPortID: 0
