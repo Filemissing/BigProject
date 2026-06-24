@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47d5a1aab1955814f8f0160f91f760c4, type: 3}
+  m_Name: Conversation
+  m_EditorClassIdentifier: Assembly-CSharp::Item
+  title: Conversation?
+  description: What
+  sprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  model: {fileID: 7058273347260566982, guid: 1db2d6e29bf44af4ca1a6f55c9644b47, type: 3}
+  defaultRotation: {x: 0, y: 0, z: 0}
+  defaultScale: {x: 1, y: 1, z: 1}
