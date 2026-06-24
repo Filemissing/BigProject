@@ -148,10 +148,11 @@ public class NPC : MonoBehaviour
         return !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance && (!agent.hasPath || agent.velocity.sqrMagnitude == 0f);
     }
 
+    protected float rotationTime = 1f;
     public void RotateToward(Vector3 point)
     {
         transform.DOKill();
-        transform.DOLookAt(point, 1f, AxisConstraint.Y, Vector3.up);
+        transform.DOLookAt(point, rotationTime, AxisConstraint.Y, Vector3.up);
     }
 
     [Button] public void PauseWandering()
