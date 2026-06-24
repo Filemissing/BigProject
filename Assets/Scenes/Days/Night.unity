@@ -1607,6 +1607,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1533149787}
     m_Modifications:
+    - target: {fileID: 3883865384041078990, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
+      propertyPath: m_Name
+      value: Marketstall (20)
+      objectReference: {fileID: 0}
     - target: {fileID: 6810849466600400443, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
       propertyPath: m_LocalPosition.x
       value: 138.64
@@ -1646,10 +1650,6 @@ PrefabInstance:
     - target: {fileID: 6810849466600400443, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3883865384041078990, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
-      propertyPath: m_Name
-      value: Marketstall (20)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2332,6 +2332,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5110715243312108599, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5379631661938212770, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: m_Name
       value: NPC Guard 4
@@ -2354,7 +2358,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5379631661938212770, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
-      insertIndex: -1
+      insertIndex: 1
       addedObject: {fileID: 677043941}
   m_SourcePrefab: {fileID: 100100000, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
 --- !u!4 &63049174 stripped
@@ -8284,6 +8288,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5110715243312108599, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5379631661938212770, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: m_Name
       value: NPC Guard 2
@@ -8314,7 +8322,7 @@ PrefabInstance:
       addedObject: {fileID: 832302615}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5379631661938212770, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
-      insertIndex: -1
+      insertIndex: 1
       addedObject: {fileID: 384201942}
   m_SourcePrefab: {fileID: 100100000, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
 --- !u!4 &384201935 stripped
@@ -8340,8 +8348,8 @@ MonoBehaviour:
   - {fileID: 2112166321}
   - {fileID: 1001825579}
   FOV: 45
-  visionDistance: 0
-  crouchedVisionDistance: 0
+  visionDistance: 10
+  crouchedVisionDistance: 7
   timeToNotice: 1
   timeToGiveUp: 5
   alertStatus: 0
@@ -12673,6 +12681,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1533149787}
     m_Modifications:
+    - target: {fileID: 3883865384041078990, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
+      propertyPath: m_Name
+      value: Marketstall (18)
+      objectReference: {fileID: 0}
     - target: {fileID: 6810849466600400443, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
       propertyPath: m_LocalPosition.x
       value: 150.3
@@ -12712,10 +12724,6 @@ PrefabInstance:
     - target: {fileID: 6810849466600400443, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3883865384041078990, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
-      propertyPath: m_Name
-      value: Marketstall (18)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14195,6 +14203,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1533149787}
     m_Modifications:
+    - target: {fileID: 3883865384041078990, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
+      propertyPath: m_Name
+      value: Marketstall (22)
+      objectReference: {fileID: 0}
     - target: {fileID: 6810849466600400443, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
       propertyPath: m_LocalPosition.x
       value: 127.49
@@ -14234,10 +14246,6 @@ PrefabInstance:
     - target: {fileID: 6810849466600400443, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3883865384041078990, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
-      propertyPath: m_Name
-      value: Marketstall (22)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16441,8 +16449,8 @@ MonoBehaviour:
   pointsOfInterest:
   - {fileID: 255292594}
   FOV: 45
-  visionDistance: 0
-  crouchedVisionDistance: 0
+  visionDistance: 10
+  crouchedVisionDistance: 7
   timeToNotice: 1
   timeToGiveUp: 5
   alertStatus: 0
@@ -19005,6 +19013,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1533149787}
     m_Modifications:
+    - target: {fileID: 3883865384041078990, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
+      propertyPath: m_Name
+      value: Marketstall (14)
+      objectReference: {fileID: 0}
     - target: {fileID: 6810849466600400443, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
       propertyPath: m_LocalPosition.x
       value: 144.47
@@ -19044,10 +19056,6 @@ PrefabInstance:
     - target: {fileID: 6810849466600400443, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3883865384041078990, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
-      propertyPath: m_Name
-      value: Marketstall (14)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21865,6 +21873,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5110715243312108599, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5379631661938212770, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: m_Name
       value: NPC Guard 3
@@ -21888,7 +21900,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5379631661938212770, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
-      insertIndex: -1
+      insertIndex: 1
       addedObject: {fileID: 1312761200}
   m_SourcePrefab: {fileID: 100100000, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
 --- !u!4 &929332202 stripped
@@ -23800,6 +23812,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5110715243312108599, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5379631661938212770, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: m_Name
       value: NPC Guard 1
@@ -23823,7 +23839,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5379631661938212770, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
-      insertIndex: -1
+      insertIndex: 1
       addedObject: {fileID: 1107594373}
   m_SourcePrefab: {fileID: 100100000, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
 --- !u!4 &997453965 stripped
@@ -27043,8 +27059,8 @@ MonoBehaviour:
   - {fileID: 1977100384}
   - {fileID: 189634735}
   FOV: 45
-  visionDistance: 0
-  crouchedVisionDistance: 0
+  visionDistance: 10
+  crouchedVisionDistance: 7
   timeToNotice: 1
   timeToGiveUp: 5
   alertStatus: 0
@@ -32509,8 +32525,8 @@ MonoBehaviour:
   - {fileID: 40160914}
   - {fileID: 2086579993}
   FOV: 45
-  visionDistance: 0
-  crouchedVisionDistance: 0
+  visionDistance: 10
+  crouchedVisionDistance: 7
   timeToNotice: 1
   timeToGiveUp: 5
   alertStatus: 0
@@ -43039,6 +43055,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1533149787}
     m_Modifications:
+    - target: {fileID: 3883865384041078990, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
+      propertyPath: m_Name
+      value: Marketstall (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 6810849466600400443, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
       propertyPath: m_LocalPosition.x
       value: 155.82
@@ -43078,10 +43098,6 @@ PrefabInstance:
     - target: {fileID: 6810849466600400443, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3883865384041078990, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
-      propertyPath: m_Name
-      value: Marketstall (12)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -48008,6 +48024,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1533149787}
     m_Modifications:
+    - target: {fileID: 3883865384041078990, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
+      propertyPath: m_Name
+      value: Marketstall (16)
+      objectReference: {fileID: 0}
     - target: {fileID: 6810849466600400443, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
       propertyPath: m_LocalPosition.x
       value: 132.84
@@ -48047,10 +48067,6 @@ PrefabInstance:
     - target: {fileID: 6810849466600400443, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3883865384041078990, guid: b2e1a5f1ddfd2f443a65529389a14bce, type: 3}
-      propertyPath: m_Name
-      value: Marketstall (16)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -51030,6 +51046,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5110715243312108599, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: onInteracted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5379631661938212770, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: m_Name
       value: NPC Guard 5
@@ -51060,7 +51080,7 @@ PrefabInstance:
       addedObject: {fileID: 556275085}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5379631661938212770, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
-      insertIndex: -1
+      insertIndex: 1
       addedObject: {fileID: 1976581520}
   m_SourcePrefab: {fileID: 100100000, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
 --- !u!4 &1976581513 stripped
@@ -51085,8 +51105,8 @@ MonoBehaviour:
   pointsOfInterest:
   - {fileID: 1637762975}
   FOV: 45
-  visionDistance: 0
-  crouchedVisionDistance: 0
+  visionDistance: 10
+  crouchedVisionDistance: 7
   timeToNotice: 1
   timeToGiveUp: 5
   alertStatus: 0

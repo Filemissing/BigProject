@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 
+[DisallowMultipleComponent]
 public class Guard : NPC
 {
     [SerializeField] float FOV = 45;
