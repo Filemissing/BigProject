@@ -22,15 +22,16 @@ public class InventoryData : MonoBehaviour
         inventory.Remove(item);
         OnItemRemoved?.Invoke();
     }
-
-    public static bool TryRemoveItem(Item item)
+    public static void StaticRemoveItem(Item item)
     {
         InventoryData instance = GameManager.instance.inventoryData;
-        if (instance.inventory.Contains(item))
-        {
-            instance.RemoveItem(item);
-            return true;
-        }
-        return false;
+        instance.RemoveItem(item);
+    }
+
+    public static bool HasItem(Item item)
+    {
+        InventoryData instance = GameManager.instance.inventoryData;
+
+        return instance.inventory.Contains(item);
     }
 }
