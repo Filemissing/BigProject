@@ -8623,6 +8623,7 @@ MonoBehaviour:
   timeToNotice: 1
   timeToGiveUp: 5
   alertStatus: 0
+  playerSetBackPoint: {fileID: 0}
 --- !u!1001 &386051062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13355,7 +13356,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f734af981e7299d4a973d31debab8ed0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f734af981e7299d4a973d31debab8ed0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13363,7 +13364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f734af981e7299d4a973d31debab8ed0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f734af981e7299d4a973d31debab8ed0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16786,6 +16787,7 @@ MonoBehaviour:
   timeToNotice: 1
   timeToGiveUp: 5
   alertStatus: 0
+  playerSetBackPoint: {fileID: 0}
 --- !u!1001 &687605659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19809,15 +19811,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: b938a69f25c45264482aaceeab0b7f99, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.25891113
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b938a69f25c45264482aaceeab0b7f99, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b938a69f25c45264482aaceeab0b7f99, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.23550415
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b938a69f25c45264482aaceeab0b7f99, type: 3}
       propertyPath: m_LocalRotation.w
@@ -27458,6 +27460,7 @@ MonoBehaviour:
   timeToNotice: 1
   timeToGiveUp: 5
   alertStatus: 0
+  playerSetBackPoint: {fileID: 0}
 --- !u!1001 &1109767400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33155,6 +33158,7 @@ MonoBehaviour:
   timeToNotice: 1
   timeToGiveUp: 5
   alertStatus: 0
+  playerSetBackPoint: {fileID: 0}
 --- !u!1001 &1318030577
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43112,7 +43116,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f734af981e7299d4a973d31debab8ed0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f734af981e7299d4a973d31debab8ed0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -43120,7 +43124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f734af981e7299d4a973d31debab8ed0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f734af981e7299d4a973d31debab8ed0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -52078,6 +52082,7 @@ MonoBehaviour:
   timeToNotice: 1
   timeToGiveUp: 5
   alertStatus: 0
+  playerSetBackPoint: {fileID: 0}
 --- !u!1001 &1977017042
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57066,6 +57071,7 @@ MonoBehaviour:
   timeToNotice: 1
   timeToGiveUp: 5
   alertStatus: 0
+  playerSetBackPoint: {fileID: 0}
 --- !u!1001 &2114223537
 PrefabInstance:
   m_ObjectHideFlags: 0
