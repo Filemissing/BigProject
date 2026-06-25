@@ -19,6 +19,10 @@ public class JournalView : MonoBehaviour
     [SerializeField] private List<Button> dayButtons = new List<Button>();
     [SerializeField] private List<Button> nightButtons = new List<Button>();
     
+    [Header("Settings")]
+    [SerializeField] private List<string> dayStrings = new List<string>();
+    [SerializeField] private List<string> nightStrings = new List<string>();
+    
     
 
     [Button]
@@ -33,7 +37,7 @@ public class JournalView : MonoBehaviour
         int dayIndex = dayButtons.IndexOf(selectedTab);
         if (dayIndex != -1)
         {
-            title.text = "Day " + (dayIndex + 1);
+            title.text = dayStrings[dayIndex];
             descriptionLeft.text = GameManager.instance.journalData.days[dayIndex];
             descriptionRight.text = GameManager.instance.journalData.days[dayIndex];
             return;
@@ -43,7 +47,7 @@ public class JournalView : MonoBehaviour
         int nightIndex = nightButtons.IndexOf(selectedTab);
         if (nightIndex != -1)
         {
-            title.text = "Night " + (nightIndex + 1);
+            title.text = nightStrings[nightIndex];
             descriptionLeft.text = GameManager.instance.journalData.nights[nightIndex];
             descriptionRight.text = GameManager.instance.journalData.nights[nightIndex];
             return;

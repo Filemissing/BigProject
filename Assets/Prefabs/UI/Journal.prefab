@@ -651,6 +651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VisibilityManager
   canvasGroup: {fileID: 8196752927800238370}
+  careAboutOthers: 1
   eventType: 2
   turnVisibleAnimation: 0
   turnInvisibleAnimation: 0
