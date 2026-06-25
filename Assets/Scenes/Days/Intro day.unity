@@ -7615,6 +7615,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4934200052846533329, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: characterAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 93021c4853d69ec4f910ed285a8ed018, type: 2}
+    - target: {fileID: 4934200052846533329, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: conversations.Array.size
       value: 1
       objectReference: {fileID: 0}

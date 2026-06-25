@@ -8612,7 +8612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37e9c4334b6eb946afdf27908bdc8d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Guard
-  characterAsset: {fileID: 0}
+  characterAsset: {fileID: 11400000, guid: acaa7fa4d13948b4e8a3f6e76eb248e8, type: 2}
   conversations: []
   pointsOfInterest:
   - {fileID: 2112166321}
@@ -16777,7 +16777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37e9c4334b6eb946afdf27908bdc8d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Guard
-  characterAsset: {fileID: 0}
+  characterAsset: {fileID: 11400000, guid: acaa7fa4d13948b4e8a3f6e76eb248e8, type: 2}
   conversations: []
   pointsOfInterest:
   - {fileID: 255292594}
@@ -19647,6 +19647,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &827448024
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4887552847018606147, guid: e91c7af6e47b218409e16f6a9e5e8365, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 182.68082
+      objectReference: {fileID: 0}
+    - target: {fileID: 4887552847018606147, guid: e91c7af6e47b218409e16f6a9e5e8365, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4276543
+      objectReference: {fileID: 0}
+    - target: {fileID: 4887552847018606147, guid: e91c7af6e47b218409e16f6a9e5e8365, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 81.225716
+      objectReference: {fileID: 0}
+    - target: {fileID: 4887552847018606147, guid: e91c7af6e47b218409e16f6a9e5e8365, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4887552847018606147, guid: e91c7af6e47b218409e16f6a9e5e8365, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4887552847018606147, guid: e91c7af6e47b218409e16f6a9e5e8365, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4887552847018606147, guid: e91c7af6e47b218409e16f6a9e5e8365, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4887552847018606147, guid: e91c7af6e47b218409e16f6a9e5e8365, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4887552847018606147, guid: e91c7af6e47b218409e16f6a9e5e8365, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4887552847018606147, guid: e91c7af6e47b218409e16f6a9e5e8365, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6953383238505740443, guid: e91c7af6e47b218409e16f6a9e5e8365, type: 3}
+      propertyPath: m_Name
+      value: LAMP
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e91c7af6e47b218409e16f6a9e5e8365, type: 3}
 --- !u!1001 &829642976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27449,7 +27506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37e9c4334b6eb946afdf27908bdc8d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Guard
-  characterAsset: {fileID: 0}
+  characterAsset: {fileID: 11400000, guid: acaa7fa4d13948b4e8a3f6e76eb248e8, type: 2}
   conversations: []
   pointsOfInterest:
   - {fileID: 1977100384}
@@ -33147,7 +33204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37e9c4334b6eb946afdf27908bdc8d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Guard
-  characterAsset: {fileID: 0}
+  characterAsset: {fileID: 11400000, guid: acaa7fa4d13948b4e8a3f6e76eb248e8, type: 2}
   conversations: []
   pointsOfInterest:
   - {fileID: 40160914}
@@ -52072,7 +52129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37e9c4334b6eb946afdf27908bdc8d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Guard
-  characterAsset: {fileID: 0}
+  characterAsset: {fileID: 11400000, guid: acaa7fa4d13948b4e8a3f6e76eb248e8, type: 2}
   conversations: []
   pointsOfInterest:
   - {fileID: 1637762975}
@@ -57059,7 +57116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b37e9c4334b6eb946afdf27908bdc8d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Guard
-  characterAsset: {fileID: 0}
+  characterAsset: {fileID: 11400000, guid: acaa7fa4d13948b4e8a3f6e76eb248e8, type: 2}
   conversations: []
   pointsOfInterest:
   - {fileID: 1842429958}
@@ -58316,3 +58373,4 @@ SceneRoots:
   - {fileID: 1998183373}
   - {fileID: 1063657528}
   - {fileID: 1489072814}
+  - {fileID: 827448024}
