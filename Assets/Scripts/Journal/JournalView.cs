@@ -102,11 +102,11 @@ public class JournalView : MonoBehaviour
     // Event Bindings
     private void OnEnable()
     {
-        JournalData.JournalUpdated += UpdateView;
+        GameManager.instance.journalData.JournalUpdated += UpdateView;
     }
     
     private void OnDisable()
     {
-        JournalData.JournalUpdated -= UpdateView;
+        GameManager.instance.journalData.JournalUpdated -= UpdateView;
     }
 }

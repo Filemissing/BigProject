@@ -9,7 +9,7 @@ public class JournalData : MonoBehaviour
     public string[] days = new string[5];
     public string[] nights = new string[5];
 
-    public static event Action JournalUpdated;
+    public event Action JournalUpdated;
     
     
     
