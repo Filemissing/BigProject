@@ -103,7 +103,7 @@ public class Guard : NPC
         // act based on state
         if (alertStatus == AlertStatus.Unaware)
         {
-            agent.speed = 3.5f;
+            agent.speed = 2.7f;
             agent.acceleration = 8;
             agent.angularSpeed = 360;
             ResumeWandering();
