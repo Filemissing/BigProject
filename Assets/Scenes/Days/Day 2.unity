@@ -26793,14 +26793,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 7659212096376620256, guid: 885cd65af1e82c1418e12f1a5a2a96fd, type: 3}
-      propertyPath: inventory.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7659212096376620256, guid: 885cd65af1e82c1418e12f1a5a2a96fd, type: 3}
-      propertyPath: 'inventory.Array.data[0]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 4cc9a1096fffd6245b3ad0182a04ab4a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
