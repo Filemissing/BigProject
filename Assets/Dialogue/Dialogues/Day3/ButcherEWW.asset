@@ -61,24 +61,6 @@ MonoBehaviour:
     finalEvents: []
     finalConditions: []
   - id: 2
-    nodeType: 1
-    position: {x: 592, y: -111}
-    values:
-    - type: 1
-      intValue: 1
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    eventParameters: []
-    finalEvents: []
-    finalConditions: []
-  - id: 3
     nodeType: 5
     position: {x: 342, y: -107}
     values:
@@ -96,6 +78,42 @@ MonoBehaviour:
     eventParameters: []
     finalEvents: []
     finalConditions: []
+  - id: 3
+    nodeType: 1
+    position: {x: 922, y: -118}
+    values:
+    - type: 1
+      intValue: 1
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 4
+    nodeType: 5
+    position: {x: 604, y: -107}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 74ab5b56821fc4540bd3318c4d8e7068, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
   edges:
   - fromNode: 0
     outPortID: 0
@@ -103,9 +121,13 @@ MonoBehaviour:
     inPortID: 0
   - fromNode: 1
     outPortID: 0
-    toNode: 3
-    inPortID: 0
-  - fromNode: 3
-    outPortID: 0
     toNode: 2
+    inPortID: 0
+  - fromNode: 2
+    outPortID: 0
+    toNode: 4
+    inPortID: 0
+  - fromNode: 4
+    outPortID: 0
+    toNode: 3
     inPortID: 0
