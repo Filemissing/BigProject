@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47d5a1aab1955814f8f0160f91f760c4, type: 3}
   m_Name: Can Of Milk
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  title: 
-  description: 
+  title: Can of milk
+  description: The accuser claims you bewitched it in order to put a curse on her.
+    No matter how you look at it, it's just milk.
   sprite: {fileID: 0}
   model: {fileID: 0}
   defaultRotation: {x: 0, y: 0, z: 0}

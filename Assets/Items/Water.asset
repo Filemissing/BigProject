@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47d5a1aab1955814f8f0160f91f760c4, type: 3}
   m_Name: Water
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  title: 
-  description: 
+  title: Water
+  description: Water from the pond; for your own consideration.
   sprite: {fileID: 0}
   model: {fileID: 0}
   defaultRotation: {x: 0, y: 0, z: 0}

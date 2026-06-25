@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47d5a1aab1955814f8f0160f91f760c4, type: 3}
   m_Name: Sheep's Blood
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  title: 
-  description: 
+  title: Vial of Blood
+  description: A vial of blood given to you by the butcher. For what purpose?
   sprite: {fileID: 0}
   model: {fileID: 0}
   defaultRotation: {x: 0, y: 0, z: 0}

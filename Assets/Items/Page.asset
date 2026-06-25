@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47d5a1aab1955814f8f0160f91f760c4, type: 3}
   m_Name: Page
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  title: Page
-  description: 'Page with symbols
+  title: Page With Odd Symbols
+  description: 'Page with symbols that you can''t decipher. Despite thay, they look
+    familiar?
 
 '
   sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}

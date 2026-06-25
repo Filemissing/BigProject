@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47d5a1aab1955814f8f0160f91f760c4, type: 3}
   m_Name: Conversation
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  title: Conversation?
-  description: What
+  title: Rumour
+  description: Gossip about Jenneke - she hasn't attented church in a long while.
   sprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
   model: {fileID: 7058273347260566982, guid: 1db2d6e29bf44af4ca1a6f55c9644b47, type: 3}
   defaultRotation: {x: 0, y: 0, z: 0}

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Ashes
   m_EditorClassIdentifier: Assembly-CSharp::Item
   title: Ashes
-  description: Ashes
+  description: You cannot tell what object this was before being burnt. All you know
+    is that they smell rather strongly.
   sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
   model: {fileID: 5575511382255712364, guid: 540c97ec8a1f7c34b8342a26c549f2a5, type: 3}
   defaultRotation: {x: 0, y: 0, z: 0}
