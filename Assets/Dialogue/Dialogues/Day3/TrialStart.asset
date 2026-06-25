@@ -21,24 +21,6 @@ MonoBehaviour:
     finalEvents: []
     finalConditions: []
   - id: 1
-    nodeType: 1
-    position: {x: 24, y: 237}
-    values:
-    - type: 1
-      intValue: 1
-      floatValue: 0
-      stringValue: 
-      boolValue: 0
-      objectValue: {fileID: 0}
-      intArray: 
-      floatArray: []
-      stringArray: []
-      boolArray: 
-      objectArray: []
-    eventParameters: []
-    finalEvents: []
-    finalConditions: []
-  - id: 2
     nodeType: 2
     position: {x: 172, y: 0}
     values:
@@ -78,7 +60,7 @@ MonoBehaviour:
     eventParameters: []
     finalEvents: []
     finalConditions: []
-  - id: 3
+  - id: 2
     nodeType: 2
     position: {x: 513, y: 0}
     values:
@@ -118,7 +100,7 @@ MonoBehaviour:
     eventParameters: []
     finalEvents: []
     finalConditions: []
-  - id: 4
+  - id: 3
     nodeType: 2
     position: {x: 918, y: 14}
     values:
@@ -158,7 +140,7 @@ MonoBehaviour:
     eventParameters: []
     finalEvents: []
     finalConditions: []
-  - id: 5
+  - id: 4
     nodeType: 3
     position: {x: 1317, y: 4}
     values:
@@ -271,16 +253,34 @@ MonoBehaviour:
         stringArray: []
         boolArray: 
         objectArray: []
-  - id: 6
+  - id: 5
     nodeType: 5
     position: {x: 1500, y: -44}
     values:
-    - type: 0
+    - type: 5
       intValue: 0
       floatValue: 0
       stringValue: 
       boolValue: 0
-      objectValue: {fileID: 0}
+      objectValue: {fileID: 11400000, guid: 49e1ef10e65ee9e4d9b009bd523da8b7, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 6
+    nodeType: 5
+    position: {x: 1500, y: 116}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 40630a9dbec50c6428f6b07371ba72dc, type: 2}
       intArray: 
       floatArray: []
       stringArray: []
@@ -290,11 +290,11 @@ MonoBehaviour:
     finalEvents: []
     finalConditions: []
   - id: 7
-    nodeType: 5
-    position: {x: 1500, y: 116}
+    nodeType: 1
+    position: {x: 1866, y: 26}
     values:
-    - type: 0
-      intValue: 0
+    - type: 1
+      intValue: 1
       floatValue: 0
       stringValue: 
       boolValue: 0
@@ -310,6 +310,10 @@ MonoBehaviour:
   edges:
   - fromNode: 0
     outPortID: 0
+    toNode: 1
+    inPortID: 0
+  - fromNode: 1
+    outPortID: 0
     toNode: 2
     inPortID: 0
   - fromNode: 2
@@ -324,11 +328,15 @@ MonoBehaviour:
     outPortID: 0
     toNode: 5
     inPortID: 0
-  - fromNode: 5
-    outPortID: 0
+  - fromNode: 4
+    outPortID: 1
     toNode: 6
     inPortID: 0
   - fromNode: 5
-    outPortID: 1
+    outPortID: 0
+    toNode: 7
+    inPortID: 0
+  - fromNode: 6
+    outPortID: 0
     toNode: 7
     inPortID: 0

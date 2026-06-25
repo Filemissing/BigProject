@@ -10,9 +10,9 @@ public class CurrentMainUIManager : MonoBehaviour
     void Refresh()
     {
         if (hasCurrentMainUI)
-            GameManager.instance.player.LockCharacter();
+            PlayerController.instance.LockCharacter();
         else
-            GameManager.instance.player.UnlockCharacter();
+            PlayerController.instance.UnlockCharacter();
     }
 
     bool DisablePreviousMainUI()

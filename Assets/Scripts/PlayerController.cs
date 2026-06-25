@@ -5,7 +5,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerController : MonoBehaviour
 {
-    static PlayerController instance;
+    public static PlayerController instance;
     private Rigidbody rb;
     private void Awake()
     {
@@ -32,6 +32,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float crouchScale = 0.5f;
     [SerializeField] private float crouchTransitionDuration = 0.2f;
     [SerializeField] private float crouchSpeed = 3f;
+
+    [HideInInspector] public bool isCrouched;
 
     [Header("Camera")]
     [SerializeField] private float additionalMouseSensitivity = 0.4f;
@@ -84,10 +86,13 @@ public class PlayerController : MonoBehaviour
                 if (!hit.collider && hit.rigidbody.gameObject.TryGetComponent(out NavMeshAgent navMeshAgent))
                 {
                     hit.rigidbody.isKinematic = false;
-                    hit.rigidbody.linearDamping = 0f;
-                    hit.rigidbody.AddForce(cameraAnchor.forward * 1000f, ForceMode.Impulse);
+                    hit.rigidbody.AddForce(cameraAnchor.forward * 100f, ForceMode.Impulse);
                 }
             }
+        }
+        else
+        {
+            rb.linearVelocity = Vector3.zero;
         }
 
         if (canLook)
@@ -101,8 +106,12 @@ public class PlayerController : MonoBehaviour
             float heading = transform.rotation.eulerAngles.y + deltaMouse.x * additionalMouseSensitivity * ((float)GameManager.instance.settings.mouseSensitivity / 100);
 
             transform.localRotation = Quaternion.Euler(new Vector3(0, heading, 0));
-            cameraAnchor.transform.localRotation = Quaternion.Euler(new Vector3(pitch, 0, 0));        
-        } 
+            cameraAnchor.transform.localRotation = Quaternion.Euler(new Vector3(pitch, 0, 0));
+        }
+        else
+        {
+            rb.angularVelocity = Vector3.zero;
+        }
     }
 
     public void LockCharacter()

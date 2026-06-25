@@ -60,7 +60,7 @@ public class PassiveDialoguePlayer : MonoBehaviour
         lastPlayedDialogueEntryIndex = index;
         
         // Play dialogue
-        float distance = Vector3.Distance(transform.position, GameManager.instance.player.transform.position);
+        float distance = Vector3.Distance(transform.position, PlayerController.instance.transform.position);
         if (distance <= maximumDistance)
             DSP_ConversationManager.instance.PlayPassiveDialogue(npc.characterAsset, passiveDialogueEntryDatas[index]);
     }

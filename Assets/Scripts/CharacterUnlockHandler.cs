@@ -11,9 +11,9 @@ public class CharacterUnlockHandler : MonoBehaviour
     void Refresh()
     {
         if (characterUnlockBlocks > 0)
-            GameManager.instance.player.LockCharacter();
+            PlayerController.instance.LockCharacter();
         else
-            GameManager.instance.player.UnlockCharacter();
+            PlayerController.instance.UnlockCharacter();
     }
     
     public void AddBlock()

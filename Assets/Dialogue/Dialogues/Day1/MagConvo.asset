@@ -75,6 +75,7 @@ MonoBehaviour:
       stringArray:
       - I have a problem...
       - Has something happened recently?
+      - Goodbye.
       boolArray: 
       objectArray: []
     - type: 9
@@ -86,7 +87,7 @@ MonoBehaviour:
       intArray: 
       floatArray: []
       stringArray: []
-      boolArray: 0000
+      boolArray: 000000
       objectArray: []
     - type: 10
       intValue: 0
@@ -101,6 +102,7 @@ MonoBehaviour:
       objectArray:
       - {fileID: 0}
       - {fileID: 0}
+      - {fileID: 0}
     - type: 8
       intValue: 0
       floatValue: 0
@@ -110,6 +112,7 @@ MonoBehaviour:
       intArray: 
       floatArray: []
       stringArray:
+      - 
       - 
       - 
       boolArray: 
@@ -137,8 +140,36 @@ MonoBehaviour:
       stringArray: []
       boolArray: 
       objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
     finalEvents: []
     finalConditions:
+    - hasValue: 0
+      target: {fileID: 0}
+      methodName: 
+      staticTypeName: 
+      isStatic: 0
+      parameter:
+        type: 0
+        intValue: 0
+        floatValue: 0
+        stringValue: 
+        boolValue: 0
+        objectValue: {fileID: 0}
+        intArray: 
+        floatArray: []
+        stringArray: []
+        boolArray: 
+        objectArray: []
     - hasValue: 0
       target: {fileID: 0}
       methodName: 
@@ -658,7 +689,7 @@ MonoBehaviour:
     - type: 3
       intValue: 0
       floatValue: 0
-      stringValue: "Eh, not really; last week, we had a break-in. \nNothing was stolen,
+      stringValue: "Eh, not really. Last week, we had a break-in. \nNothing was stolen,
         so take that how you will."
       boolValue: 0
       objectValue: {fileID: 0}
@@ -744,6 +775,10 @@ MonoBehaviour:
   - fromNode: 2
     outPortID: 1
     toNode: 13
+    inPortID: 0
+  - fromNode: 2
+    outPortID: 2
+    toNode: 14
     inPortID: 0
   - fromNode: 3
     outPortID: 0

@@ -1,10 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor;
-using UnityEditor.Callbacks;
 using UnityEngine;
-using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
 [CreateAssetMenu(fileName = "NewDialogueGraph", menuName = "DSP/Dialogue Graph")]
@@ -235,19 +232,4 @@ public class DSP_ConversationIterator
     }
 }
 
-public static class DSP_GraphAssetHandler
-{
-    [OnOpenAsset]
-    public static bool OnOpen(int instanceID, int line)
-    {
-        Object obj = EditorUtility.InstanceIDToObject(instanceID);
 
-        if (obj is DSP_ConversationGraphAsset graphAsset)
-        {
-            DSP_EditorWindow.Open(graphAsset);
-            return true;
-        }
-
-        return false;
-    }
-}
