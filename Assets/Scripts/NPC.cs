@@ -1,5 +1,6 @@
 using DG.Tweening;
 using NaughtyAttributes;
+using NaughtyAttributes.Test;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -51,7 +52,7 @@ public class NPC : MonoBehaviour
 
     private void Start()
     {
-        if (pointsOfInterest.Count > 1 )
+        if (pointsOfInterest.Count > 0)
             StartCoroutine(Wander());
         
     }
@@ -92,12 +93,14 @@ public class NPC : MonoBehaviour
 
                 if (keepOrder)
                     nextTarget = pointsOfInterest[(pointsOfInterest.IndexOf(target) + 1) % (pointsOfInterest.Count)];
-                else if(pointsOfInterest.Count > 1)
+                else if (pointsOfInterest.Count > 1)
                 {
                     var otherPOIs = pointsOfInterest.Where(POI => POI != target).ToArray();
                     int randomIndex = Random.Range(0, pointsOfInterest.Count - 1);
                     nextTarget = otherPOIs[randomIndex];
                 }
+                else
+                    nextTarget = target != null ? target : pointsOfInterest[0];
 
                 nextTargetChosen = true;
 
