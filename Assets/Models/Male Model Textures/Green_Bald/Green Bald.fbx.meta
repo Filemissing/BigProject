@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Male_NPC_Clothes_Mat
-    second: {fileID: 2100000, guid: 1f582ae57d2b1a24ca11d58ce308abe0, type: 2}
+    second: {fileID: 2100000, guid: a5a001dcd29115844964a951aa9b9e2a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Male_NPC_Mat
-    second: {fileID: 2100000, guid: f03516b06542e9442bf29f929d938a33, type: 2}
+    second: {fileID: 2100000, guid: 9f50c681d5afa1240b8da88356f58df4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -152,8 +152,7 @@ ModelImporter:
     - name: mixamorig:Hips
       parentName: Excited(Clone)
       position: {x: -0.0031096744, y: 1.016173, z: 0.009513915}
-      rotation: {x: -7.2759565e-10, y: -0.0000000014551917, z: 0.000000004729373,
-        w: 1}
+      rotation: {x: -7.2759565e-10, y: -0.0000000014551917, z: 0.000000004729373, w: 1}
       scale: {x: 1, y: 0.99999994, z: 1}
     - name: mixamorig:Spine
       parentName: mixamorig:Hips
@@ -168,8 +167,7 @@ ModelImporter:
     - name: mixamorig:Spine2
       parentName: mixamorig:Spine1
       position: {x: -0, y: 0.126679, z: 3.8916625e-10}
-      rotation: {x: 0.0000000074505797, y: 0.000000001863106, z: -0.000000017292178,
-        w: 1}
+      rotation: {x: 0.0000000074505797, y: 0.000000001863106, z: -0.000000017292178, w: 1}
       scale: {x: 0.99999994, y: 1.0000001, z: 1.0000005}
     - name: mixamorig:Neck
       parentName: mixamorig:Spine2

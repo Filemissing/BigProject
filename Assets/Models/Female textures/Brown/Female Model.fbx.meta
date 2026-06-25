@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Female_NPC_Body_Mat
-    second: {fileID: 2100000, guid: f7a154ccd9064c145abccd4ae2529abf, type: 2}
+    second: {fileID: 2100000, guid: f4b1074e3926850418155789550889b6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: hat_low_po_Female_NPC_Clothes_Mat
-    second: {fileID: 2100000, guid: f4ea0c74ab66e464d996c3f9ee40b3f6, type: 2}
+    second: {fileID: 2100000, guid: 94dc5f1319ea3cc4baa42cda6958cdd6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
