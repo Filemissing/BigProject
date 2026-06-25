@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: f734af981e7299d4a973d31debab8ed0
+guid: 827498e02f019064598cff8c96f646a5
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Female_NPC_Body_Mat
+    second: {fileID: 2100000, guid: f7a154ccd9064c145abccd4ae2529abf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hat_low_po_Female_NPC_Clothes_Mat
+    second: {fileID: 2100000, guid: f4ea0c74ab66e464d996c3f9ee40b3f6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
