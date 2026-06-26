@@ -1,9 +1,10 @@
+using DSP;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 
 [CustomEditor(typeof(DSP_EventHandler))]
-public class DSP_EventHandlerEditor : UnityEditor.Editor
+public class DSP_EventHandlerEditor : Editor
 {
     public override void OnInspectorGUI()
     {

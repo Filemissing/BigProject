@@ -10,11 +10,11 @@ public class StartConversation : MonoBehaviour
     void Start()
     {
         StartCoroutine(DelayedStart());
-
-        IEnumerator DelayedStart()
-        {
-            yield return new WaitForSeconds(delay);
-            unityEvent.Invoke();
-        }
     }
+    
+    IEnumerator DelayedStart()
+     {
+         yield return new WaitForSeconds(delay);
+         unityEvent.Invoke();
+     }
 }

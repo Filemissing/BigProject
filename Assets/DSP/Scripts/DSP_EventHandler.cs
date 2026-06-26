@@ -4,45 +4,48 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class DSP_EventHandler : MonoBehaviour
+namespace DSP
 {
-    [HideInInspector] public List<DSP_SceneEvent> eventObjects = new();
-    [HideInInspector] public List<UnityEvent> unityEvents = new();
-
-    private List<Func<bool>> _subscriptions = new();
-
-    private void OnEnable()
+    public class DSP_EventHandler : MonoBehaviour
     {
-        _subscriptions.Clear();
+        [HideInInspector] public List<DSP_SceneEvent> eventObjects = new();
+        [HideInInspector] public List<UnityEvent> unityEvents = new();
 
-        for (int i = 0; i < eventObjects.Count; i++)
+        private List<Func<bool>> _subscriptions = new();
+
+        private void OnEnable()
         {
-            var eventObject = eventObjects.ElementAt(i);
-            if (eventObject == null || unityEvents[i] == null)
-                return;
+            _subscriptions.Clear();
 
-            int index = i;
-            Func<bool> handler = () =>
+            for (int i = 0; i < eventObjects.Count; i++)
             {
-                unityEvents[index].Invoke();
-                return true;
-            };
+                var eventObject = eventObjects.ElementAt(i);
+                if (eventObject == null || unityEvents[i] == null)
+                    return;
 
-            _subscriptions.Add(handler);
-            eventObject.Subscribe(handler);
+                int index = i;
+                Func<bool> handler = () =>
+                {
+                    unityEvents[index].Invoke();
+                    return true;
+                };
+
+                _subscriptions.Add(handler);
+                eventObject.Subscribe(handler);
+            }
         }
-    }
 
-    private void OnDisable()
-    {
-        for (int i = 0; i < _subscriptions.Count; i++)
+        private void OnDisable()
         {
-            var eventObject = eventObjects.ElementAt(i);
-            if (eventObject == null) continue;
+            for (int i = 0; i < _subscriptions.Count; i++)
+            {
+                var eventObject = eventObjects.ElementAt(i);
+                if (eventObject == null) continue;
 
-            eventObject.Unsubscribe(_subscriptions[i]);
+                eventObject.Unsubscribe(_subscriptions[i]);
+            }
+
+            _subscriptions.Clear();
         }
-
-        _subscriptions.Clear();
     }
 }
