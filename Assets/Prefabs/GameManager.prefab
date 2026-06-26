@@ -55,6 +55,9 @@ MonoBehaviour:
   currentMainUIManager: {fileID: 6611203776621599383}
   settings: {fileID: 11400000, guid: 974a8b5fbae4a75448e7991455a7006d, type: 2}
   days:
+  - sceneName: Intro day
+    hasNight: 0
+    nightSceneName: 
   - sceneName: Day 1
     hasNight: 0
     nightSceneName: 

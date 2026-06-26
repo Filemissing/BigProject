@@ -27,6 +27,14 @@ public class DSP_SceneEvent : ScriptableObject
             {
                 Debug.LogWarning($"Event {name} was raised but no subscribers returned successfully");
             }
+            else
+            {
+                Debug.Log($"invoked to targets: {_event.GetInvocationList().Length}");
+                foreach (var callback in _event.GetInvocationList())
+                {
+                    Debug.Log("Invoking on: " + callback.Target);
+                }
+            }
         }
         else
         {
