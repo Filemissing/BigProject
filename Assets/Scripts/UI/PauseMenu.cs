@@ -46,7 +46,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0;
         
         // Character Lock Management
-        GameManager.instance.player.LockCharacter();
+        PlayerController.instance.LockCharacter();
         
         // Hide Settings
         settings.TurnInvisible();
@@ -71,9 +71,9 @@ public class PauseMenu : MonoBehaviour
         
         // Cursor Lock Management
         if (GameManager.instance.currentMainUIManager.hasCurrentMainUI)
-            GameManager.instance.player.LockCharacter();
+            PlayerController.instance.LockCharacter();
         else
-            GameManager.instance.player.UnlockCharacter();
+            PlayerController.instance.UnlockCharacter();
         
         // Hide Settings
         settings.TurnInvisible();
