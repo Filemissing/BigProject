@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class SettingsPresenter : MonoBehaviour
 {
      [Header("References")]
+     [SerializeField] private Slider brightness;
      [SerializeField] private Slider mouseSensitivity;
      [SerializeField] private Slider masterVolume;
      
@@ -15,6 +16,8 @@ public class SettingsPresenter : MonoBehaviour
      // Functions
      private void Awake()
      {
+          brightness.onValueChanged.AddListener(BrightnessChanged);
+          
           mouseSensitivity.onValueChanged.AddListener(MouseSensitivityChanged);
           
           masterVolume.onValueChanged.AddListener(MasterVolumeChanged);
@@ -23,6 +26,11 @@ public class SettingsPresenter : MonoBehaviour
      
      
      // Helpers
+     private void BrightnessChanged(float value)
+     {
+          GameManager.instance.settings.brightness = (int)value;
+     }
+     
      private void MouseSensitivityChanged(float value)
      {
           GameManager.instance.settings.mouseSensitivity = (int)value;

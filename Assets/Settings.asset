@@ -12,10 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1086710dd08736c4a9b0a101e2b16d08, type: 3}
   m_Name: Settings
   m_EditorClassIdentifier: Assembly-CSharp::Settings
+  brightness: 50
   mouseSensitivity: 50
   interactKey: 101
   sprintKey: 304
   crouchKey: 306
   kickKey: 113
+  inventoryKey: 105
+  journalKey: 106
+  pauseKey: 27
   masterVolume: 50
   shutdownButton: 0

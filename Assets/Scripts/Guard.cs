@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using DSP;
 
 [DisallowMultipleComponent]
 public class Guard : NPC

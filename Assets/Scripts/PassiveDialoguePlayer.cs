@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using NaughtyAttributes;
 using UnityEngine;
+using DSP;
 
 public class PassiveDialoguePlayer : MonoBehaviour
 {
