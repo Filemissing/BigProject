@@ -377,7 +377,19 @@ MonoBehaviour:
   m_Value: 50
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3329817939436320585}
+        m_TargetAssemblyTypeName: SettingsSlider, Assembly-CSharp
+        m_MethodName: Refresh
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4587285660775811187
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,5 +802,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5921b2c995015c846ad680262fbefecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SettingsSlider
+  setting: 1
   amount: {fileID: 8076317516567457395}
   slider: {fileID: 2529179954001571552}

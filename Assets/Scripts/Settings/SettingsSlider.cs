@@ -6,6 +6,7 @@ public class SettingsSlider : MonoBehaviour
 {
     public enum SettingVariable
     {
+        Brightness,
         MouseSensitivity,
         MasterVolume
     }
@@ -19,6 +20,9 @@ public class SettingsSlider : MonoBehaviour
         // Update slider value to match settings
         switch (setting)
         {
+            case SettingVariable.Brightness:
+                slider.value = GameManager.instance.settings.brightness;
+                break;
             case SettingVariable.MouseSensitivity:
                 slider.value = GameManager.instance.settings.mouseSensitivity;
                 break;
@@ -27,12 +31,12 @@ public class SettingsSlider : MonoBehaviour
                 break;
         }
         
-        Refresh(slider.value);
-        slider.onValueChanged.AddListener(Refresh);
+        Refresh();
+        //slider.onValueChanged.AddListener(Refresh);
     }
 
-    private void Refresh(float value)
+    public void Refresh()
     {
-        amount.text = value.ToString();
+        amount.text = slider.value.ToString();
     }
 }

@@ -82,8 +82,8 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetKeyDown(GameManager.instance.settings.kickKey))
             {
-                Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, 2f);
-                if (!hit.collider && hit.rigidbody.gameObject.TryGetComponent(out NavMeshAgent navMeshAgent))
+                bool success = Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, 2f);
+                if (success && hit.rigidbody)
                 {
                     hit.rigidbody.isKinematic = false;
                     hit.rigidbody.AddForce(cameraAnchor.forward * 100f, ForceMode.Impulse);
