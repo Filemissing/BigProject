@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using System;
+using System.Collections;
 
 [RequireComponent(typeof(JournalData))]
 [RequireComponent(typeof(InventoryData))]
@@ -48,7 +49,19 @@ public class GameManager : MonoBehaviour
             nextScene = days[currentDay].sceneName;
         }
 
-        SceneManager.LoadScene(nextScene);
+        TransitionPlayer transitionPlayer = FindFirstObjectByType<TransitionPlayer>();
+        
+        if (transitionPlayer != null)
+            StartCoroutine(DelayedSceneChange(FindFirstObjectByType<TransitionPlayer>().PlaySleepEnterAnimation()));
+        else
+            StartCoroutine(DelayedSceneChange(0));
+
+        IEnumerator DelayedSceneChange(float duration)
+        {
+            yield return new WaitForSeconds(duration);
+            
+            SceneManager.LoadScene(nextScene);
+        }
     }
 }
 
