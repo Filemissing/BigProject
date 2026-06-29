@@ -170,6 +170,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6373132951160832754}
   - component: {fileID: 3867024236187570488}
+  - component: {fileID: 7616809459542744776}
   m_Layer: 0
   m_Name: Global Volume
   m_TagString: Untagged
@@ -209,3 +210,17 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: 404822612b53bae46b9af5ad99a961f6, type: 2}
+--- !u!114 &7616809459542744776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7608844335466512384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2326d1847a356cd4b9e73de4fae539b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BrightnessApplier
+  minimum: -0.3
+  maximum: 1.3

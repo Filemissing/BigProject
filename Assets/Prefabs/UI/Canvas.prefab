@@ -254,8 +254,12 @@ MonoBehaviour:
 
     Crouch - [LeftCtrl]
 
-    Toggle CursorLock -
-    [LeftAlt]'
+    Toggle inventory -
+    [I]
+
+    Toggle journal - [J]
+
+    Toggle CursorLock - [LeftAlt]'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -543,6 +547,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2346128930134838844, guid: c96160baf5518e44bb14fd4646bca1d9, type: 3}
+      propertyPath: setting
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2382766179967622223, guid: c96160baf5518e44bb14fd4646bca1d9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -701,7 +709,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7040454867657914376, guid: c96160baf5518e44bb14fd4646bca1d9, type: 3}
       propertyPath: m_Size
-      value: 0.62499994
+      value: 0.625
       objectReference: {fileID: 0}
     - target: {fileID: 7040454867657914376, guid: c96160baf5518e44bb14fd4646bca1d9, type: 3}
       propertyPath: m_Value

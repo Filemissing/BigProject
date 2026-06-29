@@ -3,6 +3,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Settings", menuName = "Scriptable Objects/Settings")]
 public class Settings : ScriptableObject
 {
+    [Header("Visuals")]
+    public int brightness = 70;
+    
     [Header("Controls")]
     public int mouseSensitivity = 50;
     public KeyCode interactKey = KeyCode.E;
