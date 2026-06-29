@@ -39,7 +39,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.ChannelMixer
   active: 1
   redOutRedIn:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 116
   redOutGreenIn:
     m_OverrideState: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   greenOutGreenIn:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 136
   greenOutBlueIn:
     m_OverrideState: 0
@@ -64,7 +64,7 @@ MonoBehaviour:
     m_Value: 0
   blueOutBlueIn:
     m_OverrideState: 1
-    m_Value: 119
+    m_Value: 170
 --- !u!114 &-4589135495826166055
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -150,14 +150,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.LiftGammaGain
   active: 1
   lift:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {x: 0.9477527, y: 1, z: 0.9944457, w: -0.013812155}
   gamma:
     m_OverrideState: 1
-    m_Value: {x: 0.9612269, y: 0.95177245, z: 1, w: 0.018542558}
+    m_Value: {x: 1, y: 0.9810026, z: 0.99145246, w: 0.018542558}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 0.7713116, y: 0.82128274, z: 1, w: 0.1509937}
+    m_Value: {x: 0.98740786, y: 1, z: 0.90771055, w: 0.19337797}
 --- !u!114 &1711859030953354152
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70afe9e12c7a7ed47911bb608a23a8ff, type: 3}
   m_Name: SplitToning
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.SplitToning
-  active: 1
+  active: 0
   shadows:
     m_OverrideState: 1
     m_Value: {r: 0.5622641, g: 0.47633317, b: 0.41904587, a: 1}
@@ -248,13 +248,13 @@ MonoBehaviour:
   active: 1
   shadows:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.9080082, z: 0.847599, w: 0.14986989}
+    m_Value: {x: 1, y: 0.92135525, z: 0.9346862, w: -0.06205064}
   midtones:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.88366234, z: 0.9799027, w: 0}
+    m_Value: {x: 1, y: 0.88033295, z: 0.88033205, w: 0}
   highlights:
     m_OverrideState: 1
-    m_Value: {x: 0.86941993, y: 0.93620896, z: 1, w: -0.39914465}
+    m_Value: {x: 1, y: 0.9687645, z: 0.87185943, w: -0.29318437}
   shadowsStart:
     m_OverrideState: 1
     m_Value: 0
