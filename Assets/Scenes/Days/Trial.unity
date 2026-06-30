@@ -4470,7 +4470,37 @@ MonoBehaviour:
   eventObjects:
   - {fileID: 11400000, guid: 2072b1c3ac4e2b542a9e6b650e7d5be0, type: 2}
   - {fileID: 11400000, guid: 33036ea5e74c0f74086b088226092252, type: 2}
+  - {fileID: 11400000, guid: d4423d9c999ed9142ba36f0e9894c2dd, type: 2}
+  - {fileID: 11400000, guid: 25b3427a9413c4d42aa8e5211a2bb2bb, type: 2}
   unityEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1957883004}
+        m_TargetAssemblyTypeName: DSP.DSP_ConversationManager, Assembly-CSharp
+        m_MethodName: StartConversation
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: a4379159b6dc173418dd8bf480489cca, type: 2}
+          m_ObjectArgumentAssemblyTypeName: DSP.DSP_ConversationGraphAsset, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1957883004}
+        m_TargetAssemblyTypeName: DSP.DSP_ConversationManager, Assembly-CSharp
+        m_MethodName: StartConversation
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: f1cac001335a76e499fbd5b359a4efc3, type: 2}
+          m_ObjectArgumentAssemblyTypeName: DSP.DSP_ConversationGraphAsset, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 840665762}
@@ -8458,6 +8488,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6b983e3a34c2054bb953bf4bcf3fb67, type: 3}
+--- !u!114 &1957883004 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1761790224273420426, guid: eb89ce207563c304bb0c444c0da1e98d, type: 3}
+  m_PrefabInstance: {fileID: 1489072814}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ba851637154a12469ad561fbb215956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1976581512
 PrefabInstance:
   m_ObjectHideFlags: 0

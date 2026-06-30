@@ -26,6 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Days/Trial.unity
     guid: 62bdec3daabccc24ca4c88c0ebe49762
+  - enabled: 1
+    path: Assets/Scenes/Days/GoodEndScene.unity
+    guid: d7ff317b366970b4caf9aa57ba01531b
+  - enabled: 1
+    path: Assets/Scenes/Days/BadEndScene.unity
+    guid: f0a9465cc906b2344900d8dca1493868
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
