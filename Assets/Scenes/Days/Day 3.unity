@@ -5774,6 +5774,7 @@ GameObject:
   - component: {fileID: 1246950370}
   - component: {fileID: 1246950372}
   - component: {fileID: 1246950373}
+  - component: {fileID: 1246950374}
   m_Layer: 0
   m_Name: EventHandler
   m_TagString: Untagged
@@ -5796,6 +5797,8 @@ MonoBehaviour:
   eventObjects:
   - {fileID: 11400000, guid: d69c1a02e458d324289c372b5a0a6432, type: 2}
   - {fileID: 11400000, guid: 74ab5b56821fc4540bd3318c4d8e7068, type: 2}
+  - {fileID: 11400000, guid: 2072b1c3ac4e2b542a9e6b650e7d5be0, type: 2}
+  - {fileID: 11400000, guid: 33036ea5e74c0f74086b088226092252, type: 2}
   unityEvents:
   - m_PersistentCalls:
       m_Calls:
@@ -5824,6 +5827,34 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: "When I walked past the butcher\u2019s stall, he whispered
             something intelligible and gave me sheep\u2019s blood. Weirdo."
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1246950374}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: GoodEndScene
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1246950374}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: BadEndScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!4 &1246950371
@@ -5865,6 +5896,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bed852cb5dfe39a4a8eb5c2d37b7babf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObservationGiver
+--- !u!114 &1246950374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246950369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4309ee4f37637f4ca239b476ab00e89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &1248982465
 GameObject:
   m_ObjectHideFlags: 0
