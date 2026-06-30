@@ -33,18 +33,32 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float crouchTransitionDuration = 0.2f;
     [SerializeField] private float crouchSpeed = 3f;
 
-    [HideInInspector] public bool isCrouched;
+    [HideInInspector] public bool isSprinting;
+    [HideInInspector] public bool isCrouching;
 
     [Header("Camera")]
     [SerializeField] private float additionalMouseSensitivity = 0.4f;
     public Transform cameraAnchor;
     [SerializeField] private float upLookLimit = 80f;
     [SerializeField] private float downLookLimit = 80f;
+    
+    [Header("Sound")]
+    [SerializeField] private AudioSource stepAudioSource;
+    [SerializeField] private AudioSource crouchAudioSource;
+    [SerializeField] private float stepDistance;
+    [SerializeField] private float sprintStepDistance;
+    [SerializeField] private float crouchStepDistance;
+    [SerializeField] private float sprintVolumeMultiplier;
+    [SerializeField] private float crouchVolumeMultiplier;
 
 
-    bool canMove = true;
-    bool canLook = true;
-    bool unCrouched = false;
+    private bool canMove = true;
+    private bool canLook = true;
+    private bool unCrouched = false;
+
+    private Vector3 lastStepPosition = Vector3.zero;
+    private bool previousCanStep = false;
+    private bool canStep = false;
     
     public void Update()
     {
@@ -59,6 +73,9 @@ public class PlayerController : MonoBehaviour
             float forward = Input.GetAxisRaw("Vertical");
             float strafe = Input.GetAxisRaw("Horizontal");
 
+            isSprinting = Input.GetKey(GameManager.instance.settings.sprintKey);
+            isCrouching = Input.GetKey(GameManager.instance.settings.crouchKey);
+            
             float currentSpeed = Input.GetKey(GameManager.instance.settings.sprintKey) ? sprintSpeed : speed;
             if (Input.GetKey(GameManager.instance.settings.crouchKey))
             {
@@ -73,11 +90,17 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(GameManager.instance.settings.crouchKey))
             {
                 transform.DOScaleY(crouchScale, crouchTransitionDuration);
+                
+                // Sound
+                crouchAudioSource.Play();
             }
             else if (unCrouched)
             {
                 transform.DOScaleY(1f, crouchTransitionDuration);
                 unCrouched = false;
+                
+                // Sound
+                crouchAudioSource.Play();
             }
 
             if (Input.GetKeyDown(GameManager.instance.settings.kickKey))
@@ -89,6 +112,9 @@ public class PlayerController : MonoBehaviour
                     hit.rigidbody.AddForce(cameraAnchor.forward * 100f, ForceMode.Impulse);
                 }
             }
+
+			// Sound
+            canStep = currentSpeed > 0;
         }
         else
         {
@@ -112,6 +138,40 @@ public class PlayerController : MonoBehaviour
         {
             rb.angularVelocity = Vector3.zero;
         }
+        
+        // Sound
+        if (!canStep) return;
+        
+        if (canStep != previousCanStep && previousCanStep == false) // Started moving
+            lastStepPosition = transform.position;
+        
+        float distance = Vector3.Distance(lastStepPosition, transform.position);
+        if (isSprinting && !isCrouching) // Sprinting
+        {
+            if (distance >= sprintStepDistance)
+            {
+                stepAudioSource.PlayOneShot(stepAudioSource.clip, sprintVolumeMultiplier);
+                lastStepPosition = transform.position;
+            }
+        }
+        else if (!isSprinting && isCrouching) // Crouching
+        {
+            if (distance >= crouchStepDistance)
+            {
+                stepAudioSource.PlayOneShot(stepAudioSource.clip, crouchVolumeMultiplier);
+                lastStepPosition = transform.position;
+            }
+        }
+        else if (!isSprinting && !isCrouching) // Walking
+        {
+            if (distance >= stepDistance)
+            {
+                stepAudioSource.PlayOneShot(stepAudioSource.clip, 1);
+                lastStepPosition = transform.position;
+            }
+        }
+
+        previousCanStep = canStep;
     }
 
     public void LockCharacter()
