@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
-using System;
 using System.Collections;
 
 [RequireComponent(typeof(JournalData))]
@@ -11,6 +10,12 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     private void Awake()
     {
+        if (instance != null && gameObject.scene.name != "DontDestroyOnLoad" && SceneManager.GetActiveScene().name == "Main Menu")
+        {
+            Destroy(GameManager.instance.gameObject);
+            instance = null;
+        }
+
         if (instance != null && instance != this)
         {
             Destroy(this);
