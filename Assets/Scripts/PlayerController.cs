@@ -1,6 +1,8 @@
+using System;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.AI;
+using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerController : MonoBehaviour
@@ -43,13 +45,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float downLookLimit = 80f;
     
     [Header("Sound")]
-    [SerializeField] private AudioSource stepAudioSource;
-    [SerializeField] private AudioSource crouchAudioSource;
+    [SerializeField] private AudioSource audioSource;
     [SerializeField] private float stepDistance;
     [SerializeField] private float sprintStepDistance;
     [SerializeField] private float crouchStepDistance;
     [SerializeField] private float sprintVolumeMultiplier;
     [SerializeField] private float crouchVolumeMultiplier;
+    
+    [SerializeField] private AudioClip[] footstepSounds;
+    [SerializeField] private AudioClip crouchSound;
 
 
     private bool canMove = true;
@@ -92,7 +96,7 @@ public class PlayerController : MonoBehaviour
                 transform.DOScaleY(crouchScale, crouchTransitionDuration);
                 
                 // Sound
-                crouchAudioSource.Play();
+                audioSource.PlayOneShot(crouchSound);
             }
             else if (unCrouched)
             {
@@ -100,7 +104,7 @@ public class PlayerController : MonoBehaviour
                 unCrouched = false;
                 
                 // Sound
-                crouchAudioSource.Play();
+                audioSource.PlayOneShot(crouchSound);
             }
 
             if (Input.GetKeyDown(GameManager.instance.settings.kickKey))
@@ -150,7 +154,7 @@ public class PlayerController : MonoBehaviour
         {
             if (distance >= sprintStepDistance)
             {
-                stepAudioSource.PlayOneShot(stepAudioSource.clip, sprintVolumeMultiplier);
+                audioSource.PlayOneShot(footstepSounds[Random.Range(0, footstepSounds.Length)], sprintVolumeMultiplier);
                 lastStepPosition = transform.position;
             }
         }
@@ -158,7 +162,7 @@ public class PlayerController : MonoBehaviour
         {
             if (distance >= crouchStepDistance)
             {
-                stepAudioSource.PlayOneShot(stepAudioSource.clip, crouchVolumeMultiplier);
+                audioSource.PlayOneShot(footstepSounds[Random.Range(0, footstepSounds.Length)], crouchVolumeMultiplier);
                 lastStepPosition = transform.position;
             }
         }
@@ -166,7 +170,7 @@ public class PlayerController : MonoBehaviour
         {
             if (distance >= stepDistance)
             {
-                stepAudioSource.PlayOneShot(stepAudioSource.clip, 1);
+                audioSource.PlayOneShot(footstepSounds[Random.Range(0, footstepSounds.Length)], 1);
                 lastStepPosition = transform.position;
             }
         }
