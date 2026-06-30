@@ -850,6 +850,7 @@ GameObject:
   - component: {fileID: 210865127}
   - component: {fileID: 210865126}
   - component: {fileID: 210865125}
+  - component: {fileID: 210865128}
   m_Layer: 0
   m_Name: Bounds
   m_TagString: Untagged
@@ -950,6 +951,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 210865123}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &210865128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210865123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4da77404847b74eb4b1eea0434a480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollisionDialogueTrigger
+  conversationGraph: {fileID: 11400000, guid: ccdb325c566012345a5b2bb993db6db0, type: 2}
 --- !u!1001 &255292592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1966,6 +1980,7 @@ GameObject:
   - component: {fileID: 558831433}
   - component: {fileID: 558831432}
   - component: {fileID: 558831431}
+  - component: {fileID: 558831434}
   m_Layer: 0
   m_Name: Bounds
   m_TagString: Untagged
@@ -2066,6 +2081,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 558831429}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &558831434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558831429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4da77404847b74eb4b1eea0434a480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollisionDialogueTrigger
+  conversationGraph: {fileID: 11400000, guid: ccdb325c566012345a5b2bb993db6db0, type: 2}
 --- !u!1001 &563528281
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3967,6 +3995,7 @@ GameObject:
   - component: {fileID: 1024228032}
   - component: {fileID: 1024228031}
   - component: {fileID: 1024228030}
+  - component: {fileID: 1024228033}
   m_Layer: 0
   m_Name: Bounds
   m_TagString: Untagged
@@ -4067,6 +4096,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1024228028}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1024228033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024228028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4da77404847b74eb4b1eea0434a480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollisionDialogueTrigger
+  conversationGraph: {fileID: 11400000, guid: ccdb325c566012345a5b2bb993db6db0, type: 2}
 --- !u!43 &1038355884
 Mesh:
   m_ObjectHideFlags: 0
@@ -6931,6 +6973,7 @@ GameObject:
   - component: {fileID: 1809247541}
   - component: {fileID: 1809247540}
   - component: {fileID: 1809247539}
+  - component: {fileID: 1809247542}
   m_Layer: 0
   m_Name: Bounds
   m_TagString: Untagged
@@ -7031,6 +7074,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809247537}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1809247542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809247537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4da77404847b74eb4b1eea0434a480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollisionDialogueTrigger
+  conversationGraph: {fileID: 11400000, guid: ccdb325c566012345a5b2bb993db6db0, type: 2}
 --- !u!114 &1823909321 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1194896385535753746, guid: 3f38c611dfc130745adabfebe2bb54f5, type: 3}
@@ -9059,6 +9115,7 @@ GameObject:
   - component: {fileID: 2135445582}
   - component: {fileID: 2135445581}
   - component: {fileID: 2135445580}
+  - component: {fileID: 2135445583}
   m_Layer: 0
   m_Name: Bounds
   m_TagString: Untagged
@@ -9159,6 +9216,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2135445578}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2135445583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135445578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4da77404847b74eb4b1eea0434a480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollisionDialogueTrigger
+  conversationGraph: {fileID: 11400000, guid: ccdb325c566012345a5b2bb993db6db0, type: 2}
 --- !u!1001 &2146991930
 PrefabInstance:
   m_ObjectHideFlags: 0
