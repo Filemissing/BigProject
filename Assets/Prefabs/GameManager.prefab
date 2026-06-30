@@ -67,6 +67,9 @@ MonoBehaviour:
   - sceneName: Day 3
     hasNight: 0
     nightSceneName: 
+  - sceneName: Trial
+    hasNight: 0
+    nightSceneName: 
   currentDay: 0
   isNight: 0
 --- !u!114 &4574898053677438824
