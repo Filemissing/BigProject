@@ -15,7 +15,7 @@ MonoBehaviour:
   nodes:
   - id: 0
     nodeType: 2
-    position: {x: 166, y: -23}
+    position: {x: 166, y: -23.333332}
     values:
     - type: 3
       intValue: 0
@@ -56,14 +56,14 @@ MonoBehaviour:
     finalConditions: []
   - id: 1
     nodeType: 0
-    position: {x: -2, y: -23}
+    position: {x: -2, y: -23.333332}
     values: []
     eventParameters: []
     finalEvents: []
     finalConditions: []
   - id: 2
     nodeType: 2
-    position: {x: 510, y: -23}
+    position: {x: 510, y: -23.333332}
     values:
     - type: 3
       intValue: 0
@@ -103,7 +103,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 3
     nodeType: 5
-    position: {x: 898, y: -23}
+    position: {x: 898, y: -23.333332}
     values:
     - type: 5
       intValue: 0
@@ -121,7 +121,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 4
     nodeType: 1
-    position: {x: 1222, y: -23}
+    position: {x: 1222, y: -23.333332}
     values:
     - type: 1
       intValue: 1
