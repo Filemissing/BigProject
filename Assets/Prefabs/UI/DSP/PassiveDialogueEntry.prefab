@@ -55,6 +55,7 @@ MonoBehaviour:
   characterLabel: {fileID: 6813716954466188883}
   canvasGroup: {fileID: 8212494132012131866}
   effectDuration: 0.2
+  effectSizeY: 0
 --- !u!225 &8212494132012131866
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -135,8 +136,8 @@ MonoBehaviour:
   m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3368bfdbc7df61b4c9850320e4f4306c, type: 2}
-  m_sharedMaterial: {fileID: 4911802168497424687, guid: 3368bfdbc7df61b4c9850320e4f4306c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9c4f8691167c4f7428fde7970a7a539d, type: 2}
+  m_sharedMaterial: {fileID: -8900451983650251896, guid: 9c4f8691167c4f7428fde7970a7a539d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -272,8 +273,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3368bfdbc7df61b4c9850320e4f4306c, type: 2}
-  m_sharedMaterial: {fileID: 4911802168497424687, guid: 3368bfdbc7df61b4c9850320e4f4306c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9c4f8691167c4f7428fde7970a7a539d, type: 2}
+  m_sharedMaterial: {fileID: -8900451983650251896, guid: 9c4f8691167c4f7428fde7970a7a539d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
