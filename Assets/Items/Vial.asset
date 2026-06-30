@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Item
   title: Odd Liquid
   description: Given to you by your husband. It's best you don't show this to anyone.
-  sprite: {fileID: 0}
-  model: {fileID: 0}
+  sprite: {fileID: 21300000, guid: ca0a1b59cb31209478f08fc40bf3300a, type: 3}
+  model: {fileID: 8152729505793904849, guid: dea23ff98ff2bff448ace5697a013f07, type: 3}
   defaultRotation: {x: 0, y: 0, z: 0}
   defaultScale: {x: 1, y: 1, z: 1}
