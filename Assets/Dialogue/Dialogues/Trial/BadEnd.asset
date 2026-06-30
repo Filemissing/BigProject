@@ -1,0 +1,312 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664e79af2f21ddb4b9e73bdf5ab9f450, type: 3}
+  m_Name: BadEnd
+  m_EditorClassIdentifier: Assembly-CSharp::DSP_ConversationGraphAsset
+  nodes:
+  - id: 0
+    nodeType: 0
+    position: {x: -291, y: 8}
+    values: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 1
+    nodeType: 2
+    position: {x: -102, y: 8}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "Ugh\u2026 my head\u2026"
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: f76b187be59b792469e2ff63bf5dfc07, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 2
+    nodeType: 2
+    position: {x: 217, y: 8}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "What\u2026?"
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: f76b187be59b792469e2ff63bf5dfc07, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 3
+    nodeType: 2
+    position: {x: 549, y: 8}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: This painting-? Let me check the guide pamphlet.
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: f76b187be59b792469e2ff63bf5dfc07, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 4
+    nodeType: 2
+    position: {x: 890, y: 8}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "That woman\u2019s being drowned by the townspeople. They feared
+        for their lives, \nso they forced her to go through a witch trial. Unfortunately,
+        they were too zealous, \nand in their anger, didn\u2019t let her catch her
+        breath."
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: f76b187be59b792469e2ff63bf5dfc07, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 5
+    nodeType: 2
+    position: {x: 1431, y: 8}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: The name is-
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: f76b187be59b792469e2ff63bf5dfc07, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 6
+    nodeType: 2
+    position: {x: 1749, y: 10}
+    values:
+    - type: 3
+      intValue: 0
+      floatValue: 0
+      stringValue: "\u201CGuilty from the start.\u201D"
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: f76b187be59b792469e2ff63bf5dfc07, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    - type: 0
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 7
+    nodeType: 1
+    position: {x: 2122, y: -3}
+    values:
+    - type: 1
+      intValue: 1
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  edges:
+  - fromNode: 0
+    outPortID: 0
+    toNode: 1
+    inPortID: 0
+  - fromNode: 1
+    outPortID: 0
+    toNode: 2
+    inPortID: 0
+  - fromNode: 2
+    outPortID: 0
+    toNode: 3
+    inPortID: 0
+  - fromNode: 3
+    outPortID: 0
+    toNode: 4
+    inPortID: 0
+  - fromNode: 4
+    outPortID: 0
+    toNode: 5
+    inPortID: 0
+  - fromNode: 5
+    outPortID: 0
+    toNode: 6
+    inPortID: 0
+  - fromNode: 6
+    outPortID: 0
+    toNode: 7
+    inPortID: 0

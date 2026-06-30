@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Church Slip
   description: A slip confirming that you have visited church often. Is this even
     usable for something?
-  sprite: {fileID: 21300000, guid: 46ad87b7d9aa8aa4bb42f95a33f5efad, type: 3}
+  sprite: {fileID: 21300000, guid: 2bee9574ed2a475478a3533fbe0a8381, type: 3}
   model: {fileID: 8158808720140299728, guid: 057b9f75c85f7524c93962f2e5bfded8, type: 3}
   defaultRotation: {x: 0, y: 0, z: 0}
   defaultScale: {x: 1, y: 1, z: 1}

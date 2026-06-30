@@ -50,7 +50,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cef9a72f3318ecf458cf12e6725f06ef, type: 3}
       propertyPath: m_Name
-      value: House_ArtTest_2 (6)
+      value: House_ArtTest_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cef9a72f3318ecf458cf12e6725f06ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772604989225000782, guid: cef9a72f3318ecf458cf12e6725f06ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6068965413939263502, guid: cef9a72f3318ecf458cf12e6725f06ef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

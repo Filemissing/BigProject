@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Item
   title: Water
   description: Water from the pond; for your own consideration.
-  sprite: {fileID: 0}
-  model: {fileID: 0}
+  sprite: {fileID: 21300000, guid: bfe1c7b97abd9a646adabe115f4b869b, type: 3}
+  model: {fileID: 6821078983396226838, guid: 2637a9cfa524ae74985533789fb3131c, type: 3}
   defaultRotation: {x: 0, y: 0, z: 0}
   defaultScale: {x: 1, y: 1, z: 1}

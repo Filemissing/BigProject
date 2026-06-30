@@ -34,6 +34,27 @@ public class GameManager : MonoBehaviour
     [SerializeField] List<Day> days;
     public int currentDay = 0;
     public bool isNight = false;
+
+    private void Start()
+    {
+        // see if we started at a different day - makes it easier to test later days
+        Scene currentScene = SceneManager.GetActiveScene();
+        for (int i = 0; i < days.Count; i++)
+        {
+            Day day = days[i];
+            if (day.sceneName == currentScene.name)
+            {
+                currentDay = i;
+                break;
+            }
+            else if (day.hasNight && day.nightSceneName == currentScene.name)
+            {
+                currentDay = i;
+                isNight = true;
+                break;
+            }
+        }
+    }
     public void AdvanceDay()
     {
         string nextScene;
