@@ -22,7 +22,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 1
     nodeType: 2
-    position: {x: 174, y: -7}
+    position: {x: 174, y: -7.333332}
     values:
     - type: 3
       intValue: 0
@@ -63,7 +63,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 2
     nodeType: 2
-    position: {x: 637, y: 7}
+    position: {x: 637.3333, y: 6.666668}
     values:
     - type: 3
       intValue: 0
@@ -103,7 +103,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 3
     nodeType: 2
-    position: {x: 999, y: 7}
+    position: {x: 999.3333, y: 6.666668}
     values:
     - type: 3
       intValue: 0
@@ -143,7 +143,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 4
     nodeType: 2
-    position: {x: 1358, y: 7}
+    position: {x: 1358, y: 6.666668}
     values:
     - type: 3
       intValue: 0
@@ -183,7 +183,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 5
     nodeType: 2
-    position: {x: 1742, y: 7}
+    position: {x: 1742, y: 6.666668}
     values:
     - type: 3
       intValue: 0
@@ -223,7 +223,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 6
     nodeType: 2
-    position: {x: 2118, y: 7}
+    position: {x: 2118, y: 6.666668}
     values:
     - type: 3
       intValue: 0
@@ -263,7 +263,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 7
     nodeType: 2
-    position: {x: 2463, y: 7}
+    position: {x: 2463.3333, y: 6.666668}
     values:
     - type: 3
       intValue: 0
@@ -303,7 +303,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 8
     nodeType: 2
-    position: {x: 2985, y: 7}
+    position: {x: 2985.3333, y: 6.666668}
     values:
     - type: 3
       intValue: 0
@@ -343,7 +343,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 9
     nodeType: 2
-    position: {x: 3334, y: 21}
+    position: {x: 3334, y: 20.666668}
     values:
     - type: 3
       intValue: 0
@@ -383,7 +383,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 10
     nodeType: 2
-    position: {x: 3679, y: 7}
+    position: {x: 3679.3333, y: 6.666668}
     values:
     - type: 3
       intValue: 0
@@ -423,7 +423,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 11
     nodeType: 2
-    position: {x: 4021, y: 7}
+    position: {x: 4021.3333, y: 6.666668}
     values:
     - type: 3
       intValue: 0
@@ -462,8 +462,26 @@ MonoBehaviour:
     finalEvents: []
     finalConditions: []
   - id: 12
+    nodeType: 5
+    position: {x: 4350, y: 6.666668}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: d4423d9c999ed9142ba36f0e9894c2dd, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 13
     nodeType: 1
-    position: {x: 4470, y: 7}
+    position: {x: 4650, y: 6.666668}
     values:
     - type: 1
       intValue: 1
@@ -527,4 +545,8 @@ MonoBehaviour:
   - fromNode: 11
     outPortID: 0
     toNode: 12
+    inPortID: 0
+  - fromNode: 12
+    outPortID: 0
+    toNode: 13
     inPortID: 0
