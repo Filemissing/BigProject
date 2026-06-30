@@ -16,7 +16,7 @@ MonoBehaviour:
   description: 'Press J to open
 
 '
-  sprite: {fileID: 21300000, guid: 46ad87b7d9aa8aa4bb42f95a33f5efad, type: 3}
-  model: {fileID: 8158808720140299728, guid: 057b9f75c85f7524c93962f2e5bfded8, type: 3}
+  sprite: {fileID: 21300000, guid: cb0bf7d2c120a184e9b8111a02755ce3, type: 3}
+  model: {fileID: 9041460683996919453, guid: db820fcf6d128f34fbd77c2420cc9022, type: 3}
   defaultRotation: {x: 0, y: 0, z: 0}
   defaultScale: {x: 1, y: 1, z: 1}
