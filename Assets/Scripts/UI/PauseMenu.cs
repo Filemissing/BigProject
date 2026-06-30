@@ -1,5 +1,6 @@
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -14,6 +15,10 @@ public class PauseMenu : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private float duration = .3f;
     [SerializeField] private Vector2 panelEffectOffset = new  Vector2(-200, 0);
+    
+    [Header("Events")]
+    [SerializeField] private UnityEvent onPause;
+    [SerializeField] private UnityEvent onResume;
 
     private bool toggle = false;
     private Vector2 defaultPanelPosition;
@@ -62,6 +67,9 @@ public class PauseMenu : MonoBehaviour
         
         sidePanel.anchoredPosition = defaultPanelPosition + panelEffectOffset;
         sidePanel.DOAnchorPos(defaultPanelPosition, duration).SetEase(Ease.OutCubic).SetUpdate(true);
+        
+        // Event
+        onPause?.Invoke();
     }
     
     private void SetInvisible()
@@ -89,6 +97,9 @@ public class PauseMenu : MonoBehaviour
         
         sidePanel.anchoredPosition = defaultPanelPosition;
         sidePanel.DOAnchorPos(defaultPanelPosition + panelEffectOffset, duration).SetEase(Ease.OutCubic).SetUpdate(true);
+        
+        // Event
+        onResume?.Invoke();
     }
     
     private void ForceInvisible()
