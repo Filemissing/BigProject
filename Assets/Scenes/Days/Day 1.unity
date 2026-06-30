@@ -4053,6 +4053,10 @@ PrefabInstance:
       propertyPath: 'passiveDialogueEntryDatas.Array.data[0]'
       value: WITCH!
       objectReference: {fileID: 0}
+    - target: {fileID: 7734272789918961846, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: f734af981e7299d4a973d31debab8ed0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 1624093772307817841, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
