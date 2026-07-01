@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using DG.Tweening;
 using Unity.Mathematics;
 using UnityEngine;
@@ -24,15 +26,26 @@ public class ItemInspect : MonoBehaviour, IDragHandler, IPointerEnterHandler, IP
     [SerializeField] private float defaultZ = -10;
     [SerializeField] private float minimumZoom = 0;
     [SerializeField] private float maximumZoom = 5;
+
+    [Header("Start Animation")]
+    [SerializeField] private bool play = true;
+    [SerializeField] private float animationDuration = 0.5f;
+    [SerializeField] private float animationZoom = 1.5f;
+    [SerializeField] private Vector3 animationRotation = new Vector3(0, 45, 0);
     
     private bool isHovering = false;
     private float currentZoom = 0;
     private float smoothCurrentZoom = 0;
+
+    private bool isAnimating = false;
     
     
     
     public void OnDrag(PointerEventData eventData)
     {
+        if (isAnimating)
+            return;
+        
         objectTransform.Rotate(Vector3.down, eventData.delta.x * xMultiplier, Space.World);
         cameraPivotTransform.Rotate(Vector3.left, eventData.delta.y * yMultiplier, Space.World);
         
@@ -51,7 +64,7 @@ public class ItemInspect : MonoBehaviour, IDragHandler, IPointerEnterHandler, IP
 
     private void Update()
     {
-        if (isHovering)
+        if (!isAnimating && isHovering)
         {
             currentZoom += Input.GetAxisRaw("Mouse ScrollWheel") * zoomMultiplier;
             currentZoom = Math.Clamp(currentZoom, minimumZoom, maximumZoom);
@@ -59,7 +72,7 @@ public class ItemInspect : MonoBehaviour, IDragHandler, IPointerEnterHandler, IP
         
         
         // Zooming
-        DOTween.To(() => smoothCurrentZoom, x => smoothCurrentZoom = x, currentZoom, tweenDuration);
+        smoothCurrentZoom = Mathf.Lerp(smoothCurrentZoom, currentZoom, Time.deltaTime * 10f);
         cameraTransform.localPosition = new Vector3(0, 0, defaultZ + smoothCurrentZoom);
         
         
@@ -81,13 +94,16 @@ public class ItemInspect : MonoBehaviour, IDragHandler, IPointerEnterHandler, IP
         visualObject = Instantiate(item.model, visualObjectParent);
         visualObject.transform.localPosition = Vector3.zero;
         visualObject.transform.localRotation = Quaternion.Euler(item.defaultRotation);
-        visualObject.transform.localScale = Vector3.Scale(visualObject.transform.localScale, item.defaultScale);
-        visualObject.layer = LayerMask.NameToLayer("Inventory");
+        visualObject.transform.localScale = visualObject.transform.localScale * item.defaultScale;
+        SetLayerRecursively(visualObject, LayerMask.NameToLayer("Inventory"));
 
         currentZoom = 0;
         smoothCurrentZoom = 0;
         objectTransform.localRotation = Quaternion.Euler(item.defaultRotation);
         cameraPivotTransform.localRotation = Quaternion.identity;
+        
+        if (play)
+            PlayStartAnimation(item);
     }
 
     public void SetEmpty()
@@ -97,5 +113,37 @@ public class ItemInspect : MonoBehaviour, IDragHandler, IPointerEnterHandler, IP
         currentZoom = 0;
         smoothCurrentZoom = 0;
         cameraPivotTransform.localRotation = Quaternion.identity;
+    }
+
+    private void PlayStartAnimation(Item item)
+    {
+        isAnimating = true;
+
+        visualObject.transform.DOKill();
+
+        currentZoom = 0;
+        smoothCurrentZoom = animationZoom;
+
+        visualObject.transform.localRotation = Quaternion.Euler(item.defaultRotation + animationRotation);
+
+        Sequence sequence = DOTween.Sequence();
+
+        sequence.Join(visualObject.transform.DOLocalRotate(item.defaultRotation, animationDuration).SetEase(Ease.OutBack));
+
+        sequence.Join(DOTween.To(() => smoothCurrentZoom, x => smoothCurrentZoom = x, currentZoom, animationDuration).SetEase(Ease.OutCubic));
+
+        sequence.OnComplete(() =>
+        {
+            objectTransform.localRotation = Quaternion.Euler(item.defaultRotation);
+            isAnimating = false;
+        });
+    }
+    
+    private void SetLayerRecursively(GameObject obj, int layer)
+    {
+        obj.layer = layer;
+
+        foreach (Transform child in obj.transform)
+            SetLayerRecursively(child.gameObject, layer);
     }
 }

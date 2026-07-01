@@ -16,5 +16,5 @@ MonoBehaviour:
   description: Gossip about Jenneke - she hasn't attented church in a long while.
   sprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
   model: {fileID: 7058273347260566982, guid: 1db2d6e29bf44af4ca1a6f55c9644b47, type: 3}
-  defaultRotation: {x: 0, y: 0, z: 0}
-  defaultScale: {x: 1, y: 1, z: 1}
+  defaultRotation: {x: 0, y: 130, z: 0}
+  defaultScale: 2

@@ -8396,7 +8396,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 2094838387}
-  m_VersionIndex: 23
+  m_VersionIndex: 50
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -10796,6 +10796,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.87169814
       objectReference: {fileID: 0}
+    - target: {fileID: 365298666360094085, guid: 8ceacb98f2efcc6489e6d437ab915ad6, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 440611364009651769, guid: 8ceacb98f2efcc6489e6d437ab915ad6, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -11798,6 +11802,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8278241993610084938, guid: 8ceacb98f2efcc6489e6d437ab915ad6, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8322220414544693436, guid: 8ceacb98f2efcc6489e6d437ab915ad6, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8477418707225094432, guid: 8ceacb98f2efcc6489e6d437ab915ad6, type: 3}

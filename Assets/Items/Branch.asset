@@ -19,5 +19,5 @@ MonoBehaviour:
 '
   sprite: {fileID: 21300000, guid: 0ba7feb675947224493f7fb9ae0eb685, type: 3}
   model: {fileID: 7402854786221803140, guid: 3243e0ee1c89e204db90c7c22323929a, type: 3}
-  defaultRotation: {x: 0, y: 0, z: 0}
-  defaultScale: {x: 1, y: 1, z: 1}
+  defaultRotation: {x: 52.3, y: 80, z: 0}
+  defaultScale: 4

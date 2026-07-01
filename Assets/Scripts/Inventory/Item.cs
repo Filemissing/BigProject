@@ -11,5 +11,5 @@ public class Item : ScriptableObject
     public Sprite sprite;
     public GameObject model;
     public Vector3 defaultRotation;
-    public Vector3 defaultScale = Vector3.one;
+    public float defaultScale = 1;
 }

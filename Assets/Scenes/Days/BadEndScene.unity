@@ -429,7 +429,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 224389491}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: OnMenuClick
         m_Mode: 1
@@ -899,6 +899,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -100
       objectReference: {fileID: 0}
+    - target: {fileID: 7730673395515685770, guid: 8ceacb98f2efcc6489e6d437ab915ad6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8176893153912315246, guid: 8ceacb98f2efcc6489e6d437ab915ad6, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -943,6 +947,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5849151764999550445, guid: 8ceacb98f2efcc6489e6d437ab915ad6, type: 3}
   m_PrefabInstance: {fileID: 224389488}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &224389491 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7769176405825227701, guid: 8ceacb98f2efcc6489e6d437ab915ad6, type: 3}
+  m_PrefabInstance: {fileID: 224389488}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 709f00b067165734ea14a1f94fda5121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
 --- !u!1 &514642078
 GameObject:
   m_ObjectHideFlags: 0

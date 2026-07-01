@@ -17,5 +17,5 @@ MonoBehaviour:
     No matter how you look at it, it's just milk.
   sprite: {fileID: 21300000, guid: 9aa64f562047dfa44ad3ce7b88c81da5, type: 3}
   model: {fileID: 6821078983396226838, guid: 2637a9cfa524ae74985533789fb3131c, type: 3}
-  defaultRotation: {x: 0, y: 0, z: 0}
-  defaultScale: {x: 1, y: 1, z: 1}
+  defaultRotation: {x: -50, y: 0, z: 0}
+  defaultScale: 2

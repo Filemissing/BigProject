@@ -1559,9 +1559,12 @@ MonoBehaviour:
   audioSource: {fileID: 427172996579503790}
   stepDistance: 1.2
   footstepSounds:
-  - {fileID: 8300000, guid: b30852460a55a1e43a33983e26f120a8, type: 3}
-  - {fileID: 8300000, guid: 3d9acd0baaf9f24458b2b09470fe7938, type: 3}
-  - {fileID: 8300000, guid: 6ffb332b099298d4f88b0a4420e546ed, type: 3}
+  - {fileID: 8300000, guid: a3fa55240652bbb46a9d347ff0c62a12, type: 3}
+  - {fileID: 8300000, guid: e54f3d8b6baff85458c57bdff7025c9b, type: 3}
+  - {fileID: 8300000, guid: 64e0364d50172d24ab96e8a810591800, type: 3}
+  - {fileID: 8300000, guid: 16cdbb25a40003d4eacb950fcc118d85, type: 3}
+  - {fileID: 8300000, guid: 729ca5fdba13bbd498725dfe9a373125, type: 3}
+  - {fileID: 8300000, guid: 788e9738b819d444e8455d87d57d22ea, type: 3}
 --- !u!82 &427172996579503790
 AudioSource:
   m_ObjectHideFlags: 0

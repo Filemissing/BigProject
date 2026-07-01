@@ -192,10 +192,13 @@ MonoBehaviour:
   sprintVolumeMultiplier: 1.4
   crouchVolumeMultiplier: 0.4
   footstepSounds:
-  - {fileID: 8300000, guid: 4bea866c6c79e7048b97ab2210538181, type: 3}
-  - {fileID: 8300000, guid: 6fa885e0c016d364d82c1f499c3567b2, type: 3}
-  - {fileID: 8300000, guid: 7ec25139a24b14b4ea99e4f6fc83bad8, type: 3}
-  crouchSound: {fileID: 8300000, guid: 5b9da112fb8ab2f48b64c202892f0eb3, type: 3}
+  - {fileID: 8300000, guid: a3fa55240652bbb46a9d347ff0c62a12, type: 3}
+  - {fileID: 8300000, guid: e54f3d8b6baff85458c57bdff7025c9b, type: 3}
+  - {fileID: 8300000, guid: 64e0364d50172d24ab96e8a810591800, type: 3}
+  - {fileID: 8300000, guid: 16cdbb25a40003d4eacb950fcc118d85, type: 3}
+  - {fileID: 8300000, guid: 729ca5fdba13bbd498725dfe9a373125, type: 3}
+  - {fileID: 8300000, guid: 788e9738b819d444e8455d87d57d22ea, type: 3}
+  crouchSound: {fileID: 8300000, guid: e9cea531572c5d940b4306b0ee912660, type: 3}
 --- !u!114 &3635822171205137501
 MonoBehaviour:
   m_ObjectHideFlags: 0

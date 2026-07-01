@@ -17,5 +17,5 @@ MonoBehaviour:
     opening in town.
   sprite: {fileID: 21300000, guid: d4e082c064abd584c8bcae8e4851974d, type: 3}
   model: {fileID: 6688829467841926659, guid: 2a3dbe31ccbbe8349936ef84346cc429, type: 3}
-  defaultRotation: {x: 0, y: 0, z: 0}
-  defaultScale: {x: 1, y: 1, z: 1}
+  defaultRotation: {x: -40, y: 37.9, z: 0}
+  defaultScale: 6
