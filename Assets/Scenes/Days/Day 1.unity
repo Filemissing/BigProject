@@ -14,10 +14,10 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 0.3267282, g: 0.32297972, b: 0.3584906, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.009
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -94,7 +94,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 02f947c7e569b2049b130ecc74aad523, type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 56dd4405d8dd8464a84fb8959dbd1b72, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: b132400dbe3a83745abf9abccb7c3a13, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3549,33 +3549,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3501356204743512396, guid: cd59c2bb2f784724f9b20c375acf81c4, type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7459037448637083879, guid: cd59c2bb2f784724f9b20c375acf81c4, type: 3}
       propertyPath: m_Name
       value: Day Light
-      objectReference: {fileID: 0}
-    - target: {fileID: 8678683122009976566, guid: cd59c2bb2f784724f9b20c375acf81c4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.3088434
-      objectReference: {fileID: 0}
-    - target: {fileID: 8678683122009976566, guid: cd59c2bb2f784724f9b20c375acf81c4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.8991467
-      objectReference: {fileID: 0}
-    - target: {fileID: 8678683122009976566, guid: cd59c2bb2f784724f9b20c375acf81c4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.10073197
-      objectReference: {fileID: 0}
-    - target: {fileID: 8678683122009976566, guid: cd59c2bb2f784724f9b20c375acf81c4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.29326457
-      objectReference: {fileID: 0}
-    - target: {fileID: 8678683122009976566, guid: cd59c2bb2f784724f9b20c375acf81c4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -36.12799
       objectReference: {fileID: 0}
     - target: {fileID: 8860443168860705050, guid: cd59c2bb2f784724f9b20c375acf81c4, type: 3}
       propertyPath: m_LocalPosition.x
