@@ -142,7 +142,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 4
     nodeType: 2
-    position: {x: 1128, y: 15}
+    position: {x: 1128, y: 14.666668}
     values:
     - type: 3
       intValue: 0
@@ -224,7 +224,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 6
     nodeType: 2
-    position: {x: 1995, y: 0}
+    position: {x: 1995.3334, y: 0}
     values:
     - type: 3
       intValue: 0
@@ -263,8 +263,26 @@ MonoBehaviour:
     finalEvents: []
     finalConditions: []
   - id: 7
+    nodeType: 5
+    position: {x: 2285.3333, y: 0}
+    values:
+    - type: 5
+      intValue: 0
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 11400000, guid: 07e985c59cd33814cbeb55d7982e4752, type: 2}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 8
     nodeType: 1
-    position: {x: 2397, y: 0}
+    position: {x: 2551.3333, y: 0}
     values:
     - type: 1
       intValue: 1
@@ -308,4 +326,8 @@ MonoBehaviour:
   - fromNode: 6
     outPortID: 0
     toNode: 7
+    inPortID: 0
+  - fromNode: 7
+    outPortID: 0
+    toNode: 8
     inPortID: 0

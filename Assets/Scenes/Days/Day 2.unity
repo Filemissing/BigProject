@@ -6683,11 +6683,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: passiveDialogueEntryDatas.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: 'passiveDialogueEntryDatas.Array.data[0]'
       value: Good morning!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: 'passiveDialogueEntryDatas.Array.data[1]'
+      value: You could try going to Jenneke today.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969136767722334916, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
+      propertyPath: 'passiveDialogueEntryDatas.Array.data[2]'
+      value: She lives in the house across the street - on the left corner. A nice
+        location, if I can say so.
       objectReference: {fileID: 0}
     - target: {fileID: 7734272789918961846, guid: 785a16405ca37ba47b00eab122b08342, type: 3}
       propertyPath: m_Avatar

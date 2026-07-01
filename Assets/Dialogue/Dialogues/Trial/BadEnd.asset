@@ -15,7 +15,7 @@ MonoBehaviour:
   nodes:
   - id: 0
     nodeType: 0
-    position: {x: -291, y: 8}
+    position: {x: -290.66666, y: 8}
     values: []
     eventParameters: []
     finalEvents: []
@@ -62,7 +62,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 2
     nodeType: 2
-    position: {x: 217, y: 8}
+    position: {x: 217.33333, y: 8}
     values:
     - type: 3
       intValue: 0
@@ -102,7 +102,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 3
     nodeType: 2
-    position: {x: 549, y: 8}
+    position: {x: 549.3333, y: 8}
     values:
     - type: 3
       intValue: 0
@@ -185,7 +185,7 @@ MonoBehaviour:
     finalConditions: []
   - id: 5
     nodeType: 2
-    position: {x: 1431, y: 8}
+    position: {x: 1431.3334, y: 8}
     values:
     - type: 3
       intValue: 0
@@ -224,8 +224,26 @@ MonoBehaviour:
     finalEvents: []
     finalConditions: []
   - id: 6
+    nodeType: 1
+    position: {x: 2330.6667, y: 10}
+    values:
+    - type: 1
+      intValue: 1
+      floatValue: 0
+      stringValue: 
+      boolValue: 0
+      objectValue: {fileID: 0}
+      intArray: 
+      floatArray: []
+      stringArray: []
+      boolArray: 
+      objectArray: []
+    eventParameters: []
+    finalEvents: []
+    finalConditions: []
+  - id: 7
     nodeType: 2
-    position: {x: 1749, y: 10}
+    position: {x: 1749.3334, y: 10}
     values:
     - type: 3
       intValue: 0
@@ -263,16 +281,16 @@ MonoBehaviour:
     eventParameters: []
     finalEvents: []
     finalConditions: []
-  - id: 7
-    nodeType: 1
-    position: {x: 2122, y: -3}
+  - id: 8
+    nodeType: 5
+    position: {x: 2082, y: 8}
     values:
-    - type: 1
-      intValue: 1
+    - type: 5
+      intValue: 0
       floatValue: 0
       stringValue: 
       boolValue: 0
-      objectValue: {fileID: 0}
+      objectValue: {fileID: 11400000, guid: 07e985c59cd33814cbeb55d7982e4752, type: 2}
       intArray: 
       floatArray: []
       stringArray: []
@@ -304,9 +322,13 @@ MonoBehaviour:
     inPortID: 0
   - fromNode: 5
     outPortID: 0
-    toNode: 6
-    inPortID: 0
-  - fromNode: 6
-    outPortID: 0
     toNode: 7
+    inPortID: 0
+  - fromNode: 7
+    outPortID: 0
+    toNode: 8
+    inPortID: 0
+  - fromNode: 8
+    outPortID: 0
+    toNode: 6
     inPortID: 0

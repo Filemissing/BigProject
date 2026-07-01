@@ -143,6 +143,7 @@ GameObject:
   - component: {fileID: 1575221878435465688}
   - component: {fileID: 1747836128642644102}
   - component: {fileID: 2486785278237807753}
+  - component: {fileID: 8994766530597871791}
   m_Layer: 0
   m_Name: Table
   m_TagString: Untagged
@@ -222,6 +223,27 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8994766530597871791
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2967159632485183042}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.010000006, y: 0.082506664, z: 0.0100000035}
+  m_Center: {x: -0.000000029802322, y: -0.031253327, z: -0.00000011897646}
 --- !u!1 &2973959711930282249
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,7 +523,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6810849466600400443}
-  - component: {fileID: 1580469442393234241}
   m_Layer: 0
   m_Name: Marketstall (11)
   m_TagString: Untagged
@@ -527,27 +548,6 @@ Transform:
   - {fileID: 1575221878435465688}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 113.877, z: 0}
---- !u!65 &1580469442393234241
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3883865384041078990}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4397612821029791260
 GameObject:
   m_ObjectHideFlags: 0
@@ -1043,6 +1043,7 @@ GameObject:
   - component: {fileID: 7935542364244491743}
   - component: {fileID: 1427861344754293961}
   - component: {fileID: 1869445137578682710}
+  - component: {fileID: 2859755916777879914}
   m_Layer: 0
   m_Name: Blanket
   m_TagString: Untagged
@@ -1122,6 +1123,27 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2859755916777879914
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6662214315621523520}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0100000035, y: 0.012348115, z: 0.010000012}
+  m_Center: {x: -0.000000029802322, y: 0.003825942, z: -0.0000009536743}
 --- !u!1 &7682046301853332770
 GameObject:
   m_ObjectHideFlags: 0
