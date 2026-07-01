@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -29,10 +30,11 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(firstSceneName);
     }
-    
+
+    public UnityEvent onHistoryButton;
     public void OnHistoryButton()
     {
-        
+        onHistoryButton?.Invoke();
     }
     
     public void OnSettingsButton()
