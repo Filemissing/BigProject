@@ -17,5 +17,5 @@ MonoBehaviour:
     is that they smell rather strongly.
   sprite: {fileID: 21300000, guid: 94971e05b0860814bb586a4fc33794ad, type: 3}
   model: {fileID: 5575511382255712364, guid: 540c97ec8a1f7c34b8342a26c549f2a5, type: 3}
-  defaultRotation: {x: 0, y: 0, z: 0}
-  defaultScale: {x: 1, y: 1, z: 1}
+  defaultRotation: {x: -30, y: 0, z: 0}
+  defaultScale: 7
