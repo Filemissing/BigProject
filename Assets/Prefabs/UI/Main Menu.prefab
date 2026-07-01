@@ -361,7 +361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
   shutdownButton: {fileID: 1618619715155427522}
-  firstSceneName: Day 1
+  firstSceneName: Intro day
 --- !u!1 &539856964009602073
 GameObject:
   m_ObjectHideFlags: 0
