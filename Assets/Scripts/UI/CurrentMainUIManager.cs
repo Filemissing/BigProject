@@ -39,7 +39,7 @@ public class CurrentMainUIManager : MonoBehaviour
         return true;
     }
     
-    void SetMainUI()
+    public void SetMainUI()
     {
         if (!DisablePreviousMainUI()) return;
         
@@ -59,26 +59,11 @@ public class CurrentMainUIManager : MonoBehaviour
         Refresh();
     }
     
-    void RemoveMainUI()
+    public void RemoveMainUI()
     {
         hasCurrentMainUI = false;
         currentMainUI = null;
         
         Refresh();
-    }
-    
-    
-    
-    // Event Bindings
-    void OnEnable()
-    {
-        DSP_ConversationManager.instance.OnConversationStarted += SetMainUI;
-        DSP_ConversationManager.instance.OnConversationEnded += RemoveMainUI;
-    }
-    
-    void OnDisable()
-    {
-        DSP_ConversationManager.instance.OnConversationStarted -= SetMainUI;
-        DSP_ConversationManager.instance.OnConversationEnded -= RemoveMainUI;
     }
 }
