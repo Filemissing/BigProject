@@ -46,7 +46,7 @@ public class Guard : NPC
         float angle = Vector3.Angle(transform.forward, toPlayer); // unsigned
 
         float distance = Vector3.Distance(transform.position, player.transform.position);
-        float visibleDistance = player.isCrouched ? crouchedVisionDistance : visionDistance;
+        float visibleDistance = player.isCrouching ? crouchedVisionDistance : visionDistance;
 
         if (angle < FOV && distance < visibleDistance)
         {
@@ -62,7 +62,7 @@ public class Guard : NPC
                 // give the player some time to hide if they were crouching
                 if (alertStatus == AlertStatus.Suspicious)
                 {
-                    if (player.isCrouched)
+                    if (player.isCrouching)
                         visibleTimer += Time.deltaTime;
                     else
                         alertStatus = AlertStatus.Found;
